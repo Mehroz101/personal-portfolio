@@ -1,0 +1,138 @@
+/* Base Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 15px 50px;
+    background: linear-gradient(45deg, #444444, #333333);
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.5s ease-in-out, padding 0.3s ease-in-out;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .navbar .logo h1 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar .logo h1:hover {
+    transform: scale(1.1); /* Logo hover effect */
+  }
+  
+  .navbar .icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar .nav_links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Position for border animation */
+  }
+  
+  .navbar .nav_links li {
+    margin: 0 0.7rem;
+  }
+  
+  .navbar .nav_links li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem; /* Slightly larger text */
+    color: white;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .navbar .nav_links li a:hover {
+    color: #ffd700; /* Gold color for hover */
+    transform: scale(1.1); /* Slight scale-up on hover */
+  }
+  
+  .navbar.scrolled {
+    background: rgba(46, 139, 87, 0.95); /* Transparent background on scroll */
+    padding: 10px 30px; /* Smaller padding on scroll */
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 980px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .navbar .icon {
+      display: block;
+      font-size: 1.3rem;
+    }
+  
+    .navbar .logo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar .nav_links.hide {
+      display: none;
+    }
+  
+    .navbar .nav_links.show {
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      background: linear-gradient(45deg, #444444, #333333);
+      width: 100%;
+      left: 0;
+      padding: 10px 0;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+  
+    .navbar .nav_links li {
+      position: relative;
+      padding: 10px 0;
+    }
+  
+    .navbar .nav_links li::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: #ffd700; /* Gold border effect */
+      transition: width 0.4s ease-in-out;
+    }
+  
+    .navbar .nav_links li a:hover::after {
+      width: 100%;
+    }
+  
+    .navbar .nav_links li a {
+      font-size: 1rem;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
