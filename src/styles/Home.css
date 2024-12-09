@@ -1,0 +1,95 @@
+.homepage{
+    margin-top: 150px;
+    padding: 0 100px;
+}
+.homepage .hero_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.homepage .hero_left{
+    flex: 1;
+    max-width: 600px;
+    
+}
+.homepage .hero_left span.aoa{
+    font-size: 1.1rem;
+    color: #ffd700;
+}
+.homepage .hero_left h1{
+    font-size: 3rem ;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.homepage .hero_left h1 span{
+    color: #ffd700;
+    font-size: 3rem ;
+
+}
+.homepage .hero_left p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.homepage .hero_right{
+flex: 1;
+max-width: 600px;
+min-width: 300px;
+}
+.homepage .hero_right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.homepage .hero_left .hero_btns{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.homepage .hero_left .hero_btns button{
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffd700;
+    border: 2px solid #ffd700;
+}
+.homepage .hero_left .hero_btns button:hover{
+    background-color: #333333;
+    color: #ffd700;
+}
+
+@media screen and (max-width: 768px) {
+    .homepage{
+        padding: 0 20px;
+    }
+   
+    .homepage .hero_left{
+        text-align: center;
+    }
+    .homepage .hero_left h1{
+        font-size: 2.5rem;
+    }
+    .homepage .hero_left h1 span{
+        font-size: 2.5rem;
+    }
+    .homepage .hero_left p{
+        font-size: 1rem;
+    }
+    .homepage .hero_left .hero_btns{
+        flex-direction: column;
+    }
+    .homepage .hero_left .hero_btns button{
+        width: 100%;
+    }
+    .homepage .hero_right{
+        margin-top: 20px;
+        padding: 0;
+        transform: translateX(-30px);
+    }
+    
+}
