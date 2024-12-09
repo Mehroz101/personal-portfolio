@@ -64,7 +64,7 @@
   }
   
   .navbar.scrolled {
-    background: rgba(46, 139, 87, 0.95); /* Transparent background on scroll */
+    background: linear-gradient(45deg, #444444, #333333);
     padding: 10px 30px; /* Smaller padding on scroll */
   }
   
