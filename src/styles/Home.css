@@ -392,3 +392,77 @@ min-width: 300px;
     }
     
 }
+
+/*=================== Skill Styles =============================*/
+
+.skillsection{
+    background-color: var(--secondary-background);
+    text-align: center;
+    padding: 40px 0;
+}
+.skillsection .skill_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.skillsection .skill_cards .skill_card{
+    min-width: 300px;
+    max-width: 400px;
+    flex: 1;
+    padding: 40px 26px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    background-color:#262020;
+}
+.skillsection .skill_cards .skill_card:hover{
+    transform: translateY(-10px);
+}
+.skillsection .skill_cards .skill_card .img {
+    width: 100px;
+    height: 100px;
+    display: flex; /* Centers the content */
+    justify-content: center;
+    align-items: center;
+    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%; /* Decorative shape */
+    background-color: #312F2F;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    overflow: hidden; /* Ensures content stays within the container */
+}
+
+.skillsection .skill_cards .skill_card img {
+    max-width: 60%; /* Ensures the image doesn't exceed the container's width */
+    max-height: 60%; /* Ensures the image doesn't exceed the container's height */
+    object-fit: contain; /* Keeps the aspect ratio intact */
+    display: block; /* Ensures proper alignment */
+}
+
+
+.skillsection .skill_cards .skill_card .skill_name{
+    font-size: 1.3rem;
+    margin: 10px 0;
+    text-align: left;
+}
+.skillsection .skill_cards .skill_card .progress_bar{
+    width: 100%;
+    height: 10px;
+    background-color: #FFBD39;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.skillsection .skill_cards .skill_card .progress{
+    height: 100%;
+    background-color: #FFBD39;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.skillsection .skill_cards .skill_card .skill_percentage{
+    font-size: 0.9rem;
+    text-align: right;
+    color: var(--secondary-text);
+}
