@@ -23,7 +23,7 @@
   
   .navbar .logo h1 {
     font-size: 1.8rem;
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
     letter-spacing: 1px;
     transition: transform 0.3s ease-in-out;
@@ -53,13 +53,17 @@
   .navbar .nav_links li a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.1rem; /* Slightly larger text */
-    color: white;
+    color: var(--text-color);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 18px;
   }
   
   .navbar .nav_links li a:hover {
-    color: #ffd700; /* Gold color for hover */
+    color: var(--primary-color); /* Gold color for hover */
     transform: scale(1.1); /* Slight scale-up on hover */
   }
   
@@ -69,7 +73,7 @@
   }
   
   /* Mobile View */
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1080px) {
     .navbar {
       padding: 10px 20px;
     }
@@ -109,7 +113,7 @@
       left: 0;
       height: 2px;
       width: 0;
-      background: #ffd700; /* Gold border effect */
+      background: var(--primary-color); /* Gold border effect */
       transition: width 0.4s ease-in-out;
     }
   

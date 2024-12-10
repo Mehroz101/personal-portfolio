@@ -1,3 +1,62 @@
+:root {
+    --background: #333333;
+    --secondary-background: #312F2F;
+    --text-color: white;
+    --primary-color: #ffd700;
+    --secondary-color: #3E3C3C;
+    --secondary-text: #CCCCCC;
+  }
+/* :root {
+    --background: white;
+    --text-color: #333333;
+    --primary-color: #ffd700;
+    --secondary-color: #333333;
+  } */
+  
+  .dark-theme {
+    --background: white;
+    --text-color: #333333;
+    --primary-color: #ffd700;
+    --secondary-color: #333333;
+  
+  }
 .main_container{
     position: relative;
+}
+ .sectionheading_top{
+  max-width: 700px;
+  margin: 0 auto;
+}
+ .sectionheading_top h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+ .sectionheading_top .underline{
+  width: 170px;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+ .sectionheading_top .underline::after{
+  content: "";
+  clear: both;
+  display: block;
+  /* overflow: hidden; */
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: -7px;
+  margin: 0 auto;
+  border: 3px solid var(--primary-color)
+}
+ .sectionheading_top .text{
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
