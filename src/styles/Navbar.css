@@ -10,7 +10,7 @@
     transform: translateX(-50%);
     z-index: 10;
     padding: 15px 50px;
-    background: linear-gradient(45deg, #444444, #333333);
+    /* background: linear-gradient(45deg, #444444, #333333); */
     font-family: 'Poppins', sans-serif;
     transition: background 0.5s ease-in-out, padding 0.3s ease-in-out;
   }

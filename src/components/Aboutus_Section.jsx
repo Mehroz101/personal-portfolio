@@ -12,10 +12,12 @@ const Aboutus_Section = () => {
             Developer & specialized in <span>MERN Stack</span>
           </h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-            tempora, odit sit in corrupti perferendis error suscipit quo ipsum
-            laudantium voluptate a quaerat tempore repudiandae nesciunt
-            reiciendis, nam ullam consequuntur!
+            I’m a passionate web and software developer dedicated to creating
+            innovative and user-friendly digital experiences. With expertise in
+            the latest technologies, I focus on delivering high-quality
+            solutions tailored to client needs. My goal is to help businesses
+            thrive through creative and functional websites and applications
+            that leave a lasting impact.
           </p>
           <div className="social_accounts">
             <span>Follow me:</span>

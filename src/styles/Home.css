@@ -1,16 +1,19 @@
 /*=================== Homepage Styles =============================*/
 .homepage{
-    margin-top: 150px;
+    overflow: hidden;
 }
 .homepage .hero_section{
     display: flex;
+
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 100px;
+    padding: 150px 100px 0;
+    background-color: var(--secondary-background) !important;
 
 }
+
 .homepage .hero_left{
     flex: 1;
     max-width: 600px;
@@ -106,9 +109,8 @@ min-width: 300px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-top: 50px;
-    background-color: #312F2F;
-    padding: 50px 100px;
+    background-color: var(--background);
+    padding: 100px 100px 50px;
 
 }
 .aboutus_left{
@@ -218,9 +220,9 @@ min-width: 300px;
 /*=================== My Services Styles =============================*/
 
 .myservices{
-    background-color: var(--background);
+    background-color: var(--secondary-background);
     text-align: center;
-    
+    padding: 20px 0;
 }
 
 .myservices .myservices_cards {
@@ -278,7 +280,7 @@ min-width: 300px;
 /*=================== Education Styles =============================*/
 
 .educationsection{
-    background-color: var(--secondary-background);
+    background-color: var(--background);
     text-align: center;
     padding: 40px 0;
 
@@ -286,7 +288,7 @@ min-width: 300px;
 .educationsection .education_cards{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 25px;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -337,14 +339,14 @@ min-width: 300px;
 /*=================== Experience Styles =============================*/
 
 .experiencesection{
-    background-color: var(--background);
+    background-color: var(--secondary-background);
     text-align: center;
     padding: 40px 0;
 }
 .experiencesection .experience_cards{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 25px;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -396,7 +398,7 @@ min-width: 300px;
 /*=================== Skill Styles =============================*/
 
 .skillsection{
-    background-color: var(--secondary-background);
+    background-color: var(--background);
     text-align: center;
     padding: 40px 0;
 }
@@ -471,7 +473,7 @@ min-width: 300px;
 
 /*=================== Project Styles =============================*/
 .projectsection{
-    background-color: var(--background);
+    background-color: var(--secondary-background);
     text-align: center;
     padding: 40px 0;
 }
@@ -546,10 +548,11 @@ min-width: 300px;
     margin-bottom: 0;
     font-size: 1rem;
     font-weight: 600;
+    max-width: 90%;
 }
 /*=================== Contact Styles =============================*/
 .Contactsection {
-    background-color: var(--secondary-background);
+    background-color: var(--background);
     text-align: center;
     padding: 40px 0;
 }
@@ -589,7 +592,7 @@ min-width: 300px;
 }
 
 .Contactsection .error {
-    color: red;
+    color: rgb(235, 20, 20);
     font-size: 0.8rem;
     text-align: left;
     margin-top: -8px; /* Adjusted positioning to align with inputs */
@@ -638,4 +641,46 @@ min-width: 300px;
         min-width: 100%;
     }
     
+}
+
+/*=================== Footer Styles =============================*/
+.footer{
+    background: linear-gradient(45deg, #444444, #333333);
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    /* padding-top: 300px; */
+    z-index: 100;
+    border-radius: 200px 0 0 0;
+}
+/* .footer .stylediv{
+    position: absolute;
+    top:-100%;
+    left: 0;
+    width: 200%;
+    z-index: 1;
+    height: 200px;
+    transform: translateX(-100px) rotateZ(174deg);
+    background-color: var(--primary-color);
+} */
+
+.footer .social_links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footer .social_links a{
+    color: var(--secondary-text);
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+}
+.footer .social_links a:hover{
+    color: var(--primary-color);
+}
+.footer .copyright{
+    color: var(--secondary-text);
+    font-size: 0.9rem;
 }
