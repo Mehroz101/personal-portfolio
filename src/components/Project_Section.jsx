@@ -31,7 +31,7 @@ const Project_Section = () => {
   ];
 
   return (
-    <div className="projectsection">
+    <div className="projectsection" id="project">
       <Section_Heading
         title="My Projects"
         description="Here are some of the key projects I have worked on, showcasing my skills in web development and problem-solving."

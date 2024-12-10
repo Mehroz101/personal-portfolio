@@ -43,7 +43,7 @@ const My_Services = () => {
   ];
 
   return (
-    <div className="myservices">
+    <div className="myservices" id="service">
       <Section_Heading
         title="My Services"
         description="I offer a variety of web and mobile development services, tailored to help businesses achieve their goals through innovative and efficient solutions."

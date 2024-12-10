@@ -26,7 +26,7 @@ const Skill_Section = () => {
 
   return (
     <div>
-      <div className="skillsection">
+      <div className="skillsection" id="skill">
         <Section_Heading
           title="My Skills"
           description="Technologies I have expertise in"

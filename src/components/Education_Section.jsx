@@ -27,7 +27,7 @@ const Education_Section = () => {
   ];
 
   return (
-    <div className="educationsection">
+    <div className="educationsection" id="education">
       <Section_Heading
         title="My Education"
         description="I have a strong academic background in Information Technology and Computer Science, which has shaped my skills and knowledge in web development and software engineering."

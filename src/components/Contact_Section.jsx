@@ -10,7 +10,7 @@ const Contact_Section = () => {
   } = useForm();
   return (
     <>
-      <div className="Contactsection">
+      <div className="Contactsection" id="contact">
         <Section_Heading
           title="Contact Me"
           description="Get in touch with me"

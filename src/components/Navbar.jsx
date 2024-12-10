@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll"; // Import ScrollLink from react-scroll
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -24,29 +26,50 @@ const Navbar = () => {
         <h1>Mehroz</h1>
       </div>
       <div className="icon" onClick={() => setShowLinks(!showLinks)}>
-        <i class="fa-solid fa-bars-staggered"></i>
+        <i className="fa-solid fa-bars-staggered"></i>
       </div>
       <ul className={`nav_links ${showLinks ? "show" : "hide"}`}>
         <li>
-          <Link to="/">Home</Link>
+          <ScrollLink to="home" smooth={true} duration={500}>
+            Home
+          </ScrollLink>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <ScrollLink to="about" smooth={true} duration={500}>
+            About
+          </ScrollLink>
         </li>
         <li>
-          <Link to="/skills">Skills</Link>
+          <ScrollLink to="service" smooth={true} duration={500}>
+            Services
+          </ScrollLink>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <ScrollLink to="education" smooth={true} duration={500}>
+            Educations
+          </ScrollLink>
+        </li>
+
+        <li>
+          <ScrollLink to="experience" smooth={true} duration={500}>
+            Experience
+          </ScrollLink>
         </li>
         <li>
-          <Link to="/educations">Educations</Link>
+          <ScrollLink to="skill" smooth={true} duration={500}>
+            Skills
+          </ScrollLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <ScrollLink to="project" smooth={true} duration={500}>
+            Projects
+          </ScrollLink>
         </li>
+
         <li>
-          <Link to="/contact">Contact</Link>
+          <ScrollLink to="contact" smooth={true} duration={500}>
+            Contact
+          </ScrollLink>
         </li>
       </ul>
     </div>

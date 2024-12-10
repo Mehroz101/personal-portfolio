@@ -28,7 +28,7 @@ const Experience_section = () => {
   ];
 
   return (
-    <div className="experiencesection">
+    <div className="experiencesection" id="experience">
       <Section_Heading
         title="My Experience"
         description="I have experience in web development, specializing in the MERN stack. I’ve worked with diverse teams and developed user-centric applications."
