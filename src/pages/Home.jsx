@@ -6,6 +6,8 @@ import My_Services from "../components/My_Services";
 import Education_Section from "../components/Education_Section";
 import Experience_section from "../components/Experience_section";
 import Skill_Section from "../components/Skill_Section";
+import Project_Section from "../components/Project_Section";
+import Contact_Section from "../components/Contact_Section";
 const Home = () => {
   return (
     <>
@@ -16,6 +18,8 @@ const Home = () => {
         <Education_Section />
         <Experience_section />
         <Skill_Section />
+        <Project_Section />
+        <Contact_Section />
       </div>
     </>
   );

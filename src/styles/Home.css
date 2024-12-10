@@ -410,10 +410,10 @@ min-width: 300px;
     margin: 20px auto;
 }
 .skillsection .skill_cards .skill_card{
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 100px;
+    max-width: 200px;
     flex: 1;
-    padding: 40px 26px;
+    padding: 20px 16px 10px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
     background-color:#262020;
@@ -422,8 +422,8 @@ min-width: 300px;
     transform: translateY(-10px);
 }
 .skillsection .skill_cards .skill_card .img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: flex; /* Centers the content */
     justify-content: center;
     align-items: center;
@@ -448,9 +448,9 @@ min-width: 300px;
     text-align: left;
 }
 .skillsection .skill_cards .skill_card .progress_bar{
-    width: 100%;
+    min-width: 100px;
     height: 10px;
-    background-color: #FFBD39;
+    background-color: var(--secondary-background);
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -458,6 +458,7 @@ min-width: 300px;
 .skillsection .skill_cards .skill_card .progress{
     height: 100%;
     background-color: #FFBD39;
+    width: 0;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -465,4 +466,176 @@ min-width: 300px;
     font-size: 0.9rem;
     text-align: right;
     color: var(--secondary-text);
+}
+
+
+/*=================== Project Styles =============================*/
+.projectsection{
+    background-color: var(--background);
+    text-align: center;
+    padding: 40px 0;
+}
+.projectsection .project_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.projectsection .project_cards .project_card{
+    min-width: 250px;
+    max-width: 350px;
+    flex: 1;
+    /* padding: 20px 16px 10px; */
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    background-color:#262020;
+    position: relative;
+    overflow: hidden;
+}
+.projectsection .project_cards .project_card:hover{
+    transform: translateY(-10px);
+}
+.projectsection .project_cards .project_card .img{
+    width: 100%;
+    height: 400px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.projectsection .project_cards .project_card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.projectsection .project_cards .project_card:hover .img img{
+    transform: scale(1.1);
+}
+.projectsection .project_cards .project_card  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    color: var(--secondary-text);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.projectsection .project_cards .project_card:hover .text{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+ 
+   overflow: hidden;
+}
+.projectsection .project_cards .project_card .text h2{
+    color: #FFBD39;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.projectsection .project_cards .project_card .text p{
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/*=================== Contact Styles =============================*/
+.Contactsection {
+    background-color: var(--secondary-background);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.Contactsection .contactus_form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.Contactsection .contactus_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between form elements */
+}
+
+.Contactsection .contactus_form .input {
+    width: 100%;
+    min-width: 200px;
+}
+
+.Contactsection .contactus_form input, 
+.Contactsection .contactus_form textarea {
+    flex: 1;
+    width: 100%;
+    padding: 15px; /* Reduced padding to prevent overflow */
+    border: 1px solid #535353;
+    font-size: 0.9rem; /* Increased font size slightly for readability */
+    margin: 0 0 10px; /* Removed horizontal margin to prevent overlap */
+    color: var(--text-color);
+    background-color: var(--background);
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.Contactsection .contactus_form input:focus, 
+.Contactsection .contactus_form textarea:focus {
+    outline: 2px solid #FFBD39;
+}
+
+.Contactsection .error {
+    color: red;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: -8px; /* Adjusted positioning to align with inputs */
+}
+
+.Contactsection .combo_input {
+    display: flex;
+    flex-wrap: wrap; /* Allows inputs to stack on small screens */
+    gap: 15px;
+}
+
+.Contactsection .combo_input .input {
+    flex: 1;
+    min-width: calc(50% - 15px); /* Ensures proper width for two inputs */
+}
+
+.Contactsection .contactus_form textarea {
+    resize: none;
+    height: 100px; /* Set a fixed height for textarea */
+}
+
+.Contactsection .contactus_form input::placeholder, 
+.Contactsection .contactus_form textarea::placeholder {
+    color: var(--secondary-text);
+}
+
+.Contactsection .contactus_form button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.Contactsection .contactus_form button:hover {
+    background-color: #f0a500;
+}
+@media screen and (max-width: 400px) {
+    .Contactsection .contactus_form .combo_input .input {
+        flex: 1;
+        min-width: 100%;
+    }
+    
 }
