@@ -1,0 +1,497 @@
+.projectdetail{
+    background-color: var(--background);
+    text-align: center;
+    padding: 150px 0px 0;
+}
+  /*========================== Hero Section ============================= */
+  .hero-section {
+    background: url("../assets/project1.png") no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    
+  }
+  .hero-section .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content .btn {
+    padding: 10px 20px;
+  }
+  
+  /*========================== state Section ============================= */
+
+  .projectdetail .stats{
+    background-color: var(--secondary-background);  
+    display: flex;
+    /* justify-content: center; */
+    gap: 100px;
+    padding: 100px 0px ;
+    flex-wrap: wrap;
+
+  }
+ 
+ .stats-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    min-width: 400px;
+ 
+  }
+  .stats-left .stats-heading{
+    justify-self: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .stats-left .stats-description {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.7    ;
+    color: var(--text-color); 
+  }
+  .stats-left  .stat_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}   
+.stats-left  .stat_cards .stat_card{
+    flex: 1;
+    /* max-width: 300px; */
+    min-width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 30px;
+}
+.stats-left  .stat_cards .stat_card:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.stats-left  .stat_cards .stat_card h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.stats-left  .stat_cards .stat_card span{
+    font-size: 1rem;
+}
+.stats-right{
+    flex: 1;
+    max-width: 700px;
+    min-width: 500px;
+    margin: 0 auto;
+  }
+  .stats-right img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+/*========================== tech Stack Section ============================= */
+.tech_stack{
+    background-color: var(--secondary-background);  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px ;
+  }
+  .tech_stack h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+.tech_stack .tech_stack_list_items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.tech_stack .tech_stack_list_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.tech_stack .tech_stack_list_items .tech-stack-list{
+    min-width: 100px;
+    max-width: 200px;
+    flex: 1;
+    padding: 20px 16px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#262020;
+}
+.tech_stack .tech_stack_list_items .tech-stack-list:hover{
+    transform: translateY(-10px);
+}
+.tech_stack .tech_stack_list_items .tech-stack-list .img {
+    width: 50px;
+    height: 50px;
+    display: flex; /* Centers the content */
+    justify-content: center;
+    align-items: center;
+    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%; /* Decorative shape */
+    background-color: #312F2F;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    overflow: hidden; /* Ensures content stays within the container */
+}
+.tech_stack .tech_stack_list_items .tech-stack-list img {
+    max-width: 60%; /* Ensures the image doesn't exceed the container's width */
+    max-height: 60%; /* Ensures the image doesn't exceed the container's height */
+    object-fit: contain; /* Keeps the aspect ratio intact */
+    display: block; /* Ensures proper alignment */
+}
+
+
+.tech_stack .tech_stack_list_items p{
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: left;
+}
+/*========================== libraries Stack Section ============================= */
+.libraries_stack{
+    background-color: var(--background);  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px ;
+  }
+  .libraries_stack h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+.libraries_stack .libraries_stack_list_items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.libraries_stack .libraries_stack_list_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.libraries_stack .libraries_stack_list_items .libraries-stack-list{
+    min-width: 100px;
+    max-width: 200px;
+    flex: 1;
+    padding: 20px 16px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#262020;
+}
+.libraries_stack .libraries_stack_list_items .libraries-stack-list:hover{
+    transform: translateY(-10px);
+}
+.libraries_stack .libraries_stack_list_items .libraries-stack-list .img {
+    width: 50px;
+    height: 50px;
+    display: flex; /* Centers the content */
+    justify-content: center;
+    align-items: center;
+    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%; /* Decorative shape */
+    background-color: #312F2F;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    overflow: hidden; /* Ensures content stays within the container */
+}
+.libraries_stack .libraries_stack_list_items .libraries-stack-list img {
+    max-width: 60%; /* Ensures the image doesn't exceed the container's width */
+    max-height: 60%; /* Ensures the image doesn't exceed the container's height */
+    object-fit: contain; /* Keeps the aspect ratio intact */
+    display: block; /* Ensures proper alignment */
+}
+
+
+.libraries_stack .libraries_stack_list_items p{
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/*========================== video Section ============================= */
+
+.projectdetail .video-section{
+    background: linear-gradient(45deg, #444444, #333333);
+    text-align: center;
+    padding: 40px 10px;
+    margin: 0 auto;
+    
+
+}
+.projectdetail .video-section video{
+    width: 60%;
+    height: auto;
+}
+.projectdetail .video-section h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:var(--text-color);
+}
+/*========================== pages Section ============================= */
+.pages-section{
+    padding: 20px 0;
+}
+  .pages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .pages-section h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color:var(--text-color);
+  }
+  
+  .page-box {
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+  }
+  .page-box h3{
+    font-size: 1rem;
+  }
+  
+  .page-box img {
+    width: 100%;
+    
+    height: auto;
+  }
+  /*========================== documentation Section ============================= */
+  .documentation-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 20px;
+  }
+  .documentation-left {
+    min-width: 500px;
+    max-width: 700px;
+    flex: 1;
+  }
+  .documentation-left img{
+    width: 100%;
+    height: auto;
+
+  }
+  .documentation-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .documentation-heading {
+    font-size: 2rem;
+    color: var(--text-color); /* Green color for a clean and professional feel */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+ 
+  
+  .documentation-description {
+    font-size: 1rem;
+    color: var(--text-color); /* A soft, readable color for the description */
+    margin-top: 20px;
+    max-width: 800px;
+    line-height: 1.7;
+    text-align: left;
+  }
+  
+  .download-button {
+    display: block;
+    margin: 30px 0;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .download-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);    
+  }
+  /*========================== pricing Section ============================= */
+  
+  .pricing-section{
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    padding-left:100px;
+    padding-right: 100px;
+    background-color: var(--secondary-background);
+  }
+  
+/*========================== media queries Section ============================= */
+
+
+  @media (max-width: 768px) {
+    .stats{
+        padding: 10px !important;
+    }
+    .stats-left {
+     
+      min-width: 200px;
+      max-width: 500px;
+      padding: 10px  ;
+      margin: 0 auto;
+    }
+    .stats-left .stats-heading{
+      justify-self: flex-start;
+      align-self: flex-start;
+      text-align: left;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .stats-left .stats-description {
+      font-size: 0.9rem;
+      text-align: left;
+      line-height: 1.7    ;
+      color: var(--text-color); 
+    }
+    .stats-left  .stat_cards{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stats-right{
+      flex: 1;
+      max-width: 500px;
+      min-width: 300px;
+      height: auto;
+    }
+    .tech_stack h2{
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+  
+    .libraries_stack h2{
+      font-size: 1.5rem;
+    }
+    .video-section{
+        padding: 20px 0;
+    }
+    .video-section  h2{
+        font-size: 1.5rem;
+    }
+    .video-container{
+        width: 100%;
+    }
+ .video-section video{
+    width: 100% !important  ;
+    height: auto;
+ }
+ .page-box{
+    min-width: 200px;
+    max-width: 300px;
+ }
+ .page-box h3{
+    font-size: 0.9rem;
+ }
+ .page-box img{
+    width: 100%;
+    height: auto;
+ }
+ .documentation-section{
+    padding: 20px 0;
+ }
+ .documentation-left{
+    min-width: 200px;
+    max-width: 300px;
+ }
+ .documentation-right{
+    min-width: 200px;
+    max-width: 300px;
+ }
+ .documentation-left img{
+    width: 100%;
+    height: auto;
+ }
+ .documentation-right .documentation-heading{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.documentation-right .documentation-description{
+    font-size: 0.9rem;
+    text-align: left;
+}
+.documentation-right .download-button{
+    font-size: 0.9rem;
+}
+.pricing-section{
+    padding: 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;    
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--secondary-background);
+}
+.pricing-section h2{
+    font-size: 1.5rem;
+}
+
+   
+   
+  }
