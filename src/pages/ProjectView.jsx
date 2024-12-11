@@ -92,6 +92,24 @@ const ProjectView = () => {
             </div>
           </div>
         </section>
+        <section className="about_project">
+          <h2 className="heading">About the Project</h2>
+          <p className="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            possimus sed ex est officia molestias delectus, distinctio omnis
+            deleniti sunt natus et eos vitae placeat culpa sequi sit iste
+            incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet possimus sed ex est officia molestias delectus, distinctio
+            omnis deleniti sunt natus et eos vitae placeat culpa sequi sit iste
+            incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet possimus sed ex est officia molestias delectus, distinctio
+            omnis deleniti sunt natus et eos vitae placeat culpa sequi sit iste
+            incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet possimus sed ex est officia molestias delectus, distinctio
+            omnis deleniti sunt natus et eos vitae placeat culpa sequi sit iste
+            incidunt!
+          </p>
+        </section>
         <section className="stats">
           <div className="stats-left">
             <h2 className="stats-heading">Project Insights & Stats</h2>

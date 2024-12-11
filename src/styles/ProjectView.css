@@ -31,6 +31,24 @@
     padding: 10px 20px;
   }
   
+  /*========================== About Project Section ============================= */
+
+.about_project{
+    background-color: var(--background);
+    padding: 50px 10px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.about_project h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.about_project p{
+    font-size: 1rem;
+}
+
   /*========================== state Section ============================= */
 
   .projectdetail .stats{
@@ -382,6 +400,15 @@
 
 
   @media (max-width: 768px) {
+    .about_project h2{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        color: var(--text-color);
+    }
+    .about_project p{
+        font-size: 0.9rem;
+    }
+    
     .stats{
         padding: 10px !important;
     }
