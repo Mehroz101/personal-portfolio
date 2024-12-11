@@ -5,7 +5,7 @@ const Service_Card = ({ icon, title, description }) => {
     <>
       <div className="service_card">
         <div className="icon">
-          <i class={icon}></i>
+          <i className={icon}></i>
         </div>
         <div className="text">
           <h2>{title}</h2>

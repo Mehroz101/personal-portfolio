@@ -1,5 +1,5 @@
 import React from "react";
-import Section_Heading from "./Section_Heading";
+import Section_Heading from "../components/Section_Heading";
 import { useForm } from "react-hook-form";
 
 const Contact_Section = () => {
@@ -50,7 +50,9 @@ const Contact_Section = () => {
               />
               {errors.message && <p className="error">Message is required</p>}
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" className="btn">
+              Send
+            </button>
           </form>
         </div>
       </div>

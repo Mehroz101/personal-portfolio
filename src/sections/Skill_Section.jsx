@@ -8,8 +8,8 @@ import Express from "../assets/express.png";
 import Mongo from "../assets/mongodb.png";
 import Tailwind from "../assets/tailwind.png";
 import Github from "../assets/github.png";
-import Section_Heading from "./Section_Heading";
-import Skill_card from "./Skill_card";
+import Section_Heading from "../components/Section_Heading";
+import Skill_card from "../components/Skill_card";
 
 const Skill_Section = () => {
   const skills = [

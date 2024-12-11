@@ -23,7 +23,9 @@ const Navbar = () => {
   return (
     <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <h1>Mehroz</h1>
+        <h1>
+          <Link to="/">Mehroz</Link>
+        </h1>
       </div>
       <div className="icon" onClick={() => setShowLinks(!showLinks)}>
         <i className="fa-solid fa-bars-staggered"></i>

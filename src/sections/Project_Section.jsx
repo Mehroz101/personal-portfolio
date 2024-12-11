@@ -1,9 +1,10 @@
 import React from "react";
-import Section_Heading from "./Section_Heading";
-import Project_Card from "./Project_Card";
+import Section_Heading from "../components/Section_Heading";
+import Project_Card from "../components/Project_Card";
 import Project1 from "../assets/project1.png"; // Replace with actual image paths
 import Project2 from "../assets/project2.jpg"; // Replace with actual image paths
 import Project3 from "../assets/project3.jpg"; // Replace with actual image paths
+import { Link } from "react-router-dom";
 
 const Project_Section = () => {
   const projects = [
@@ -47,6 +48,9 @@ const Project_Section = () => {
           />
         ))}
       </div>
+      <Link to="/projects" className="viewallprojects btn">
+        View all projects
+      </Link>
     </div>
   );
 };

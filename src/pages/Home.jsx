@@ -1,13 +1,12 @@
 import React from "react";
-import "../styles/Home.css";
-import Hero_Section from "../components/Hero_Section";
-import Aboutus_Section from "../components/Aboutus_Section";
-import My_Services from "../components/My_Services";
-import Education_Section from "../components/Education_Section";
-import Experience_section from "../components/Experience_section";
-import Skill_Section from "../components/Skill_Section";
-import Project_Section from "../components/Project_Section";
-import Contact_Section from "../components/Contact_Section";
+import Hero_Section from "../sections/Hero_Section";
+import Aboutus_Section from "../sections/Aboutus_Section";
+import My_Services from "../sections/My_Services";
+import Education_Section from "../sections/Education_Section";
+import Experience_section from "../sections/Experience_section";
+import Skill_Section from "../sections/Skill_Section";
+import Project_Section from "../sections/Project_Section";
+import Contact_Section from "../sections/Contact_Section";
 import Footer from "../components/Footer";
 const Home = () => {
   return (
@@ -21,7 +20,6 @@ const Home = () => {
         <Skill_Section />
         <Project_Section />
         <Contact_Section />
-        <Footer />
       </div>
     </>
   );

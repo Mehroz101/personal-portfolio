@@ -1,6 +1,6 @@
 import React from "react";
-import Section_Heading from "./Section_Heading";
-import Experience_card from "./Experience_card";
+import Section_Heading from "../components/Section_Heading";
+import Experience_card from "../components/Experience_card";
 
 const Experience_section = () => {
   const experienceData = [

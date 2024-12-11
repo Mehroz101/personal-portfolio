@@ -5,7 +5,7 @@ const Skill_card = ({ img, name, percentage }) => {
     <>
       <div className="skill_card">
         <div className="img">
-          <img src={img} alt="HTML Icon" class="skill_icon" />
+          <img src={img} alt="HTML Icon" className="skill_icon" />
         </div>
         <h3 className="skill_name">{name}</h3>
         <div className="progress_bar">

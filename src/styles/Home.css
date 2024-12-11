@@ -1,6 +1,7 @@
 /*=================== Homepage Styles =============================*/
 .homepage{
     overflow: hidden;
+    min-height: 100vh;
 }
 .homepage .hero_section{
     display: flex;
@@ -53,7 +54,7 @@ min-width: 300px;
     gap: 20px;
     margin-top: 20px;
 }
-.homepage .hero_left .hero_btns button{
+/* .homepage .hero_left .hero_btns button{
     padding: 10px 20px;
     border-radius: 2px;
     border: none;
@@ -66,14 +67,14 @@ min-width: 300px;
 .homepage .hero_left .hero_btns button:hover{
     background-color: var(--background);
     color: var(--primary-color);
-}
+} */
 
 @media screen and (max-width: 768px) {
     .homepage{
         padding: 0 10px;
     }
     .homepage .hero_section{
-        padding: 0 10px;
+        padding: 150px 10px 20px;
     }
    
     .homepage .hero_left{
@@ -167,7 +168,7 @@ min-width: 300px;
     gap: 20px;
     margin-top: 20px;
 }
-.aboutus_left .about_btns button{
+/* .aboutus_left .about_btns button{
     padding: 8px 15px;
     border-radius: 2px;
     border: none;
@@ -180,7 +181,7 @@ min-width: 300px;
 .aboutus_left .about_btns button:hover{
     background-color: var(--background);
     color: var(--primary-color);
-}
+} */
 .aboutus_right{
     flex: 1;
     max-width: 600px;
@@ -484,7 +485,7 @@ min-width: 300px;
     gap: 25px;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto 50px;
 }
 .projectsection .project_cards .project_card{
     min-width: 250px;
@@ -550,11 +551,16 @@ min-width: 300px;
     font-weight: 600;
     max-width: 90%;
 }
+.projectsection .viewallprojects{
+    margin-top: 20px !important;
+    text-align: center;
+}
 /*=================== Contact Styles =============================*/
 .Contactsection {
     background-color: var(--background);
     text-align: center;
     padding: 40px 0;
+    margin-bottom: 270px;
 }
 
 .Contactsection .contactus_form {
@@ -618,7 +624,7 @@ min-width: 300px;
 .Contactsection .contactus_form textarea::placeholder {
     color: var(--secondary-text);
 }
-
+/* 
 .Contactsection .contactus_form button {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -634,7 +640,7 @@ min-width: 300px;
 
 .Contactsection .contactus_form button:hover {
     background-color: #f0a500;
-}
+} */
 @media screen and (max-width: 400px) {
     .Contactsection .contactus_form .combo_input .input {
         flex: 1;
@@ -648,8 +654,10 @@ min-width: 300px;
     background: linear-gradient(45deg, #444444, #333333);
     text-align: center;
     padding: 40px 0;
-    position: relative;
-    /* padding-top: 300px; */
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     z-index: 100;
     border-radius: 200px 0 0 0;
 }

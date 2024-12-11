@@ -1,6 +1,6 @@
 import React from "react";
-import Section_Heading from "./Section_Heading";
-import Education_card from "./Education_card";
+import Section_Heading from "../components/Section_Heading";
+import Education_card from "../components/Education_card";
 
 const Education_Section = () => {
   const educationData = [

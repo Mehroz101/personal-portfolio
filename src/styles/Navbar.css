@@ -29,6 +29,11 @@
     transition: transform 0.3s ease-in-out;
   }
   
+  .navbar .logo h1 a{
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
   .navbar .logo h1:hover {
     transform: scale(1.1); /* Logo hover effect */
   }
