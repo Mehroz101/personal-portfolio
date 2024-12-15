@@ -8,7 +8,6 @@ import NotFound from "./pages/NotFound";
 import AllProjects from "./pages/AllProjects";
 import "./styles/Home.css";
 import "./App.css";
-
 function App() {
   return (
     <>
