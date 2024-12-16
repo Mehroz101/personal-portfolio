@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/ProjectView.css";
 import Project1 from "../assets/project1.png"; // Replace with actual image paths
@@ -16,10 +16,11 @@ import Github from "../assets/github.png";
 import Section_Heading from "../components/Section_Heading";
 import Skill_card from "../components/Skill_card";
 import PricingCard from "../components/Price_Card";
+import { portfolio_data } from "../../public/portfoliodata";
 const ProjectView = () => {
   const { id } = useParams();
-
-  const projectData = [
+const [viewProject,setViewProject] = useState(null)
+ const  projectData = [
     {
       id: "project1",
       title: "Smart Parking System",
@@ -74,7 +75,17 @@ const ProjectView = () => {
     { img: Project2, title: "Feature 2" },
     { img: Project3, title: "Feature 3" },
   ];
-  if (!project) {
+  useEffect(()=>{
+    if(id){
+      const viewproject = portfolio_data?.ProjectSection?.project?.filter((item)=>item?.id === id)
+      setViewProject(viewproject[0])
+      console.log(typeof id)
+      // console.log(viewproject)
+      console.log(viewProject?.projectData?.projectState?.state)
+      // console.log(portfolio_data?.ProjectSection?.project[0]?.id)
+    }
+  },[id])
+  if (!viewProject) {
     return <div>Project not found.</div>;
   }
 
@@ -84,8 +95,8 @@ const ProjectView = () => {
         <section className="hero-section">
           <div className="overlay">
             <div className="hero-content">
-              <h1>Project Title</h1>
-              <p>Your tagline goes here</p>
+              <h1>{viewProject?.title}</h1>
+              <p>{viewProject?.description}</p>
               <a href="#pricing" className="btn">
                 Get Started
               </a>
@@ -95,188 +106,119 @@ const ProjectView = () => {
         <section className="about_project">
           <h2 className="heading">About the Project</h2>
           <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            possimus sed ex est officia molestias delectus, distinctio omnis
-            deleniti sunt natus et eos vitae placeat culpa sequi sit iste
-            incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet possimus sed ex est officia molestias delectus, distinctio
-            omnis deleniti sunt natus et eos vitae placeat culpa sequi sit iste
-            incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet possimus sed ex est officia molestias delectus, distinctio
-            omnis deleniti sunt natus et eos vitae placeat culpa sequi sit iste
-            incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet possimus sed ex est officia molestias delectus, distinctio
-            omnis deleniti sunt natus et eos vitae placeat culpa sequi sit iste
-            incidunt!
+           {viewProject.projectData.about}
           </p>
         </section>
-        <section className="stats">
+        {viewProject?.projectData?.projectState && (
+          <section className="stats">
           <div className="stats-left">
-            <h2 className="stats-heading">Project Insights & Stats</h2>
+            <h2 className="stats-heading">{viewProject?.projectData?.projectState?.heading}</h2>
             <p className="stats-description">
-              Discover the key metrics and insights behind the project,
-              including its size, components, and development progress. This
-              section highlights important figures that showcase the scale and
-              impact of the project.
+             {viewProject?.projectData?.projectState?.description}
             </p>
             <div className="stat_cards">
-              <div className="stat_card">
-                <h3>30</h3>
-                <span>Projects</span>
+            {viewProject?.projectData?.projectState?.state.map((item)=>{
+              return(
+                <div className="stat_card">
+                <h3>{item?.title}</h3>
+                <span>{item?.number}</span>
               </div>
-              <div className="stat_card">
-                <h3>3 Years</h3>
-                <span>Experience</span>
-              </div>
-              <div className="stat_card">
-                <h3>100</h3>
-                <span>Clients</span>
-              </div>
-              <div className="stat_card">
-                <h3>20</h3>
-                <span>Awards</span>
-              </div>
+              )
+            })}
+            
             </div>
           </div>
           <div className="stats-right">
             <div className="img">
-              <img src={Project1} alt="Stats</div> Image" />
+              <img src={viewProject?.projectData?.projectState?.img} alt="Stats</div> Image" />
             </div>
           </div>
         </section>
+        )}
+       
         <section className="tech_stack">
           <h2>Tech Stack</h2>
           <div className="tech_stack_list_items">
-            <div className="tech-stack-list">
+          {viewProject?.projectData?.technologies?.map((item)=>{
+            return(
+              <div className="tech-stack-list">
               <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
+                <img src={item?.img} alt="" />
               </div>
-              <p>React</p>
+              <p>{item?.title}</p>
             </div>
-            <div className="tech-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="tech-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="tech-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="tech-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="tech-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
+            )
+          })}
           </div>
         </section>
         <section className="libraries_stack">
           <h2>Libraries I Used</h2>
           <div className="libraries_stack_list_items">
-            <div className="libraries-stack-list">
+          {viewProject?.projectData?.libraries?.map((item)=>{
+            return(
+              <div className="libraries-stack-list">
               <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
+                <img src={item?.img} alt="" />
               </div>
-              <p>React</p>
+              <p>{item?.title}</p>
             </div>
-            <div className="libraries-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="libraries-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="libraries-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="libraries-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
-            <div className="libraries-stack-list">
-              <div className="img">
-                {" "}
-                <img src={Reactjs} alt="" />
-              </div>
-              <p>React</p>
-            </div>
+            )
+          })}
           </div>
         </section>
-        <section className="video-section">
+        {viewProject?.projectData?.liveDemo && (
+          <section className="video-section">
           <h2>Video Tutorial</h2>
           <div className="video-container">
             <video controls>
-              <source src="tutorial-video.mp4" type="video/mp4" />
+              <source src={viewProject?.projectData?.liveDemo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
         </section>
-        <section className="pages-section">
+        )}
+        {
+          viewProject?.projectData?.pages && (
+            <section className="pages-section">
           <h2>Pages</h2>
           <div className="pages">
-            {features.map((feature, index) => (
+            {viewProject?.projectData?.pages?.map((page, index) => (
               <div className="page-box" key={index}>
-                <img src={feature.img} alt={feature.title} />
-                <h3>{feature.title}</h3>
+                <img src={page?.img} alt={page?.title} />
+                <h3>{page?.title}</h3>
               </div>
             ))}
           </div>
         </section>
-        <section className="documentation-section">
+          ) 
+        }
+       {
+        viewProject?.projectData?.documentation && (
+          <section className="documentation-section">
           <div className="documentation-left">
-            <img src={Project1} alt="Documentation" />
+            <img src={viewProject?.projectData?.documentation?.img} alt="Documentation" />
           </div>
           <div className="documentation-right">
             <h2 className="documentation-heading">
               Comprehensive Documentation
             </h2>
             <p className="documentation-description">
-              Access detailed guides and resources to get the most out of the
-              project. Our comprehensive documentation covers everything from
-              setup to advanced features, ensuring you have all the information
-              you need for a smooth experience.
+              {viewProject?.projectData?.documentation?.description}
             </p>
             <button className="download-button">Download Documentation</button>
           </div>
         </section>
+        )
+       }
+      
+       
         <section className="pricing-section" id="pricing">
-          <PricingCard />
+        {
+          viewProject?.projectData?.pricevalue && (
+          <PricingCard price={viewProject?.projectData?.pricing} pricevalue={viewProject?.projectData?.pricevalue} />
+
+          )
+        }
         </section>
       </div>
     </>

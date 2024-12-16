@@ -2,7 +2,7 @@ import React from "react";
 import Section_Heading from "../components/Section_Heading";
 import Education_card from "../components/Education_card";
 
-const Education_Section = () => {
+const Education_Section = ({educationdata}) => {
   const educationData = [
     {
       years: "2015 - 2019",
@@ -29,17 +29,17 @@ const Education_Section = () => {
   return (
     <div className="educationsection" id="education">
       <Section_Heading
-        title="My Education"
-        description="I have a strong academic background in Information Technology and Computer Science, which has shaped my skills and knowledge in web development and software engineering."
+        title={educationdata?.heading}
+        description={educationdata?.tagline}
       />
       <div className="education_cards">
-        {educationData.map((education, index) => (
+        {educationdata?.education?.map((education, index) => (
           <Education_card
             key={index}
-            years={education.years}
-            degree={education.degree}
-            university={education.university}
-            description={education.description}
+            years={education?.startend}
+            degree={education?.degree}
+            university={education?.institute}
+            description={education?.description}
           />
         ))}
       </div>

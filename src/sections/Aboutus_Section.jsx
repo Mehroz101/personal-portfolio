@@ -1,37 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Aboutus_Section = () => {
+const Aboutus_Section = ({aboutdata}) => {
   return (
     <>
       <div className="aboutus_section" id="about">
         <div className="aboutus_left">
-          <span className="tag">About Me</span>
+          <span className="tag">{aboutdata?.tag}</span>
+          <h2 className="tagline" dangerouslySetInnerHTML={{ __html: aboutdata?.heading }}></h2>
+{/* 
           <h2>
             Hello! I'm <span> Mehroz Farooq</span>. I'm Professional Web
             Developer & specialized in <span>MERN Stack</span>
-          </h2>
+          </h2> */}
           <p>
-            I’m a passionate web and software developer dedicated to creating
-            innovative and user-friendly digital experiences. With expertise in
-            the latest technologies, I focus on delivering high-quality
-            solutions tailored to client needs. My goal is to help businesses
-            thrive through creative and functional websites and applications
-            that leave a lasting impact.
+            {aboutdata?.para}
           </p>
           <div className="social_accounts">
             <span>Follow me:</span>
             <div className="links">
-              <Link to="https://www.facebook.com/">
+              <Link to={aboutdata?.links?.facebook}>
                 <i className="fa-brands fa-facebook"></i>
               </Link>
-              <Link to="https://www.instagram.com/">
+              <Link to={aboutdata?.links?.instagram}>
                 <i className="fa-brands fa-instagram"></i>
               </Link>
-              <Link to="https://www.linkedin.com/">
+              <Link to={aboutdata?.links?.linkdin}>
                 <i className="fa-brands fa-linkedin"></i>
               </Link>
-              <Link to="https://github.com/">
+              <Link to={aboutdata?.links?.github}>
                 <i className="fa-brands fa-github"></i>
               </Link>
             </div>
@@ -44,19 +41,19 @@ const Aboutus_Section = () => {
         <div className="aboutus_right">
           <div className="stat_cards">
             <div className="stat_card">
-              <h3>30</h3>
+              <h3>{aboutdata?.projects}</h3>
               <span>Projects</span>
             </div>
             <div className="stat_card">
-              <h3>3 Years</h3>
+              <h3>{aboutdata?.experience} Years</h3>
               <span>Experience</span>
             </div>
             <div className="stat_card">
-              <h3>100</h3>
+              <h3>{aboutdata?.clients}</h3>
               <span>Clients</span>
             </div>
             <div className="stat_card">
-              <h3>20</h3>
+              <h3>{aboutdata?.award}</h3>
               <span>Awards</span>
             </div>
           </div>

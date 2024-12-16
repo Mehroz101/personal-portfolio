@@ -11,7 +11,7 @@ import Github from "../assets/github.png";
 import Section_Heading from "../components/Section_Heading";
 import Skill_card from "../components/Skill_card";
 
-const Skill_Section = () => {
+const Skill_Section = ({skilldata}) => {
   const skills = [
     { img: HTML, name: "HTML", percentage: "90%" },
     { img: CSS, name: "CSS", percentage: "90%" },
@@ -28,11 +28,11 @@ const Skill_Section = () => {
     <div>
       <div className="skillsection" id="skill">
         <Section_Heading
-          title="My Skills"
-          description="Technologies I have expertise in"
+          title={skilldata?.heading}
+          description={skilldata?.tagline}
         />
         <div className="skill_cards">
-          {skills.map((skill, index) => (
+          {skilldata?.skill?.map((skill, index) => (
             <Skill_card
               key={index}
               img={skill.img}

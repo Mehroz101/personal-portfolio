@@ -370,6 +370,8 @@ min-width: 300px;
     font-size: 0.9rem;
     margin: 0;
     background-color:#FFBD39;
+    color: black;
+    font-weight: 600;
     padding: 3px 10px;
     border-radius: 50px;
 }

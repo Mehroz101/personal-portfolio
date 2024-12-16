@@ -2,7 +2,7 @@ import React from "react";
 import Service_Card from "../components/Service_Card";
 import Section_Heading from "../components/Section_Heading";
 
-const My_Services = () => {
+const My_Services = ({servicedata}) => {
   const services = [
     {
       icon: "fa-solid fa-code",
@@ -45,16 +45,16 @@ const My_Services = () => {
   return (
     <div className="myservices" id="service">
       <Section_Heading
-        title="My Services"
-        description="I offer a variety of web and mobile development services, tailored to help businesses achieve their goals through innovative and efficient solutions."
+        title={servicedata?.heading}
+        description={servicedata?.tagline}
       />
       <div className="myservices_cards">
-        {services.map((service, index) => (
+        {servicedata?.service?.map((service, index) => (
           <Service_Card
             key={index}
-            icon={service.icon}
-            title={service.title}
-            description={service.description}
+            icon={service?.icon}
+            title={service?.title}
+            description={service?.description}
           />
         ))}
       </div>

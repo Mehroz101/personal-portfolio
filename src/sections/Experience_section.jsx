@@ -2,7 +2,7 @@ import React from "react";
 import Section_Heading from "../components/Section_Heading";
 import Experience_card from "../components/Experience_card";
 
-const Experience_section = () => {
+const Experience_section = ({experiencedata}) => {
   const experienceData = [
     {
       years: "2020 - Present",
@@ -30,17 +30,17 @@ const Experience_section = () => {
   return (
     <div className="experiencesection" id="experience">
       <Section_Heading
-        title="My Experience"
-        description="I have experience in web development, specializing in the MERN stack. I’ve worked with diverse teams and developed user-centric applications."
+        title={experiencedata?.heading}
+        description={experiencedata?.tagline}
       />
       <div className="experience_cards">
-        {experienceData.map((experience, index) => (
+        {experiencedata?.experience?.map((experience, index) => (
           <Experience_card
             key={index}
-            years={experience.years}
-            title={experience.title}
-            companyName={experience.companyName}
-            description={experience.description}
+            years={experience?.startend}
+            title={experience?.role}
+            companyName={experience?.where}
+            description={experience?.description}
           />
         ))}
       </div>

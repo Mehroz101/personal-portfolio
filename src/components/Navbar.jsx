@@ -32,9 +32,7 @@ const Navbar = () => {
       </div>
       <ul className={`nav_links ${showLinks ? "show" : "hide"}`}>
         <li>
-          <ScrollLink to="home" smooth={true} duration={500}>
-            Home
-          </ScrollLink>
+        <Link to="/">Home</Link>
         </li>
         <li>
           <ScrollLink to="about" smooth={true} duration={500}>

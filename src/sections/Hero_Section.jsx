@@ -1,18 +1,17 @@
 import React from "react";
 import heroImg from "../assets/hero.png";
 
-const Hero_Section = () => {
+const Hero_Section = ({herodata}) => {
   return (
     <>
       <div className="hero_section" id="home">
         <div className="hero_left">
-          <span className="aoa">Aslam Alikum</span>
-          <h1 className="tagline">
-            I'm Professional <span>MERN Stack Developer</span>
-          </h1>
+          <span className="aoa">{herodata?.tag}</span>
+          
+          <h1 className="tagline" dangerouslySetInnerHTML={{ __html: herodata?.heading }}></h1>
+
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            {herodata?.tagline}
           </p>
           <div className="hero_btns">
             <button className="btn">Hire Me</button>
