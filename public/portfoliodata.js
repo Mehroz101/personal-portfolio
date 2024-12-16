@@ -288,7 +288,15 @@ export const portfolio_data = {
             ]
         },
         tags:["React","Nodejs","Expressjs","MongoDB","Github"], 
-
+FooterSection:{
+    heading:"MOJI",
+    links:{
+        facebook:"https://www.facebook.com/mehroz.farooq.7/",
+        github:"https://github.com/Mehroz101",
+        instagram:"https://www.instagram.com/mehrozfarooq/",
+        linkdin:"https://pk.linkedin.com/in/mehroz-farooq-0ba92b223"
+    }
+}
       
   }
   
