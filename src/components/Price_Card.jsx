@@ -15,7 +15,6 @@ const PricingCard = ({price,pricevalue}) => {
           return (
             <>
             <div className="feature">
-
             <svg
               width="24"
               height="24"
