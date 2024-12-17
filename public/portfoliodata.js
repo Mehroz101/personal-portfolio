@@ -19,12 +19,14 @@ import Portfolio_ViewProject from "../src/assets/Portfolio_ViewProject.png";
 import Portfolio_Contact from "../src/assets/Portfolio_Contact.png";
 import Portfolio_Footer from "../src/assets/Portfolio_Footer.png";
 import Portfolio_Hero from "../src/assets/Portfolio_Hero.png";
+import Photo from "../src/assets/photo.png";
 export const portfolio_data = {
   HeroSection: {
     tag: "Aslam Alikum",
     heading: "I'm Professional <span> MERN Stack Developer </span>",
     tagline:
       "I specialize in creating dynamic, responsive, and scalable web applications with expertise in the MERN stack. Let's build your vision!",
+    img: Photo,
   },
   AboutSection: {
     tag: "About Me",
