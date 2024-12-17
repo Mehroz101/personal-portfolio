@@ -348,6 +348,7 @@ export const portfolio_data = {
             },
           ],
           liveDemo: "https://smart-parking-demo.com",
+          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
           // repo: "https://github.com/username/smart-parking",
           // challenges:
           //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",

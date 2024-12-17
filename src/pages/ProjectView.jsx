@@ -46,7 +46,7 @@ const ProjectView = () => {
               <h1>{viewProject?.title}</h1>
               <p>{viewProject?.description}</p>
               <a
-                href={viewProject?.projectData?.liveDemo}
+                href={viewProject?.projectData?.videoTutorial}
                 target="_blank"
                 className="btn"
               >
