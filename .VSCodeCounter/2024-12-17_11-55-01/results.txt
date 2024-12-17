@@ -1,0 +1,79 @@
+Date : 2024-12-17 11:55:01
+Directory : c:\Users\Development\Desktop\New folder (2)\MyPortfolio
+Total : 40 files,  7515 codes, 121 comments, 234 blanks, all 7870 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          2 |      4,524 |          0 |          2 |      4,526 |
+| CSS            |          8 |      1,478 |        103 |        134 |      1,715 |
+| JavaScript JSX |         23 |      1,035 |          8 |         88 |      1,131 |
+| JavaScript     |          3 |        444 |         10 |          5 |        459 |
+| HTML           |          1 |         26 |          0 |          1 |         27 |
+| Markdown       |          1 |          6 |          0 |          4 |         10 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |         40 |      7,515 |        121 |        234 |      7,870 |
+| . (Files)                                                                                   |          6 |      4,598 |          1 |         11 |      4,610 |
+| public                                                                                      |          2 |        403 |          9 |          1 |        413 |
+| src                                                                                         |         32 |      2,514 |        111 |        222 |      2,847 |
+| src (Files)                                                                                 |          4 |        132 |          7 |          9 |        148 |
+| src\assets                                                                                  |          1 |          1 |          0 |          0 |          1 |
+| src\components                                                                              |          9 |        254 |          0 |         31 |        285 |
+| src\pages                                                                                   |          4 |        338 |          3 |         23 |        364 |
+| src\sections                                                                                |          8 |        403 |          5 |         31 |        439 |
+| src\styles                                                                                  |          6 |      1,386 |         96 |        128 |      1,610 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                    | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\README.md                           | Markdown       |          6 |          0 |          4 |         10 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\eslint.config.js                    | JavaScript     |         37 |          0 |          2 |         39 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\index.html                          | HTML           |         26 |          0 |          1 |         27 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\package-lock.json                   | JSON           |      4,493 |          0 |          1 |      4,494 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\package.json                        | JSON           |         31 |          0 |          1 |         32 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\public\portfoliodata.js             | JavaScript     |        402 |          9 |          1 |        412 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\public\vite.svg                     | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\App.css                         | CSS            |         74 |          7 |          3 |         84 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\App.jsx                         | JavaScript JSX |         28 |          0 |          2 |         30 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\assets\react.svg                | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Education_card.jsx   | JavaScript JSX |         14 |          0 |          3 |         17 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Experience_card.jsx  | JavaScript JSX |         14 |          0 |          3 |         17 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Footer.jsx           | JavaScript JSX |         37 |          0 |          3 |         40 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Navbar.jsx           | JavaScript JSX |         72 |          0 |          8 |         80 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Price_Card.jsx       | JavaScript JSX |         49 |          0 |          2 |         51 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Project_Card.jsx     | JavaScript JSX |         20 |          0 |          3 |         23 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Section_Heading.jsx  | JavaScript JSX |         13 |          0 |          3 |         16 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Service_Card.jsx     | JavaScript JSX |         17 |          0 |          3 |         20 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\components\Skill_card.jsx       | JavaScript JSX |         18 |          0 |          3 |         21 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\index.css                       | CSS            |         18 |          0 |          3 |         21 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\main.jsx                        | JavaScript JSX |         12 |          0 |          1 |         13 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\pages\AllProjects.jsx           | JavaScript JSX |         72 |          1 |          8 |         81 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\pages\Home.jsx                  | JavaScript JSX |         33 |          0 |          3 |         36 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\pages\NotFound.jsx              | JavaScript JSX |         15 |          0 |          3 |         18 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\pages\ProjectView.jsx           | JavaScript JSX |        218 |          2 |          9 |        229 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Aboutus_Section.jsx    | JavaScript JSX |         59 |          5 |          3 |         67 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Contact_Section.jsx    | JavaScript JSX |         61 |          0 |          3 |         64 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Education_Section.jsx  | JavaScript JSX |         47 |          0 |          4 |         51 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Experience_section.jsx | JavaScript JSX |         48 |          0 |          4 |         52 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Hero_Section.jsx       | JavaScript JSX |         25 |          0 |          5 |         30 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\My_Services.jsx        | JavaScript JSX |         62 |          0 |          4 |         66 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Project_Section.jsx    | JavaScript JSX |         55 |          0 |          4 |         59 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\sections\Skill_Section.jsx      | JavaScript JSX |         46 |          0 |          4 |         50 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\styles\AllProjects.css          | CSS            |         90 |          7 |          6 |        103 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\styles\Home.css                 | CSS            |        583 |         70 |         43 |        696 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\styles\Navbar.css               | CSS            |        122 |          4 |         20 |        146 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\styles\NotFound.css             | CSS            |         44 |          2 |          5 |         51 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\styles\PricingCard.css          | CSS            |         75 |          1 |         15 |         91 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\src\styles\ProjectView.css          | CSS            |        472 |         12 |         39 |        523 |
+| c:\Users\Development\Desktop\New folder (2)\MyPortfolio\vite.config.js                      | JavaScript     |          5 |          1 |          2 |          8 |
+| Total                                                                                       |                |      7,515 |        121 |        234 |      7,870 |
++---------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

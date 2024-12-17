@@ -15,6 +15,10 @@
     text-align: center;
     color: white;
   }
+  .hero-content{
+    max-width: 600px;
+    margin: 0 auto;
+  }
   .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -299,6 +303,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
   }
   .pages-section h2{
     font-size: 2rem;
@@ -309,7 +314,10 @@
   .page-box {
     min-width: 300px;
     max-width: 400px;
+    height: 500px;
+    overflow: hidden;
     text-align: center;
+
   }
   .page-box h3{
     font-size: 1rem;
@@ -317,8 +325,8 @@
   
   .page-box img {
     width: 100%;
-    
-    height: auto;
+  object-fit: cover;
+    height: 80%;
   }
   /*========================== documentation Section ============================= */
   .documentation-section {
@@ -332,10 +340,13 @@
     min-width: 500px;
     max-width: 700px;
     flex: 1;
+    margin:  0 auto;
   }
   .documentation-left img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    min-height: auto;
+    object-fit: cover;
 
   }
   .documentation-right {
@@ -382,6 +393,14 @@
   .download-button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);    
+  }
+  @media screen and (max-width: 500px) {
+    .documentation-section {
+      display: flex;     
+       flex-direction: column;
+      margin: 0 auto;
+    }
+    
   }
   /*========================== pricing Section ============================= */
   
