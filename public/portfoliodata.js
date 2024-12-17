@@ -347,7 +347,7 @@ export const portfolio_data = {
               img: Portfolio_ViewProject,
             },
           ],
-          liveDemo: "https://smart-parking-demo.com",
+          liveDemo: "https://mehrozportfolio.netlify.app/",
           // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
           // repo: "https://github.com/username/smart-parking",
           // challenges:

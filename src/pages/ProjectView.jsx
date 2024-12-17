@@ -46,7 +46,7 @@ const ProjectView = () => {
               <h1>{viewProject?.title}</h1>
               <p>{viewProject?.description}</p>
               <a
-                href={viewProject?.projectData?.videoTutorial}
+                href={viewProject?.projectData?.liveDemo}
                 target="_blank"
                 className="btn"
               >
@@ -120,13 +120,13 @@ const ProjectView = () => {
             })}
           </div>
         </section>
-        {viewProject?.projectData?.liveDemo && (
+        {viewProject?.projectData?.videoTutorial && (
           <section className="video-section">
             <h2>Video Tutorial</h2>
             <div className="video-container">
               <video controls>
                 <source
-                  src={viewProject?.projectData?.liveDemo}
+                  src={viewProject?.projectData?.videoTutorial}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
@@ -162,7 +162,15 @@ const ProjectView = () => {
               <p className="documentation-description">
                 {viewProject?.projectData?.documentation?.description}
               </p>
-              <button className="download-button">
+              <button
+                className="download-button"
+                disabled
+                style={{
+                  cursor: "not-allowed",
+                  opacity: "0.5",
+                  pointerEvents: "none",
+                }}
+              >
                 Download Documentation
               </button>
             </div>
