@@ -36,7 +36,6 @@ const PricingCard = ({price,pricevalue}) => {
             </>
           )
         })}
-      
         <div className="card-footer">
           <button className="btn">Contact me</button>
           <div className="description">
