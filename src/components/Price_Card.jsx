@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/PricingCard.css"; // Importing the CSS file
-
 const PricingCard = ({price,pricevalue}) => {
   return (
     <div className="pricing-container">
