@@ -79,6 +79,7 @@ min-width: 300px;
    
     .homepage .hero_left{
         text-align: center;
+        margin: 0 auto;
     }
     .homepage .hero_left h1{
         font-size: 2.5rem;
@@ -91,9 +92,11 @@ min-width: 300px;
     }
     .homepage .hero_left .hero_btns{
         flex-direction: column;
+        margin: 0 auto;
     }
-    .homepage .hero_left .hero_btns button{
+    .homepage .hero_left .hero_btns a{
         width: 100%;
+        max-width: 200px;
     }
     .homepage .hero_right{
         margin: 20px auto;
