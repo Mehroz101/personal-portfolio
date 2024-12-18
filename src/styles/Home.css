@@ -93,6 +93,8 @@ min-width: 300px;
     .homepage .hero_left .hero_btns{
         flex-direction: column;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
     }
     .homepage .hero_left .hero_btns a{
         width: 100%;
