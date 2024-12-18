@@ -62,9 +62,7 @@ const ProjectView = () => {
         {viewProject?.projectData?.projectState && (
           <section className="stats">
             <div className="stats-left">
-              <h2 className="stats-heading">
-                {viewProject?.projectData?.projectState?.heading}
-              </h2>
+              <h2 className="stats-heading">Project Insights & Stats</h2>
               <p className="stats-description">
                 {viewProject?.projectData?.projectState?.description}
               </p>
@@ -79,14 +77,14 @@ const ProjectView = () => {
                 })}
               </div>
             </div>
-            <div className="stats-right">
+            {/* <div className="stats-right">
               <div className="img">
                 <img
                   src={viewProject?.projectData?.projectState?.img}
                   alt="Stats</div> Image"
                 />
               </div>
-            </div>
+            </div> */}
           </section>
         )}
 
@@ -97,7 +95,7 @@ const ProjectView = () => {
               return (
                 <div className="tech-stack-list">
                   <div className="img">
-                    <img src={item?.img} alt="" />
+                    <img src={item?.img} loading="lazy" alt={item?.title} />
                   </div>
                   <p>{item?.title}</p>
                 </div>
@@ -105,7 +103,7 @@ const ProjectView = () => {
             })}
           </div>
         </section>
-        <section className="libraries_stack">
+        {/* <section className="libraries_stack">
           <h2>Libraries I Used</h2>
           <div className="libraries_stack_list_items">
             {viewProject?.projectData?.libraries?.map((item) => {
@@ -119,7 +117,7 @@ const ProjectView = () => {
               );
             })}
           </div>
-        </section>
+        </section> */}
         {viewProject?.projectData?.videoTutorial && (
           <section className="video-section">
             <h2>Video Tutorial</h2>
@@ -140,7 +138,7 @@ const ProjectView = () => {
             <div className="pages">
               {viewProject?.projectData?.pages?.map((page, index) => (
                 <div className="page-box" key={index}>
-                  <img src={page?.img} alt={page?.title} />
+                  <img src={page?.img} loading="lazy" alt={page?.title} />
                   <h3>{page?.title}</h3>
                 </div>
               ))}
@@ -149,12 +147,12 @@ const ProjectView = () => {
         )}
         {viewProject?.projectData?.documentation && (
           <section className="documentation-section">
-            <div className="documentation-left">
+            {/* <div className="documentation-left">
               <img
                 src={viewProject?.projectData?.documentation?.img}
                 alt="Documentation"
               />
-            </div>
+            </div> */}
             <div className="documentation-right">
               <h2 className="documentation-heading">
                 Comprehensive Documentation

@@ -20,7 +20,7 @@ const Hero_Section = ({ herodata }) => {
           </div>
         </div>
         <div className="hero_right">
-          <img src={herodata?.img} alt="" />
+          <img src={herodata?.img} loading="lazy" alt="" />
         </div>
       </div>
     </>

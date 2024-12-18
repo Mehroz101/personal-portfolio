@@ -73,12 +73,12 @@
     padding-left: 100px;
     padding-right: 100px;
     min-width: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+
  
   }
   .stats-left .stats-heading{
-    justify-self: flex-start;
-    align-self: flex-start;
-    text-align: left;
     width: 100%;
     font-size: 2.5rem;
     font-weight: bold;
@@ -86,7 +86,6 @@
   }
   .stats-left .stats-description {
     font-size: 1rem;
-    text-align: left;
     line-height: 1.7    ;
     color: var(--text-color); 
   }
@@ -115,7 +114,10 @@
 .stats-left  .stat_cards .stat_card h3{
     font-size: 2rem;
     font-weight: 700;
-    margin: 0 0 5px;
+    width:max-content;
+    text-align: center;
+    margin: 0 auto 5px;
+    
 }
 .stats-left  .stat_cards .stat_card span{
     font-size: 1rem;
@@ -204,7 +206,7 @@
     text-align: left;
 }
 /*========================== libraries Stack Section ============================= */
-.libraries_stack{
+/* .libraries_stack{
     background-color: var(--background);  
     display: flex;
     justify-content: center;
@@ -253,29 +255,26 @@
 .libraries_stack .libraries_stack_list_items .libraries-stack-list .img {
     width: 50px;
     height: 50px;
-    display: flex; /* Centers the content */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%; /* Decorative shape */
+    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%;
     background-color: #312F2F;
     padding: 10px;
     margin: 0 auto 10px auto;
-    overflow: hidden; /* Ensures content stays within the container */
+    overflow: hidden; 
 }
 .libraries_stack .libraries_stack_list_items .libraries-stack-list img {
-    max-width: 60%; /* Ensures the image doesn't exceed the container's width */
-    max-height: 60%; /* Ensures the image doesn't exceed the container's height */
-    object-fit: contain; /* Keeps the aspect ratio intact */
-    display: block; /* Ensures proper alignment */
+    max-width: 60%; 
+    max-height: 60%; 
+    object-fit: contain; 
+    display: block; 
 }
-
-
 .libraries_stack .libraries_stack_list_items p{
     font-size: 1rem;
     margin: 10px 0;
     text-align: left;
-}
-
+} */
 /*========================== video Section ============================= */
 
 .projectdetail .video-section{
@@ -351,10 +350,10 @@
   }
   .documentation-right {
     flex: 1;
-    min-width: 300px;
+    max-width: 1200px;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
-    align-items: flex-start;
     padding: 20px;
   }
   
@@ -372,9 +371,7 @@
     font-size: 1rem;
     color: var(--text-color); /* A soft, readable color for the description */
     margin-top: 20px;
-    max-width: 800px;
     line-height: 1.7;
-    text-align: left;
   }
   
   .download-button {
@@ -388,6 +385,7 @@
     cursor: pointer;
     border: 1px solid var(--primary-color);
     transition: all 0.3s ease-in-out;
+    align-self: center;
   }
   
   .download-button:hover {

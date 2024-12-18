@@ -6,7 +6,7 @@ import Project2 from "../assets/project2.jpg"; // Replace with actual image path
 import Project3 from "../assets/project3.jpg"; // Replace with actual image paths
 import { Link } from "react-router-dom";
 
-const Project_Section = ({projectdata}) => {
+const Project_Section = ({ projectdata }) => {
   const projects = [
     {
       img: Project1,
@@ -38,7 +38,7 @@ const Project_Section = ({projectdata}) => {
         description={projectdata?.tagline}
       />
       <div className="project_cards">
-        {projectdata?.project?.map((project, index) => (
+        {projectdata?.project?.slice(0, 3).map((project, index) => (
           <Project_Card
             key={index}
             img={project.img}

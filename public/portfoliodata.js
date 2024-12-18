@@ -9,6 +9,10 @@ import Tailwind from "../src/assets/tailwind.png";
 import Github from "../src/assets/github.png";
 import ReactHookForm from "../src/assets/react-hook-form.png";
 import ReactScroller from "../src/assets/react-scroller.svg";
+import JWT from "../src/assets/jwt.png";
+import Mongoose from "../src/assets/mongoose.png";
+import Redux from "../src/assets/redux.png";
+import Axios from "../src/assets/axios.png";
 //Project IMGs
 import Project1 from "../src/assets/project1.png"; // Replace with actual image paths
 import Project2 from "../src/assets/project2.jpg"; // Replace with actual image paths
@@ -19,6 +23,18 @@ import Portfolio_ViewProject from "../src/assets/Portfolio_ViewProject.png";
 import Portfolio_Contact from "../src/assets/Portfolio_Contact.png";
 import Portfolio_Footer from "../src/assets/Portfolio_Footer.png";
 import Portfolio_Hero from "../src/assets/Portfolio_Hero.png";
+
+//Quiz APP Screenshots
+import Quiz_Login from "../src/assets/QuizApp/Quiz_Login.png";
+import Quiz_Signup from "../src/assets/QuizApp/Quiz_Signup.png";
+import Quiz_AddExam from "../src/assets/QuizApp/Quiz_AddExam.png";
+import Quiz_AllExams from "../src/assets/QuizApp/Quiz_AllExams.png";
+import Quiz_ViewExam from "../src/assets/QuizApp/Quiz_ViewExam.png";
+import Quiz_StartExam from "../src/assets/QuizApp/Quiz_StartExam.png";
+import Quiz_Result from "../src/assets/QuizApp/Quiz_Result.png";
+import Quiz_Examistractions from "../src/assets/QuizApp/Quiz_Examinstractions.png";
+import Quiz_Userhome from "../src/assets/QuizApp/Quiz_Userhome.png";
+
 import Photo from "../src/assets/photo.png";
 export const portfolio_data = {
   HeroSection: {
@@ -170,117 +186,136 @@ export const portfolio_data = {
     tagline:
       "Here are some of the key projects I have worked on, showcasing my skills in web development and problem-solving.",
     project: [
-      {
-        id: "1",
-        img: Project1,
-        title: "Smart Parking System",
-        description:
-          "A web-based smart parking solution that helps users find available parking spots in real-time. The platform allows users to book, manage, and pay for parking spaces through an intuitive interface.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB"],
-        projectData: {
-          id: "1",
-          title: "Smart Parking System",
-          banner: Project1,
-          about:
-            "A web-based smart parking solution that helps users find available parking spots in real-time. The platform allows users to book, manage, and pay for parking spaces through an intuitive interface.",
-          projectState: {
-            heading: "Project Insights & Stats",
-            description:
-              "Discover the key metrics and insights behind the project, including its size, components, and development progress. This section highlights important figures that showcase the scale and impact of the project.",
-            img: Project2,
-            state: [
-              {
-                title: "Line of code",
-                number: "50000+",
-              },
-              {
-                title: "Modules",
-                number: "3",
-              },
-              {
-                title: "Pages",
-                number: "20+",
-              },
-              {
-                title: "Number of features",
-                number: "50000+",
-              },
-              {
-                title: "Number of APIs",
-                number: "100+",
-              },
-            ],
-          },
-          technologies: [
-            {
-              img: Reactjs,
-              title: "React js",
-            },
-            {
-              img: Node,
-              title: "Node js",
-            },
-            {
-              img: Mongo,
-              title: "MongoDB",
-            },
-          ],
-          libraries: [
-            {
-              img: Reactjs,
-              title: "React js",
-            },
-            {
-              img: Node,
-              title: "Node js",
-            },
-            {
-              img: Mongo,
-              title: "MongoDB",
-            },
-          ],
-          features: [
-            "Real-time parking availability",
-            "Booking and payment system",
-            "User-friendly interface",
-          ],
-          pages: [
-            {
-              title: "Home Page",
-              img: Project1,
-            },
-            {
-              title: "Main App Page",
-              img: Project2,
-            },
-            {
-              title: "Profile Page",
-              img: Project3,
-            },
-          ],
-          liveDemo: "https://smart-parking-demo.com",
-          repo: "https://github.com/username/smart-parking",
-          challenges:
-            "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
-          //   improvements: [
-          //     "Add AI-based predictions for parking availability",
-          //     "Enhance the mobile responsiveness",
-          //   ],
-          documentation: {
-            description:
-              "Access detailed guides and resources to get the most out of the project. Our comprehensive documentation covers everything from setup to advanced features, ensuring you have all the information you need for a smooth experience",
-            img: Project1,
-          },
-          pricing: 12000,
-          pricevalue: [
-            "compelete documentation",
-            "compelete project code",
-            "three user module (user,parking owner,admin)",
-            "2 Revisions",
-            "complete guidence",
-          ],
-        },
-      },
+      // {
+      //   id: "1",
+      //   img: Project1,
+      //   title: "Smart Parking System",
+      //   description:
+      //     "A web-based smart parking solution that helps users find available parking spots in real-time. The platform allows users to book, manage, and pay for parking spaces through an intuitive interface.",
+      //   tags: ["React", "Nodejs", "Expressjs", "MongoDB"],
+      //   projectData: {
+      //     id: "1",
+      //     title: "Smart Parking System",
+      //     banner: Project1,
+      //     about:
+      //       "A web-based smart parking solution that helps users find available parking spots in real-time. The platform allows users to book, manage, and pay for parking spaces through an intuitive interface.",
+      //     projectState: {
+      //       heading: "Project Insights & Stats",
+      //       description:
+      //         "Discover the key metrics and insights behind the project, including its size, components, and development progress. This section highlights important figures that showcase the scale and impact of the project.",
+      //       img: Project2,
+      //       state: [
+      //         {
+      //           title: "Lines",
+      //           number: "50000+",
+      //         },
+      //         {
+      //           title: "Modules",
+      //           number: "3",
+      //         },
+      //         {
+      //           title: "Pages",
+      //           number: "20+",
+      //         },
+      //         {
+      //           title: "features",
+      //           number: "50000+",
+      //         },
+      //         {
+      //           title: "APIs",
+      //           number: "100+",
+      //         },
+      //       ],
+      //     },
+      //     technologies: [
+      //       {
+      //         img: Reactjs,
+      //         title: "React js",
+      //       },
+      //       {
+      //         img: Node,
+      //         title: "Node js",
+      //       },
+      //       {
+      //         img: Mongo,
+      //         title: "MongoDB",
+      //       },
+      //       {
+      //         img: Express,
+      //         title: "Express js",
+      //       },
+      //       {
+      //         img: Tailwind,
+      //         title: "Tailwind",
+      //       },
+      //       {
+      //         img: Github,
+      //         title: "Github",
+      //       },
+      //       // {
+      //       //   img: Figma,
+      //       //   title: "Figma",
+      //       // },
+      //       // {
+      //       //   img: Git,
+      //       //   title: "Git",
+      //       // },
+      //       // {
+      //       //   img: Vercel,
+      //       //   title: "Vercel",
+      //       // },
+      //       // {
+      //       //   img: Netlify,
+      //       //   title: "Netlify",
+      //       // },
+      //       // {
+      //       //   img: Heroku,
+      //       //   title: "Heroku",
+      //       // },
+      //     ],
+
+      //     features: [
+      //       "Real-time parking availability",
+      //       "Booking and payment system",
+      //       "User-friendly interface",
+      //     ],
+      //     pages: [
+      //       {
+      //         title: "Home Page",
+      //         img: Project1,
+      //       },
+      //       {
+      //         title: "Main App Page",
+      //         img: Project2,
+      //       },
+      //       {
+      //         title: "Profile Page",
+      //         img: Project3,
+      //       },
+      //     ],
+      //     liveDemo: "https://smart-parking-demo.com",
+      //     repo: "https://github.com/username/smart-parking",
+      //     challenges:
+      //       "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
+      //     //   improvements: [
+      //     //     "Add AI-based predictions for parking availability",
+      //     //     "Enhance the mobile responsiveness",
+      //     //   ],
+      //     documentation: {
+      //       description:
+      //         "Access detailed guides and resources to get the most out of the project. Our comprehensive documentation covers everything from setup to advanced features, ensuring you have all the information you need for a smooth experience",
+      //       img: Project1,
+      //     },
+      //     pricing: 12000,
+      //     pricevalue: [
+      //       "compelete documentation",
+      //       "compelete project code",
+      //       "three user module (user,parking owner,admin)",
+      //       "2 Revisions",
+      //       "complete guidence",
+      //     ],
+      //   },
+      // },
       {
         id: "2",
         img: Portfolio_Home,
@@ -295,13 +330,12 @@ export const portfolio_data = {
           about:
             "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
           projectState: {
-            heading: "Project Insights & Stats",
             description:
               "This project consists of 7,515 lines of clean, efficient code, ensuring optimal performance. It includes 17 reusable components for a modular and consistent design. The website has 3 main pages: Home, Projects, and About, offering a smooth and engaging user experience.",
             img: Portfolio_Hero,
             state: [
               {
-                title: "Line of code",
+                title: "Lines",
                 number: "7,515",
               },
               {
@@ -323,8 +357,6 @@ export const portfolio_data = {
               img: Github,
               title: "Github",
             },
-          ],
-          libraries: [
             {
               img: ReactHookForm,
               title: "React Hook Form",
@@ -375,15 +407,120 @@ export const portfolio_data = {
       },
       {
         id: "3",
-        img: Project3,
-        title: "Personal Portfolio",
+        img: Quiz_Examistractions, // Replace with the appropriate image import
+        title: "Quiz App",
         description:
-          "A personal portfolio website showcasing web development skills, including projects, skills, and experience. Built with React and styled using custom CSS and Tailwind CSS for responsive design.",
-        tags: ["React", "Github"],
+          "A MERN stack Quiz application enabling users to participate in exams, view results, and allowing admins to manage exams and user reports effectively.",
+        tags: ["React", "Nodejs", "MongoDB", "Expressjs"],
+        projectData: {
+          id: "3",
+          title: "Quiz Application",
+          banner: Quiz_Examistractions, // Replace with an actual image
+          about:
+            "This project demonstrates full-stack development proficiency using the MERN stack. It allows for user and admin role management. The application features a clean UI for conducting exams and robust backend capabilities for result computation and reporting.",
+          projectState: {
+            description:
+              "The project includes 5,000 lines of efficient code, featuring reusable components and scalable backend APIs. It provides seamless exam management for admins and intuitive test-taking for users.",
+            img: Quiz_ViewExam, // Replace with the appropriate image
+            state: [
+              {
+                title: "Lines ",
+                number: "5,000",
+              },
+              {
+                title: "Modules",
+                number: "2",
+              },
+              {
+                title: "APIs",
+                number: "20+",
+              },
+            ],
+          },
+          technologies: [
+            {
+              img: Reactjs, // Replace with React logo import
+              title: "React.js",
+            },
+            {
+              img: Node, // Replace with Node.js logo import
+              title: "Node.js",
+            },
+            {
+              img: Mongo, // Replace with MongoDB logo import
+              title: "MongoDB",
+            },
+            {
+              img: Express, // Replace with Express.js logo import
+              title: "Express.js",
+            },
+            {
+              img: JWT,
+              title: "JWT",
+            },
+            {
+              img: Redux,
+              title: "Redux",
+            },
+            {
+              img: Axios,
+              title: "Axios",
+            },
+            {
+              img: Mongoose,
+              title: "Mongoose",
+            },
+          ],
+          pages: [
+            {
+              title: "All Exams",
+              img: Quiz_AllExams, // Replace with appropriate image
+            },
+            {
+              title: "User Dashboard",
+              img: Quiz_Userhome, // Replace with appropriate image
+            },
+            {
+              title: "Exam Page",
+              img: Quiz_StartExam, // Replace with appropriate image
+            },
+            {
+              title: "Result Page",
+              img: Quiz_Result, // Replace with appropriate image
+            },
+            {
+              title: "Auth Page",
+              img: Quiz_Signup, // Replace with appropriate image
+            },
+            {
+              title: "User Reports",
+              img: Quiz_Result, // Replace with appropriate image
+            },
+            {
+              title: "Create Exam",
+              img: Quiz_AddExam, // Replace with appropriate image
+            },
+          ],
+          // liveDemo: "https://quizappdemo.netlify.app/", // Update with the live demo link
+          repo: "https://github.com/yourusername/quizapp", // Update with your repository link
+          documentation: {
+            description:
+              "This documentation provides a comprehensive guide to the QuizApp built using the MERN stack. It details setup, features, and code structure, offering insights into scalable web application development. It’s ideal for developers learning full-stack development.",
+            img: Quiz_Examistractions, // Replace with appropriate image
+          },
+          pricing: 1500,
+          pricevalue: [
+            "Complete project code",
+            "5 key pages",
+            "Full backend integration",
+            "1 Revision",
+            "Setup guidance",
+          ],
+        },
       },
     ],
   },
-  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Github"],
+  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind"],
   FooterSection: {
     heading: "MOJI",
     links: {
