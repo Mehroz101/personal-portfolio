@@ -96,10 +96,12 @@ min-width: 300px;
         width: 100%;
     }
     .homepage .hero_right{
-        margin-top: 20px;
+        margin: 20px auto;
+        width: 100%;
         padding: 0;
-        transform: translateX(-30px);
+        justify-self: center;
     }
+   
     
 }
 /*=================== AboutUs Styles =============================*/

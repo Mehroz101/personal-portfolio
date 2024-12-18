@@ -26,6 +26,9 @@ const Footer = () => {
             <Link to={footerdata?.links?.github}>
               <i className="fa-brands fa-github"></i>
             </Link>
+            <Link to={footerdata?.links?.whatsapp}>
+                <i className="fa-brands fa-whatsapp"></i>
+              </Link>
           </div>
           <p className="copyright">
             &copy; {new Date().getFullYear()} MOJI. All rights reserved

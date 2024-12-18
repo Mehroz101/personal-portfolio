@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 300px;
+    padding-bottom: 200px;
     min-height: calc(100vh - 300px);
     background: linear-gradient(45deg, #444444, #333333);
     perspective: 1000px;
@@ -26,6 +27,10 @@
     color: var(--text-color);
     transform: translateZ(20px);
     animation: fadeIn 1.5s ease-in-out;
+  }
+  .not-found .back-home{
+    text-align: center;
+    width: 150px;
   }
   
   /* Animations */
