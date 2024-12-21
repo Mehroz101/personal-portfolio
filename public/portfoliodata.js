@@ -43,8 +43,9 @@ export const portfolio_data = {
     tagline:
       "I specialize in creating dynamic, responsive, and scalable web applications with expertise in the MERN stack. Let's build your vision!",
     img: Photo,
-    CVlink :"https://drive.google.com/file/d/1J6NsqlWGzvlNEuLEIi5BsUooaySfd60w/view?usp=drive_link",
-    whatsapplink:"https://wa.link/09unaf"
+    CVlink:
+      "https://drive.google.com/file/d/1J6NsqlWGzvlNEuLEIi5BsUooaySfd60w/view?usp=drive_link",
+    whatsapplink: "https://wa.link/09unaf",
   },
   AboutSection: {
     tag: "About Me",
@@ -351,7 +352,6 @@ export const portfolio_data = {
           ],
           liveDemo: "https://mehrozportfolio.netlify.app/",
           // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
-          // repo: "https://github.com/username/smart-parking",
           // challenges:
           //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
           //   improvements: [
