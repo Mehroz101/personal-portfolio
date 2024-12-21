@@ -186,136 +186,101 @@ export const portfolio_data = {
     tagline:
       "Here are some of the key projects I have worked on, showcasing my skills in web development and problem-solving.",
     project: [
-      // {
-      //   id: "1",
-      //   img: Project1,
-      //   title: "Smart Parking System",
-      //   description:
-      //     "A web-based smart parking solution that helps users find available parking spots in real-time. The platform allows users to book, manage, and pay for parking spaces through an intuitive interface.",
-      //   tags: ["React", "Nodejs", "Expressjs", "MongoDB"],
-      //   projectData: {
-      //     id: "1",
-      //     title: "Smart Parking System",
-      //     banner: Project1,
-      //     about:
-      //       "A web-based smart parking solution that helps users find available parking spots in real-time. The platform allows users to book, manage, and pay for parking spaces through an intuitive interface.",
-      //     projectState: {
-      //       heading: "Project Insights & Stats",
-      //       description:
-      //         "Discover the key metrics and insights behind the project, including its size, components, and development progress. This section highlights important figures that showcase the scale and impact of the project.",
-      //       img: Project2,
-      //       state: [
-      //         {
-      //           title: "Lines",
-      //           number: "50000+",
-      //         },
-      //         {
-      //           title: "Modules",
-      //           number: "3",
-      //         },
-      //         {
-      //           title: "Pages",
-      //           number: "20+",
-      //         },
-      //         {
-      //           title: "features",
-      //           number: "50000+",
-      //         },
-      //         {
-      //           title: "APIs",
-      //           number: "100+",
-      //         },
-      //       ],
-      //     },
-      //     technologies: [
-      //       {
-      //         img: Reactjs,
-      //         title: "React js",
-      //       },
-      //       {
-      //         img: Node,
-      //         title: "Node js",
-      //       },
-      //       {
-      //         img: Mongo,
-      //         title: "MongoDB",
-      //       },
-      //       {
-      //         img: Express,
-      //         title: "Express js",
-      //       },
-      //       {
-      //         img: Tailwind,
-      //         title: "Tailwind",
-      //       },
-      //       {
-      //         img: Github,
-      //         title: "Github",
-      //       },
-      //       // {
-      //       //   img: Figma,
-      //       //   title: "Figma",
-      //       // },
-      //       // {
-      //       //   img: Git,
-      //       //   title: "Git",
-      //       // },
-      //       // {
-      //       //   img: Vercel,
-      //       //   title: "Vercel",
-      //       // },
-      //       // {
-      //       //   img: Netlify,
-      //       //   title: "Netlify",
-      //       // },
-      //       // {
-      //       //   img: Heroku,
-      //       //   title: "Heroku",
-      //       // },
-      //     ],
+      {
+        id: "1",
+        img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
+        title: "Tuition Management System",
+        description:
+          "A comprehensive web-based platform enabling students to find and send invitations to teachers, while teachers can manage requests and their profiles. This system simplifies tuition management with intuitive interfaces for both teachers and students.",
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB"],
+        projectData: {
+          id: "1",
+          title: "Tuition Management System",
+          banner:
+            "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Banner.png?raw=true",
+          about:
+            "A modern platform designed to connect students with teachers. Students can search for teachers based on their requirements and send invitations. Teachers can manage and respond to requests, while both can customize their profiles, providing a seamless tuition management experience.",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "Explore the key metrics and components of the Tuition Management System. This section outlines the project scale, core features, and development progress, showcasing its impact and usability.",
+            img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
+            state: [
+              { title: "Lines", number: "40000+" },
+              { title: "Modules", number: "4" },
+              { title: "Pages", number: "15+" },
+              { title: "Features", number: "20+" },
+              { title: "APIs", number: "50+" },
+            ],
+          },
+          technologies: [
+            { img: Reactjs, title: "React JS" },
+            { img: Node, title: "Node JS" },
+            { img: Mongo, title: "MongoDB" },
+            { img: Express, title: "Express JS" },
+            { img: Github, title: "GitHub" },
+            { img: Mongoose, title: "Mongoose" },
+            { img: JWT, title: "JWT" },
+            { img: Axios, title: "Axios" },
+            { img: ReactHookForm, title: "React Hook Form" },
+          ],
+          features: [
+            "Search for teachers by subjects or location",
+            "Send and manage tuition invitations",
+            "Teacher profile and request management",
+            "User-friendly interface",
+            "Secure login for both students and teachers",
+          ],
+          pages: [
+            {
+              title: "Home Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
+            },
+            {
+              title: "Teacher Detail Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_%20Detail.png?raw=true",
+            },
+            {
+              title: "Books Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Books.png?raw=true",
+            },
+            {
+              title: "Profile Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Profile.png?raw=true",
+            },
+            {
+              title: "Search Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Search.png?raw=true",
+            },
+            {
+              title: "Student Request Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_stdRequest.png?raw=true",
+            },
+            {
+              title: "Invitation Page",
+              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Invitation.png?raw=true",
+            },
+          ],
+          liveDemo: "https://tuition-management-demo.com",
+          repo: "https://github.com/username/tuition-management-system",
+          challenges:
+            "Creating a robust invitation and request management system, ensuring scalability for a large number of users.",
+          documentation: {
+            description:
+              "Access detailed guides and resources for smooth usage of the Tuition Management System. Comprehensive documentation covers setup, API usage, and advanced features.",
+            img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Documentation.png?raw=true",
+          },
+          pricing: 15000,
+          pricevalue: [
+            "Complete documentation",
+            "Full project code",
+            "Two user modules (Student, Teacher)",
+            "Two revisions",
+            "Complete guidance and setup assistance",
+          ],
+        },
+      },
 
-      //     features: [
-      //       "Real-time parking availability",
-      //       "Booking and payment system",
-      //       "User-friendly interface",
-      //     ],
-      //     pages: [
-      //       {
-      //         title: "Home Page",
-      //         img: Project1,
-      //       },
-      //       {
-      //         title: "Main App Page",
-      //         img: Project2,
-      //       },
-      //       {
-      //         title: "Profile Page",
-      //         img: Project3,
-      //       },
-      //     ],
-      //     liveDemo: "https://smart-parking-demo.com",
-      //     repo: "https://github.com/username/smart-parking",
-      //     challenges:
-      //       "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
-      //     //   improvements: [
-      //     //     "Add AI-based predictions for parking availability",
-      //     //     "Enhance the mobile responsiveness",
-      //     //   ],
-      //     documentation: {
-      //       description:
-      //         "Access detailed guides and resources to get the most out of the project. Our comprehensive documentation covers everything from setup to advanced features, ensuring you have all the information you need for a smooth experience",
-      //       img: Project1,
-      //     },
-      //     pricing: 12000,
-      //     pricevalue: [
-      //       "compelete documentation",
-      //       "compelete project code",
-      //       "three user module (user,parking owner,admin)",
-      //       "2 Revisions",
-      //       "complete guidence",
-      //     ],
-      //   },
-      // },
       {
         id: "2",
         img: Portfolio_Home,
