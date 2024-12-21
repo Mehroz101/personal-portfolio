@@ -50,7 +50,9 @@ const Contact_Section = () => {
               />
               {errors.message && <p className="error">Message is required</p>}
             </div>
-            <button type="submit" className="btn">
+            <button type="submit" disabled style={{ cursor: "not-allowed",
+                  opacity: "0.5",
+                  pointerEvents: "none",}} className="btn">
               Send
             </button>
           </form>

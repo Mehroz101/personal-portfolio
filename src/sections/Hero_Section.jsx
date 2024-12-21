@@ -15,8 +15,8 @@ const Hero_Section = ({ herodata }) => {
 
           <p>{herodata?.tagline}</p>
           <div className="hero_btns">
-            <button className="btn">Hire Me</button>
-            <button className="btn">Download CV</button>
+            <a href={herodata?.whatsapplink} className="btn">Hire Me</a>
+            <a href={herodata?.CVlink} className="btn">Download CV</a>
           </div>
         </div>
         <div className="hero_right">

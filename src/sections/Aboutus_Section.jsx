@@ -31,12 +31,15 @@ const Aboutus_Section = ({aboutdata}) => {
               <Link to={aboutdata?.links?.github}>
                 <i className="fa-brands fa-github"></i>
               </Link>
+              <Link to={aboutdata?.links?.whatsapp}>
+                <i className="fa-brands fa-whatsapp"></i>
+              </Link>
             </div>
           </div>
-          <div className="about_btns">
+          {/* <div className="about_btns">
             <button className="btn">Hire Me</button>
             <button className="btn">Download CV</button>
-          </div>
+          </div> */}
         </div>
         <div className="aboutus_right">
           <div className="stat_cards">
