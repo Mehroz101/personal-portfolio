@@ -14,9 +14,7 @@ import Mongoose from "../src/assets/mongoose.png";
 import Redux from "../src/assets/redux.png";
 import Axios from "../src/assets/axios.png";
 //Project IMGs
-import Project1 from "../src/assets/project1.png"; // Replace with actual image paths
-import Project2 from "../src/assets/project2.jpg"; // Replace with actual image paths
-import Project3 from "../src/assets/project3.jpg"; // Replace with actual image paths
+
 import Portfolio_Home from "../src/assets/Portfolio_Home.png";
 import Portfolio_AllProjects from "../src/assets/Portfolio_AllProjects.png";
 import Portfolio_ViewProject from "../src/assets/Portfolio_ViewProject.png";
@@ -34,6 +32,13 @@ import Quiz_StartExam from "../src/assets/QuizApp/Quiz_StartExam.png";
 import Quiz_Result from "../src/assets/QuizApp/Quiz_Result.png";
 import Quiz_Examistractions from "../src/assets/QuizApp/Quiz_Examinstractions.png";
 import Quiz_Userhome from "../src/assets/QuizApp/Quiz_Userhome.png";
+
+//Portfolio2 Screenshots
+import Portfolio2_Home from "../src/assets/Portfolio2/Portfolio2_Home.png"
+import Portfolio2_About from "../src/assets/Portfolio2/Portfolio2_About.png"
+import Portfolio2_AllProjects from "../src/assets/Portfolio2/Portfolio2_AllProjects.png"
+import Portfolio2_Contact from "../src/assets/Portfolio2/Portfolio2_Contact.png"
+
 
 import Photo from "../src/assets/photo.png";
 export const portfolio_data = {
@@ -196,7 +201,7 @@ export const portfolio_data = {
         title: "Tuition Management System",
         description:
           "A comprehensive web-based platform enabling students to find and send invitations to teachers, while teachers can manage requests and their profiles. This system simplifies tuition management with intuitive interfaces for both teachers and students.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB","GitHub"],
         projectData: {
           id: "1",
           title: "Tuition Management System",
@@ -483,6 +488,90 @@ export const portfolio_data = {
             "Full backend integration",
             "1 Revision",
             "Setup guidance",
+          ],
+        },
+      },
+      {
+        id: "4",
+        img: Portfolio2_Home,
+        title: "Personal Portfolio",
+        description:
+          "A Unique personal portfolio website design using React.js to showcase my designing skill.",
+        tags: ["React", "Github"],
+        projectData: {
+          id: "2",
+          title: "Personal Portfolio",
+          banner: Portfolio2_Home,
+          about:
+            "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
+          projectState: {
+            description:
+              "This project consists around 4500+ lines of clean, efficient code, ensuring optimal performance. It includes 12 reusable components for a modular and consistent design. The website has 4 main pages: Home, Projects,Contact and About, offering a smooth and engaging user experience.",
+            img: Portfolio_Hero,
+            state: [
+              {
+                title: "Lines",
+                number: "4500",
+              },
+              {
+                title: "Components",
+                number: "12",
+              },
+              {
+                title: "Pages",
+                number: "4",
+              },
+            ],
+          },
+          technologies: [
+            {
+              img: Reactjs,
+              title: "React js",
+            },
+            {
+              img: Github,
+              title: "Github",
+            },
+           
+          ],
+
+          pages: [
+            {
+              title: "Home Page",
+              img: Portfolio2_Home,
+            },
+            {
+              title: "All Projects Page",
+              img: Portfolio2_AllProjects,
+            },
+            {
+              title: "AboutUs Page",
+              img: Portfolio2_About,
+            },
+            {
+              title: "ContactUs Page",
+              img: Portfolio2_Contact,
+            },
+          ],
+          // liveDemo: "https://mehrozportfolio.netlify.app/",
+          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
+          // challenges:
+          //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
+          //   improvements: [
+          //     "Add AI-based predictions for parking availability",
+          //     "Enhance the mobile responsiveness",
+          //   ],
+          documentation: {
+            description:
+              "This documentation provides an in-depth guide to the Personal Portfolio project built using React.js. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation is available as a paid resource, offering exclusive insights and best practices for building a professional portfolio. Ideal for developers looking to create their own portfolios or improve their React.js skills, this resource ensures a smooth and efficient development process.",
+            img: Portfolio_Contact,
+          },
+          pricing: "Free",
+          pricevalue: [
+            "compelete documentation",
+            "compelete project code",
+            "Four pages",
+            "complete guidence",
           ],
         },
       },
