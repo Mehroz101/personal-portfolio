@@ -6,12 +6,12 @@ import { useInView } from "react-intersection-observer";
 const Aboutus_Section = ({ aboutdata }) => {
   const [refLeft, inViewLeft] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.4,
   });
 
   const [refRight, inViewRight] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.4,
   });
 
   // Animation for left section
@@ -34,16 +34,16 @@ const Aboutus_Section = ({ aboutdata }) => {
     },
   };
 
-  // Sequential animation for stat cards
-  const animationVariantStatCard = {
-    hidden: { x: -200, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.8, ease: "easeInOut" },
-    }
+  // // Sequential animation for stat cards
+  // const animationVariantStatCard = {
+  //   hidden: { x: -200, opacity: 0 },
+  //   visible: {
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: { duration: 0.8, ease: "easeInOut" },
+  //   }
     
-  };
+  // };
 
   return (
     <>
@@ -99,7 +99,7 @@ const Aboutus_Section = ({ aboutdata }) => {
             </motion.div>
 
             <motion.div
-              variants={animationVariantStatCard}
+              variants={animationVariantRight}
               initial="hidden"
               animate={inViewRight ? "visible" : "hidden"}
               className="stat_card"
@@ -109,7 +109,7 @@ const Aboutus_Section = ({ aboutdata }) => {
             </motion.div>
 
             <motion.div
-              variants={animationVariantStatCard}
+              variants={animationVariantRight}
               initial="hidden"
               animate={inViewRight ? "visible" : "hidden"}
               className="stat_card"
@@ -119,7 +119,7 @@ const Aboutus_Section = ({ aboutdata }) => {
             </motion.div>
 
             <motion.div
-              variants={animationVariantStatCard}
+              variants={animationVariantRight}
               initial="hidden"
               animate={inViewRight ? "visible" : "hidden"}
               className="stat_card"
