@@ -15,12 +15,14 @@ import Redux from "../src/assets/redux.png";
 import Axios from "../src/assets/axios.png";
 //Project IMGs
 
-import Portfolio_Home from "../src/assets/Portfolio_Home.png";
-import Portfolio_AllProjects from "../src/assets/Portfolio_AllProjects.png";
-import Portfolio_ViewProject from "../src/assets/Portfolio_ViewProject.png";
-import Portfolio_Contact from "../src/assets/Portfolio_Contact.png";
-import Portfolio_Footer from "../src/assets/Portfolio_Footer.png";
-import Portfolio_Hero from "../src/assets/Portfolio_Hero.png";
+import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
+import Portfolio_AllProjects from "../src/assets/Portfolio1/Portfolio_AllProjects.png";
+import Portfolio_About from "../src/assets/Portfolio1/Portfolio1_About.png";
+import Portfolio_Contact from "../src/assets/Portfolio1/Portfolio1_Contact.png";
+import Portfolio_Footer from "../src/assets/Portfolio1/Portfolio_Footer.png";
+import Portfolio_Experience from "../src/assets/Portfolio1/Portfolio1_Experience.png";
+import Portfolio_Service from "../src/assets/Portfolio1/Portfolio1_Service.png";
+import Portfolio_Skill from "../src/assets/Portfolio1/Portfolio1_Skill.png";
 
 //Quiz APP Screenshots
 import Quiz_Login from "../src/assets/QuizApp/Quiz_Login.png";
@@ -292,7 +294,7 @@ export const portfolio_data = {
 
       {
         id: "2",
-        img: Portfolio_Home,
+        img: Portfolio_Hero,
         title: "Personal Portfolio",
         description:
           "A personal portfolio website built using React.js to showcase skills, projects, and experience. The platform features an interactive, responsive design with smooth navigation, highlighting professional expertise in web development.",
@@ -300,13 +302,13 @@ export const portfolio_data = {
         projectData: {
           id: "2",
           title: "Personal Portfolio",
-          banner: Portfolio_Home,
+          banner: Portfolio_About,
           about:
             "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
           projectState: {
             description:
               "This project consists of 7,515 lines of clean, efficient code, ensuring optimal performance. It includes 17 reusable components for a modular and consistent design. The website has 3 main pages: Home, Projects, and About, offering a smooth and engaging user experience.",
-            img: Portfolio_Hero,
+            // img: Portfolio_Hero,
             state: [
               {
                 title: "Lines",
@@ -343,16 +345,36 @@ export const portfolio_data = {
 
           pages: [
             {
-              title: "Home Page",
-              img: Portfolio_Home,
+              title: "Experience Section",
+              img: Portfolio_Experience,
             },
             {
-              title: "All Projects Page",
+              title: "All Projects Section",
               img: Portfolio_AllProjects,
             },
             {
-              title: "Project Detail Page",
-              img: Portfolio_ViewProject,
+              title: "Footer Section",
+              img: Portfolio_Footer,
+            },
+            {
+              title: "Service Section",
+              img: Portfolio_Service,
+            },
+            {
+              title: "Contact Section",
+              img: Portfolio_Contact,
+            },
+            {
+              title: "Skill Section",
+              img: Portfolio_Skill,
+            },
+            {
+              title: "About Section",
+              img: Portfolio_About,
+            },
+            {
+              title: "Hero Section",
+              img: Portfolio_Hero,
             },
           ],
           liveDemo: "https://mehrozportfolio.netlify.app/",
@@ -577,7 +599,7 @@ export const portfolio_data = {
       },
     ],
   },
-  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind"],
+  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind","GitHub"],
   FooterSection: {
     heading: "MOJI",
     links: {

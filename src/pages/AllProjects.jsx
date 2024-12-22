@@ -22,11 +22,13 @@ const AllProjects = () => {
 
   useEffect(() => {
     const filteredProjects =
-      selectedFilters.length > 0
-        ? allProjects.filter((project) =>
-            selectedFilters.every((filter) => project.tags.includes(filter))
+    selectedFilters.length > 0
+      ? allProjects.filter((project) =>
+          selectedFilters.every((filter) =>
+            project.tags.some((tag) => tag.toLowerCase() === filter.toLowerCase()) // Case-insensitive comparison
           )
-        : allProjects;
+        )
+      : allProjects;
   
     setFilterProjects(filteredProjects);
   }, [selectedFilters, allProjects]);

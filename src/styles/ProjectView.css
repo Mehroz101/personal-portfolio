@@ -2,6 +2,7 @@
     background-color: var(--background);
     text-align: center;
     padding: 150px 0px 0;
+    padding-bottom: 450px;
 }
   /*========================== Hero Section ============================= */
   .hero-section {
@@ -302,6 +303,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
   }
   .pages-section h2{
@@ -313,20 +315,92 @@
   .page-box {
     min-width: 300px;
     max-width: 400px;
-    height: 500px;
-    overflow: hidden;
     text-align: center;
+    margin-bottom: 40px;
+    max-height: 400px;
+    box-shadow: 1px 1px 5px rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
+  }
+  .page-box:hover{
+    transform: translateY(-10px);
+  }
+  .page-box .img{
+    height: 400px;
+    width: 100%;
+    overflow: hidden !important;
+  }
+  .page-box .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .page-box h3{
     font-size: 1rem;
   }
-  
-  .page-box img {
-    width: 100%;
-  object-fit: cover;
-    height: 80%;
+  .image-popup-container {
+    text-align: center;
   }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .thumbnail {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto; /* Allow vertical scrolling */
+
+  }
+  
+  .full-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+ 
   /*========================== documentation Section ============================= */
   .documentation-section {
     display: flex;
@@ -403,7 +477,6 @@
   /*========================== pricing Section ============================= */
   
   .pricing-section{
-    padding-bottom: 300px;
     display: flex;
     justify-content: center;
     padding-left:100px;
