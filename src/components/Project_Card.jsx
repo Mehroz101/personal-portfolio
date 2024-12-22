@@ -1,7 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Project_Card = ({ img, title, description, id }) => {
+  const pathname = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on component mount
+  }, [pathname]);
   return (
     <>
       <div className="project_card">

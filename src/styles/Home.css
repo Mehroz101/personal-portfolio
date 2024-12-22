@@ -252,7 +252,7 @@ min-width: 300px;
     transition: all 0.3s ease-in-out;
 }
 .myservices .myservices_cards .service_card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
 }
 .myservices .myservices_cards .service_card:hover h2{
     color: #FFBD39;
