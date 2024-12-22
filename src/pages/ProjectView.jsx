@@ -18,6 +18,7 @@ import Skill_card from "../components/Skill_card";
 import PricingCard from "../components/Price_Card";
 import { portfolio_data } from "../../public/portfoliodata";
 import Project_Section from "../sections/Project_Section";
+import Project_Card from "../components/Project_Card";
 const ProjectView = () => {
   const { id } = useParams();
   const [viewProject, setViewProject] = useState(null);
@@ -213,7 +214,20 @@ const ProjectView = () => {
           </div>
         </div>
          )}
-        <Project_Section projectdata={allProjectData} showHeading={false} />
+         <div className="projectsection">
+         <div className="project_cards">
+        {allProjectData?.project?.slice(0, 3).map((project, index) => (
+          <Project_Card
+            key={index}
+            img={project.img}
+            title={project.title}
+            description={project.description}
+            id={project.id}
+          />
+        ))}
+      </div>
+      </div>
+        {/* <Project_Section projectdata={allProjectData} showHeading={false} /> */}
       </div>
 
     </>
