@@ -57,7 +57,7 @@ export const portfolio_data = {
   AboutSection: {
     tag: "About Me",
     heading:
-      "Hello! I'm <span>Mehroz Farooq</span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
+      "Hello! I'm <span>Mehroz Farooq. </span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
     para: "I’m a dedicated web and software developer with a passion for crafting innovative and user-friendly digital experiences. Leveraging expertise in modern technologies, I focus on delivering top-notch solutions tailored to individual and business needs. My mission is to empower businesses with creative and functional websites and applications that make a meaningful impact.",
     projects: 6,
     clients: 6,

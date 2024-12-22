@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const Experience_card = ({ years, title, companyName, description }) => {
   const [ref, inView] = useInView({
-    // triggerOnce: true, // Animation triggers only once when it enters the viewport
+    triggerOnce: true, // Animation triggers only once when it enters the viewport
     threshold: 0.2,    // Start the animation when 20% of the card is in view
   });
 

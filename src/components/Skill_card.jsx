@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const Skill_card = ({ img, name, percentage }) => {
   const [ref, inView] = useInView({
-    // triggerOnce: true, // Animation triggers only once when it enters the viewport
+    triggerOnce: true, // Animation triggers only once when it enters the viewport
     threshold: 0.2,    // Start the animation when 20% of the card is in view
   });
 
