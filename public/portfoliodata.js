@@ -35,6 +35,32 @@ import Quiz_Result from "../src/assets/QuizApp/Quiz_Result.png";
 import Quiz_Examistractions from "../src/assets/QuizApp/Quiz_Examinstractions.png";
 import Quiz_Userhome from "../src/assets/QuizApp/Quiz_Userhome.png";
 
+//Parking Management System Screenshots
+import Project1_Admindashboard from "../src/assets/ParkingManagementSystem/Project1_Admindashboard.png";
+import Project1_AdmindashboardNav from "../src/assets/ParkingManagementSystem/Project1_AdmindashboardNav.png";
+import Project1_Adminearning from "../src/assets/ParkingManagementSystem/Project1_Adminearning.png";
+import Project1_Adminnotifications from "../src/assets/ParkingManagementSystem/Project1_Adminnotifications.png";
+import Project1_Adminrequest from "../src/assets/ParkingManagementSystem/Project1_Adminrequest.png";
+import Project1_Adminreview from "../src/assets/ParkingManagementSystem/Project1_Adminreview.png";
+import Project1_Adminsetting from "../src/assets/ParkingManagementSystem/Project1_Adminsetting.png";
+import Project1_Adminspaces from "../src/assets/ParkingManagementSystem/Project1_Adminspaces.png";
+import Project1_Adminuser from "../src/assets/ParkingManagementSystem/Project1_Adminuser.png";
+import Project1_Home from "../src/assets/ParkingManagementSystem/Project1_Home.png";
+import Project1_Mainapp from "../src/assets/ParkingManagementSystem/Project1_Mainapp.png";
+import Project1_Newlisting from "../src/assets/ParkingManagementSystem/Project1_Newlisting.png";
+import Project1_NewRequest from "../src/assets/ParkingManagementSystem/Project1_NewRequest.png";
+import Project1_Userdashboard from "../src/assets/ParkingManagementSystem/Project1_Userdashboard.png";
+import Project1_UserEarning from "../src/assets/ParkingManagementSystem/Project1_UserEarning.png";
+import Project1_Userhero from "../src/assets/ParkingManagementSystem/Project1_Userhero.png";
+import Project1_Userhistory from "../src/assets/ParkingManagementSystem/Project1_Userhistory.png";
+import Project1_Userlogin from "../src/assets/ParkingManagementSystem/Project1_Userlogin.png";
+import Project1_Userrequest from "../src/assets/ParkingManagementSystem/Project1_Userrequest.png";
+import Project1_Userrequests from "../src/assets/ParkingManagementSystem/Project1_Userrequests.png";
+import Project1_Usersetting from "../src/assets/ParkingManagementSystem/Project1_Usersetting.png";
+import Project1_Usersignup from "../src/assets/ParkingManagementSystem/Project1_Usersignup.png";
+import Project1_Userspaces from "../src/assets/ParkingManagementSystem/Project1_Userspaces.png";
+import Project1_Userwithdraw from "../src/assets/ParkingManagementSystem/Project1_Userwithdraw.png";
+
 //Portfolio2 Screenshots
 import Portfolio2_Home from "../src/assets/Portfolio2/Portfolio2_Home.png";
 import Portfolio2_About from "../src/assets/Portfolio2/Portfolio2_About.png";
@@ -511,6 +537,88 @@ export const portfolio_data = {
           ],
         },
       },
+      {
+        id: "4",
+        img: Project1_Home,
+        title: "Smart Parking Solution",
+        description:
+          "An advanced web-based system that allows users to find, reserve, and manage parking spaces seamlessly. It provides an intuitive interface for both users and parking owners, enhancing the parking experience.",
+        tags: ["React", "Node.js", "Express.js", "MongoDB", "GitHub"],
+        projectData: {
+          id: "4",
+          title: "Smart Parking Solution",
+          banner: Project1_Mainapp,
+          about:
+            "A modern platform designed to make parking hassle-free. Users can search and book parking spots, while parking owners can list and manage their spaces. The system ensures seamless functionality and a user-friendly experience.",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "Discover the core features and development scale of the Smart Parking Solution. This section highlights the impact and usability of the system.",
+            img: Project1_Home,
+            state: [
+              { title: "Lines", number: "50000+" },
+              { title: "Modules", number: "5" },
+              { title: "Pages", number: "20+" },
+              { title: "Features", number: "25+" },
+              { title: "APIs", number: "60+" },
+            ],
+          },
+          technologies: [
+            { img: Reactjs, title: "React JS" },
+            { img: Node, title: "Node JS" },
+            { img: Mongo, title: "MongoDB" },
+            { img: Express, title: "Express JS" },
+            { img: Github, title: "GitHub" },
+            { img: Mongoose, title: "Mongoose" },
+            { img: JWT, title: "JWT" },
+            { img: Axios, title: "Axios" },
+            { img: ReactHookForm, title: "React Hook Form" },
+          ],
+          features: [
+            "Search and reserve parking spaces",
+            "List and manage spaces for rent",
+            "User and admin dashboards",
+            "Secure login and profile management",
+            "Real-time notifications for bookings and requests",
+          ],
+          pages: [
+            { title: "Home Page", img: Project1_Home },
+            { title: "Admin Dashboard", img: Project1_Admindashboard },
+            { title: "Admin Earnings", img: Project1_Adminearning },
+            { title: "Admin Notifications", img: Project1_Adminnotifications },
+            { title: "Admin Requests", img: Project1_Adminrequest },
+            { title: "Admin Spaces", img: Project1_Adminspaces },
+            { title: "Admin Settings", img: Project1_Adminsetting },
+            { title: "Admin Users", img: Project1_Adminuser },
+            { title: "User Dashboard", img: Project1_Userdashboard },
+            { title: "User Earnings", img: Project1_UserEarning },
+            { title: "User History", img: Project1_Userhistory },
+            { title: "User Requests", img: Project1_Userrequests },
+            { title: "User Spaces", img: Project1_Userspaces },
+            { title: "User Withdrawals", img: Project1_Userwithdraw },
+            { title: "Login Page", img: Project1_Userlogin },
+            { title: "Signup Page", img: Project1_Usersignup },
+          ],
+          liveDemo: "https://smart-parking-solution-demo.com",
+          repo: "https://github.com/username/smart-parking-solution",
+          challenges:
+            "Ensuring seamless integration of user and admin functionalities, while maintaining scalability and responsiveness.",
+          documentation: {
+            description:
+              "Comprehensive guides and resources for smooth usage of the Smart Parking Solution, covering setup, API usage, and advanced features.",
+            img: Project1_Newlisting,
+          },
+          pricing: 20000,
+          pricevalue: [
+            "Complete documentation",
+            "Full project code",
+            "User and admin modules",
+            "Two revisions",
+            "Setup assistance and guidance",
+          ],
+        },
+      },
+
       {
         id: "4",
         img: Portfolio2_Home,
