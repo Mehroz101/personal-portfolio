@@ -13,7 +13,6 @@ const Home = () => {
   const [data,setData]= useState([])
   useEffect(()=>{
     setData(portfolio_data)
-    console.log(portfolio_data.HeroSection)
   },[])
   return (
     <>

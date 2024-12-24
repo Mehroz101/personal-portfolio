@@ -17,10 +17,27 @@ import Section_Heading from "../components/Section_Heading";
 import Skill_card from "../components/Skill_card";
 import PricingCard from "../components/Price_Card";
 import { portfolio_data } from "../../public/portfoliodata";
+import Project_Section from "../sections/Project_Section";
+import Project_Card from "../components/Project_Card";
 const ProjectView = () => {
   const { id } = useParams();
   const [viewProject, setViewProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [allProjectData,setAllProjectData]= useState([])
 
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage("");
+  };
+  useEffect(()=>{
+    setAllProjectData(portfolio_data?.ProjectSection)
+  },[])
   useEffect(() => {
     if (id) {
       const viewproject = portfolio_data?.ProjectSection?.project?.filter(
@@ -31,6 +48,7 @@ const ProjectView = () => {
       console.log(viewProject?.projectData?.projectState?.state);
     }
   }, [id]);
+
   if (!viewProject) {
     return <div>Project not found.</div>;
   }
@@ -134,11 +152,14 @@ const ProjectView = () => {
         )}
         {viewProject?.projectData?.pages && (
           <section className="pages-section">
-            <h2>Pages</h2>
+            <h2>Pages & Sections</h2>
             <div className="pages">
               {viewProject?.projectData?.pages?.map((page, index) => (
-                <div className="page-box" key={index}>
+                <div className="page-box" onClick={() => openModal(page?.img)}  key={index}>
+                <div className="img">
+
                   <img src={page?.img} loading="lazy" alt={page?.title} />
+                </div>
                   <h3>{page?.title}</h3>
                 </div>
               ))}
@@ -183,7 +204,32 @@ const ProjectView = () => {
             />
           )}
         </section>
+        {isModalOpen && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close-btn" onClick={closeModal}>
+              &times;
+            </span>
+            <img src={selectedImage} alt="Full View" className="full-image" />
+          </div>
+        </div>
+         )}
+         <div className="projectsection">
+         <div className="project_cards">
+        {allProjectData?.project?.slice(0, 3).map((project, index) => (
+          <Project_Card
+            key={index}
+            img={project.img}
+            title={project.title}
+            description={project.description}
+            id={project.id}
+          />
+        ))}
       </div>
+      </div>
+        {/* <Project_Section projectdata={allProjectData} showHeading={false} /> */}
+      </div>
+
     </>
   );
 };

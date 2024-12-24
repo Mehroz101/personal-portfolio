@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { portfolio_data } from "../../public/portfoliodata";
-
 const Footer = () => {
   const [footerdata,setfooterData] = useState("")
   useEffect(()=>{
@@ -38,5 +37,4 @@ const Footer = () => {
     </>
   );
 };
-
 export default Footer;

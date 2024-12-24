@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/NotFound.css"; // Optional CSS file for styling
-
 const NotFound = () => {
   return (
     <div className="not-found">
@@ -13,5 +12,4 @@ const NotFound = () => {
     </div>
   );
 };
-
 export default NotFound;

@@ -14,15 +14,15 @@ import Mongoose from "../src/assets/mongoose.png";
 import Redux from "../src/assets/redux.png";
 import Axios from "../src/assets/axios.png";
 //Project IMGs
-import Project1 from "../src/assets/project1.png"; // Replace with actual image paths
-import Project2 from "../src/assets/project2.jpg"; // Replace with actual image paths
-import Project3 from "../src/assets/project3.jpg"; // Replace with actual image paths
-import Portfolio_Home from "../src/assets/Portfolio_Home.png";
-import Portfolio_AllProjects from "../src/assets/Portfolio_AllProjects.png";
-import Portfolio_ViewProject from "../src/assets/Portfolio_ViewProject.png";
-import Portfolio_Contact from "../src/assets/Portfolio_Contact.png";
-import Portfolio_Footer from "../src/assets/Portfolio_Footer.png";
-import Portfolio_Hero from "../src/assets/Portfolio_Hero.png";
+
+import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
+import Portfolio_AllProjects from "../src/assets/Portfolio1/Portfolio_AllProjects.png";
+import Portfolio_About from "../src/assets/Portfolio1/Portfolio1_About.png";
+import Portfolio_Contact from "../src/assets/Portfolio1/Portfolio1_Contact.png";
+import Portfolio_Footer from "../src/assets/Portfolio1/Portfolio_Footer.png";
+import Portfolio_Experience from "../src/assets/Portfolio1/Portfolio1_Experience.png";
+import Portfolio_Service from "../src/assets/Portfolio1/Portfolio1_Service.png";
+import Portfolio_Skill from "../src/assets/Portfolio1/Portfolio1_Skill.png";
 
 //Quiz APP Screenshots
 import Quiz_Login from "../src/assets/QuizApp/Quiz_Login.png";
@@ -35,31 +35,11 @@ import Quiz_Result from "../src/assets/QuizApp/Quiz_Result.png";
 import Quiz_Examistractions from "../src/assets/QuizApp/Quiz_Examinstractions.png";
 import Quiz_Userhome from "../src/assets/QuizApp/Quiz_Userhome.png";
 
-//Parking Management System Screenshots
-import Project1_Admindashboard from "../src/assets/ParkingManagementSystem/Project1_Admindashboard.png";
-import Project1_AdmindashboardNav from "../src/assets/ParkingManagementSystem/Project1_AdmindashboardNav.png";
-import Project1_Adminearning from "../src/assets/ParkingManagementSystem/Project1_Adminearning.png";
-import Project1_Adminnotifications from "../src/assets/ParkingManagementSystem/Project1_Adminnotifications.png";
-import Project1_Adminrequest from "../src/assets/ParkingManagementSystem/Project1_Adminrequest.png";
-import Project1_Adminreview from "../src/assets/ParkingManagementSystem/Project1_Adminreview.png";
-import Project1_Adminsetting from "../src/assets/ParkingManagementSystem/Project1_Adminsetting.png";
-import Project1_Adminspaces from "../src/assets/ParkingManagementSystem/Project1_Adminspaces.png";
-import Project1_Adminuser from "../src/assets/ParkingManagementSystem/Project1_Adminuser.png";
-import Project1_Home from "../src/assets/ParkingManagementSystem/Project1_Home.png";
-import Project1_Mainapp from "../src/assets/ParkingManagementSystem/Project1_Mainapp.png";
-import Project1_Newlisting from "../src/assets/ParkingManagementSystem/Project1_Newlisting.png";
-import Project1_NewRequest from "../src/assets/ParkingManagementSystem/Project1_NewRequest.png";
-import Project1_Userdashboard from "../src/assets/ParkingManagementSystem/Project1_Userdashboard.png";
-import Project1_UserEarning from "../src/assets/ParkingManagementSystem/Project1_UserEarning.png";
-import Project1_Userhero from "../src/assets/ParkingManagementSystem/Project1_Userhero.png";
-import Project1_Userhistory from "../src/assets/ParkingManagementSystem/Project1_Userhistory.png";
-import Project1_Userlogin from "../src/assets/ParkingManagementSystem/Project1_Userlogin.png";
-import Project1_Userrequest from "../src/assets/ParkingManagementSystem/Project1_Userrequest.png";
-import Project1_Userrequests from "../src/assets/ParkingManagementSystem/Project1_Userrequests.png";
-import Project1_Usersetting from "../src/assets/ParkingManagementSystem/Project1_Usersetting.png";
-import Project1_Usersignup from "../src/assets/ParkingManagementSystem/Project1_Usersignup.png";
-import Project1_Userspaces from "../src/assets/ParkingManagementSystem/Project1_Userspaces.png";
-import Project1_Userwithdraw from "../src/assets/ParkingManagementSystem/Project1_Userwithdraw.png";
+//Portfolio2 Screenshots
+import Portfolio2_Home from "../src/assets/Portfolio2/Portfolio2_Home.png";
+import Portfolio2_About from "../src/assets/Portfolio2/Portfolio2_About.png";
+import Portfolio2_AllProjects from "../src/assets/Portfolio2/Portfolio2_AllProjects.png";
+import Portfolio2_Contact from "../src/assets/Portfolio2/Portfolio2_Contact.png";
 
 import Photo from "../src/assets/photo.png";
 export const portfolio_data = {
@@ -76,7 +56,7 @@ export const portfolio_data = {
   AboutSection: {
     tag: "About Me",
     heading:
-      "Hello! I'm <span>Mehroz Farooq</span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
+      "Hello! I'm <span>Mehroz Farooq. </span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
     para: "I’m a dedicated web and software developer with a passion for crafting innovative and user-friendly digital experiences. Leveraging expertise in modern technologies, I focus on delivering top-notch solutions tailored to individual and business needs. My mission is to empower businesses with creative and functional websites and applications that make a meaningful impact.",
     projects: 6,
     clients: 6,
@@ -222,7 +202,7 @@ export const portfolio_data = {
         title: "Tuition Management System",
         description:
           "A comprehensive web-based platform enabling students to find and send invitations to teachers, while teachers can manage requests and their profiles. This system simplifies tuition management with intuitive interfaces for both teachers and students.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub"],
         projectData: {
           id: "1",
           title: "Tuition Management System",
@@ -310,10 +290,9 @@ export const portfolio_data = {
           ],
         },
       },
-
       {
         id: "2",
-        img: Portfolio_Home,
+        img: Portfolio_Hero,
         title: "Personal Portfolio",
         description:
           "A personal portfolio website built using React.js to showcase skills, projects, and experience. The platform features an interactive, responsive design with smooth navigation, highlighting professional expertise in web development.",
@@ -321,13 +300,13 @@ export const portfolio_data = {
         projectData: {
           id: "2",
           title: "Personal Portfolio",
-          banner: Portfolio_Home,
+          banner: Portfolio_About,
           about:
             "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
           projectState: {
             description:
               "This project consists of 7,515 lines of clean, efficient code, ensuring optimal performance. It includes 17 reusable components for a modular and consistent design. The website has 3 main pages: Home, Projects, and About, offering a smooth and engaging user experience.",
-            img: Portfolio_Hero,
+            // img: Portfolio_Hero,
             state: [
               {
                 title: "Lines",
@@ -364,16 +343,36 @@ export const portfolio_data = {
 
           pages: [
             {
-              title: "Home Page",
-              img: Portfolio_Home,
+              title: "Experience Section",
+              img: Portfolio_Experience,
             },
             {
-              title: "All Projects Page",
+              title: "All Projects Section",
               img: Portfolio_AllProjects,
             },
             {
-              title: "Project Detail Page",
-              img: Portfolio_ViewProject,
+              title: "Footer Section",
+              img: Portfolio_Footer,
+            },
+            {
+              title: "Service Section",
+              img: Portfolio_Service,
+            },
+            {
+              title: "Contact Section",
+              img: Portfolio_Contact,
+            },
+            {
+              title: "Skill Section",
+              img: Portfolio_Skill,
+            },
+            {
+              title: "About Section",
+              img: Portfolio_About,
+            },
+            {
+              title: "Hero Section",
+              img: Portfolio_Hero,
             },
           ],
           liveDemo: "https://mehrozportfolio.netlify.app/",
@@ -514,88 +513,90 @@ export const portfolio_data = {
       },
       {
         id: "4",
-        img: Project1_Home,
-        title: "Smart Parking Solution",
+        img: Portfolio2_Home,
+        title: "Personal Portfolio",
         description:
-          "An advanced web-based system that allows users to find, reserve, and manage parking spaces seamlessly. It provides an intuitive interface for both users and parking owners, enhancing the parking experience.",
-        tags: ["React", "Node.js", "Express.js", "MongoDB", "GitHub"],
+          "A Unique personal portfolio website design using React.js to showcase my designing skill.",
+        tags: ["React", "Github"],
         projectData: {
-          id: "4",
-          title: "Smart Parking Solution",
-          banner: Project1_Mainapp,
+          id: "2",
+          title: "Personal Portfolio",
+          banner: Portfolio2_Home,
           about:
-            "A modern platform designed to make parking hassle-free. Users can search and book parking spots, while parking owners can list and manage their spaces. The system ensures seamless functionality and a user-friendly experience.",
+            "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
           projectState: {
-            heading: "Project Insights & Stats",
             description:
-              "Discover the core features and development scale of the Smart Parking Solution. This section highlights the impact and usability of the system.",
-            img: Project1_Home,
+              "This project consists around 4500+ lines of clean, efficient code, ensuring optimal performance. It includes 12 reusable components for a modular and consistent design. The website has 4 main pages: Home, Projects,Contact and About, offering a smooth and engaging user experience.",
+            img: Portfolio_Hero,
             state: [
-              { title: "Lines", number: "50000+" },
-              { title: "Modules", number: "5" },
-              { title: "Pages", number: "20+" },
-              { title: "Features", number: "25+" },
-              { title: "APIs", number: "60+" },
+              {
+                title: "Lines",
+                number: "4500",
+              },
+              {
+                title: "Components",
+                number: "12",
+              },
+              {
+                title: "Pages",
+                number: "4",
+              },
             ],
           },
           technologies: [
-            { img: Reactjs, title: "React JS" },
-            { img: Node, title: "Node JS" },
-            { img: Mongo, title: "MongoDB" },
-            { img: Express, title: "Express JS" },
-            { img: Github, title: "GitHub" },
-            { img: Mongoose, title: "Mongoose" },
-            { img: JWT, title: "JWT" },
-            { img: Axios, title: "Axios" },
-            { img: ReactHookForm, title: "React Hook Form" },
+            {
+              img: Reactjs,
+              title: "React js",
+            },
+            {
+              img: Github,
+              title: "Github",
+            },
           ],
-          features: [
-            "Search and reserve parking spaces",
-            "List and manage spaces for rent",
-            "User and admin dashboards",
-            "Secure login and profile management",
-            "Real-time notifications for bookings and requests",
-          ],
+
           pages: [
-            { title: "Home Page", img: Project1_Home },
-            { title: "Admin Dashboard", img: Project1_Admindashboard },
-            { title: "Admin Earnings", img: Project1_Adminearning },
-            { title: "Admin Notifications", img: Project1_Adminnotifications },
-            { title: "Admin Requests", img: Project1_Adminrequest },
-            { title: "Admin Spaces", img: Project1_Adminspaces },
-            { title: "Admin Settings", img: Project1_Adminsetting },
-            { title: "Admin Users", img: Project1_Adminuser },
-            { title: "User Dashboard", img: Project1_Userdashboard },
-            { title: "User Earnings", img: Project1_UserEarning },
-            { title: "User History", img: Project1_Userhistory },
-            { title: "User Requests", img: Project1_Userrequests },
-            { title: "User Spaces", img: Project1_Userspaces },
-            { title: "User Withdrawals", img: Project1_Userwithdraw },
-            { title: "Login Page", img: Project1_Userlogin },
-            { title: "Signup Page", img: Project1_Usersignup },
+            {
+              title: "Home Page",
+              img: Portfolio2_Home,
+            },
+            {
+              title: "All Projects Page",
+              img: Portfolio2_AllProjects,
+            },
+            {
+              title: "AboutUs Page",
+              img: Portfolio2_About,
+            },
+            {
+              title: "ContactUs Page",
+              img: Portfolio2_Contact,
+            },
           ],
-          liveDemo: "https://smart-parking-solution-demo.com",
-          repo: "https://github.com/username/smart-parking-solution",
-          challenges:
-            "Ensuring seamless integration of user and admin functionalities, while maintaining scalability and responsiveness.",
+          // liveDemo: "https://mehrozportfolio.netlify.app/",
+          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
+          // challenges:
+          //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
+          //   improvements: [
+          //     "Add AI-based predictions for parking availability",
+          //     "Enhance the mobile responsiveness",
+          //   ],
           documentation: {
             description:
-              "Comprehensive guides and resources for smooth usage of the Smart Parking Solution, covering setup, API usage, and advanced features.",
-            img: Project1_Newlisting,
+              "This documentation provides an in-depth guide to the Personal Portfolio project built using React.js. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation is available as a paid resource, offering exclusive insights and best practices for building a professional portfolio. Ideal for developers looking to create their own portfolios or improve their React.js skills, this resource ensures a smooth and efficient development process.",
+            img: Portfolio_Contact,
           },
-          pricing: 20000,
+          pricing: "Free",
           pricevalue: [
-            "Complete documentation",
-            "Full project code",
-            "User and admin modules",
-            "Two revisions",
-            "Setup assistance and guidance",
+            "compelete documentation",
+            "compelete project code",
+            "Four pages",
+            "complete guidence",
           ],
         },
       },
     ],
   },
-  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind"],
+  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub"],
   FooterSection: {
     heading: "MOJI",
     links: {
