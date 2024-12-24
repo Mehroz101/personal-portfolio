@@ -340,7 +340,7 @@ export const portfolio_data = {
         title: "Smart Parking Solution",
         description:
           "An advanced web-based system that allows users to find, reserve, and manage parking spaces seamlessly. It provides an intuitive interface for both users and parking owners, enhancing the parking experience.",
-        tags: ["React", "Node.js", "Express.js", "MongoDB", "GitHub"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub"],
         projectData: {
           id: "2",
           title: "Smart Parking Solution",
@@ -424,7 +424,7 @@ export const portfolio_data = {
         title: "Personal Portfolio",
         description:
           "A personal portfolio website built using React.js to showcase skills, projects, and experience. The platform features an interactive, responsive design with smooth navigation, highlighting professional expertise in web development.",
-        tags: ["React", "Github"],
+        tags: ["React", "Github", "Tailwind"],
         projectData: {
           id: "3",
           title: "Personal Portfolio",
@@ -526,89 +526,7 @@ export const portfolio_data = {
           ],
         },
       },
-      {
-        id: "5",
-        img: Portfolio2_Home,
-        title: "Personal Portfolio",
-        description:
-          "A Unique personal portfolio website design using React.js to showcase my designing skill.",
-        tags: ["React", "Github"],
-        projectData: {
-          id: "5",
-          title: "Personal Portfolio",
-          banner: Portfolio2_Home,
-          about:
-            "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
-          projectState: {
-            description:
-              "This project consists around 4500+ lines of clean, efficient code, ensuring optimal performance. It includes 12 reusable components for a modular and consistent design. The website has 4 main pages: Home, Projects,Contact and About, offering a smooth and engaging user experience.",
-            img: Portfolio_Hero,
-            state: [
-              {
-                title: "Lines",
-                number: "4500",
-              },
-              {
-                title: "Components",
-                number: "12",
-              },
-              {
-                title: "Pages",
-                number: "4",
-              },
-            ],
-          },
-          technologies: [
-            {
-              img: Reactjs,
-              title: "React js",
-            },
-            {
-              img: Github,
-              title: "Github",
-            },
-          ],
 
-          pages: [
-            {
-              title: "Home Page",
-              img: Portfolio2_Home,
-            },
-            {
-              title: "All Projects Page",
-              img: Portfolio2_AllProjects,
-            },
-            {
-              title: "AboutUs Page",
-              img: Portfolio2_About,
-            },
-            {
-              title: "ContactUs Page",
-              img: Portfolio2_Contact,
-            },
-          ],
-          // liveDemo: "https://mehrozportfolio.netlify.app/",
-          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
-          // challenges:
-          //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
-          //   improvements: [
-          //     "Add AI-based predictions for parking availability",
-          //     "Enhance the mobile responsiveness",
-          //   ],
-          documentation: {
-            description:
-              "This documentation provides an in-depth guide to the Personal Portfolio project built using React.js. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation is available as a paid resource, offering exclusive insights and best practices for building a professional portfolio. Ideal for developers looking to create their own portfolios or improve their React.js skills, this resource ensures a smooth and efficient development process.",
-            img: Portfolio_Contact,
-          },
-          pricing: "Free",
-          pricevalue: [
-            "compelete documentation",
-            "compelete project code",
-            "Four pages",
-            "complete guidence",
-          ],
-        },
-      },
       {
         id: "4",
         img: Quiz_Examistractions, // Replace with the appropriate image import
@@ -719,6 +637,89 @@ export const portfolio_data = {
             "Full backend integration",
             "1 Revision",
             "Setup guidance",
+          ],
+        },
+      },
+      {
+        id: "5",
+        img: Portfolio2_Home,
+        title: "Personal Portfolio",
+        description:
+          "A Unique personal portfolio website design using React.js to showcase my designing skill.",
+        tags: ["React", "Github"],
+        projectData: {
+          id: "5",
+          title: "Personal Portfolio",
+          banner: Portfolio2_Home,
+          about:
+            "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
+          projectState: {
+            description:
+              "This project consists around 4500+ lines of clean, efficient code, ensuring optimal performance. It includes 12 reusable components for a modular and consistent design. The website has 4 main pages: Home, Projects,Contact and About, offering a smooth and engaging user experience.",
+            img: Portfolio_Hero,
+            state: [
+              {
+                title: "Lines",
+                number: "4500",
+              },
+              {
+                title: "Components",
+                number: "12",
+              },
+              {
+                title: "Pages",
+                number: "4",
+              },
+            ],
+          },
+          technologies: [
+            {
+              img: Reactjs,
+              title: "React js",
+            },
+            {
+              img: Github,
+              title: "Github",
+            },
+          ],
+
+          pages: [
+            {
+              title: "Home Page",
+              img: Portfolio2_Home,
+            },
+            {
+              title: "All Projects Page",
+              img: Portfolio2_AllProjects,
+            },
+            {
+              title: "AboutUs Page",
+              img: Portfolio2_About,
+            },
+            {
+              title: "ContactUs Page",
+              img: Portfolio2_Contact,
+            },
+          ],
+          // liveDemo: "https://mehrozportfolio.netlify.app/",
+          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
+          // challenges:
+          //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
+          //   improvements: [
+          //     "Add AI-based predictions for parking availability",
+          //     "Enhance the mobile responsiveness",
+          //   ],
+          documentation: {
+            description:
+              "This documentation provides an in-depth guide to the Personal Portfolio project built using React.js. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation is available as a paid resource, offering exclusive insights and best practices for building a professional portfolio. Ideal for developers looking to create their own portfolios or improve their React.js skills, this resource ensures a smooth and efficient development process.",
+            img: Portfolio_Contact,
+          },
+          pricing: "Free",
+          pricevalue: [
+            "compelete documentation",
+            "compelete project code",
+            "Four pages",
+            "complete guidence",
           ],
         },
       },
