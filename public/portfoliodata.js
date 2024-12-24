@@ -13,6 +13,10 @@ import JWT from "../src/assets/jwt.png";
 import Mongoose from "../src/assets/mongoose.png";
 import Redux from "../src/assets/redux.png";
 import Axios from "../src/assets/axios.png";
+import PrimeReact from "../src/assets/primereact.jpg";
+import Mapbox from "../src/assets/mapbox.png";
+import ReactToast from "../src/assets/reactToast.png";
+import ReChart from "../src/assets/reChart.png";
 //Project IMGs
 
 import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
@@ -318,13 +322,97 @@ export const portfolio_data = {
       },
       {
         id: "2",
+        img: Project1_Home,
+        title: "Smart Parking Solution",
+        description:
+          "An advanced web-based system that allows users to find, reserve, and manage parking spaces seamlessly. It provides an intuitive interface for both users and parking owners, enhancing the parking experience.",
+        tags: ["React", "Node.js", "Express.js", "MongoDB", "GitHub"],
+        projectData: {
+          id: "2",
+          title: "Smart Parking Solution",
+          banner: Project1_Mainapp,
+          about:
+            "The Smart Parking Solution simplifies the process of finding and managing parking spaces. Users can search for available parking spots using filters like location, price, and availability. Once a suitable spot is found, they can reserve it instantly through a secure online payment system. Parking owners can list their spaces, set pricing, and manage reservations through a dedicated dashboard. The platform also provides real-time notifications for updates on bookings, requests, and earnings. With an intuitive interface and seamless functionality, this system bridges the gap between parking owners and users, ensuring a hassle-free parking experience for everyone.",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "Discover the core features and development scale of the Smart Parking Solution. This section highlights the impact and usability of the system.",
+            img: Project1_Home,
+            state: [
+              { title: "Lines", number: "50,000+" },
+              { title: "Modules", number: "3" },
+              { title: "Pages", number: "20+" },
+              { title: "Features", number: "25+" },
+              { title: "APIs", number: "60+" },
+            ],
+          },
+          technologies: [
+            { img: Reactjs, title: "React JS" },
+            { img: Node, title: "Node JS" },
+            { img: Mongo, title: "MongoDB" },
+            { img: Express, title: "Express JS" },
+            { img: Mapbox, title: "MapBox Api" },
+            { img: ReactToast, title: "React Toastify" },
+            { img: Github, title: "GitHub" },
+            { img: Mongoose, title: "Mongoose" },
+            { img: JWT, title: "JWT" },
+            { img: Axios, title: "Axios" },
+            { img: PrimeReact, title: "Prime React" },
+            { img: ReChart, title: "ReChart" },
+          ],
+          features: [
+            "Search and reserve parking spaces",
+            "List and manage spaces for rent",
+            "User and admin dashboards",
+            "Secure login and profile management",
+            "Real-time notifications for bookings and requests",
+          ],
+          pages: [
+            { title: "Home Page", img: Project1_Home },
+            { title: "Admin Dashboard", img: Project1_Admindashboard },
+            { title: "Admin Earnings", img: Project1_Adminearning },
+            { title: "Admin Notifications", img: Project1_Adminnotifications },
+            { title: "Admin Requests", img: Project1_Adminrequest },
+            { title: "Admin Spaces", img: Project1_Adminspaces },
+            { title: "Admin Settings", img: Project1_Adminsetting },
+            { title: "Admin Users", img: Project1_Adminuser },
+            { title: "User Dashboard", img: Project1_Userdashboard },
+            { title: "User Earnings", img: Project1_UserEarning },
+            { title: "User History", img: Project1_Userhistory },
+            { title: "User Requests", img: Project1_Userrequests },
+            { title: "User Spaces", img: Project1_Userspaces },
+            { title: "User Withdrawals", img: Project1_Userwithdraw },
+            { title: "Login Page", img: Project1_Userlogin },
+            { title: "Signup Page", img: Project1_Usersignup },
+          ],
+          // liveDemo: "https://smart-parking-solution-demo.com",
+          // repo: "https://github.com/username/smart-parking-solution",
+          challenges:
+            "Ensuring seamless integration of user and admin functionalities, while maintaining scalability and responsiveness.",
+          documentation: {
+            description:
+              "Comprehensive guides and resources for smooth usage of the Smart Parking Solution, covering setup, API usage, and advanced features.",
+            img: Project1_Newlisting,
+          },
+          pricing: 20000,
+          pricevalue: [
+            "Complete documentation",
+            "Full project code",
+            "User and admin modules",
+            "Two revisions",
+            "Setup assistance and guidance",
+          ],
+        },
+      },
+      {
+        id: "3",
         img: Portfolio_Hero,
         title: "Personal Portfolio",
         description:
           "A personal portfolio website built using React.js to showcase skills, projects, and experience. The platform features an interactive, responsive design with smooth navigation, highlighting professional expertise in web development.",
         tags: ["React", "Github"],
         projectData: {
-          id: "2",
+          id: "3",
           title: "Personal Portfolio",
           banner: Portfolio_About,
           about:
@@ -425,14 +513,97 @@ export const portfolio_data = {
         },
       },
       {
-        id: "3",
+        id: "5",
+        img: Portfolio2_Home,
+        title: "Personal Portfolio",
+        description:
+          "A Unique personal portfolio website design using React.js to showcase my designing skill.",
+        tags: ["React", "Github"],
+        projectData: {
+          id: "5",
+          title: "Personal Portfolio",
+          banner: Portfolio2_Home,
+          about:
+            "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
+          projectState: {
+            description:
+              "This project consists around 4500+ lines of clean, efficient code, ensuring optimal performance. It includes 12 reusable components for a modular and consistent design. The website has 4 main pages: Home, Projects,Contact and About, offering a smooth and engaging user experience.",
+            img: Portfolio_Hero,
+            state: [
+              {
+                title: "Lines",
+                number: "4500",
+              },
+              {
+                title: "Components",
+                number: "12",
+              },
+              {
+                title: "Pages",
+                number: "4",
+              },
+            ],
+          },
+          technologies: [
+            {
+              img: Reactjs,
+              title: "React js",
+            },
+            {
+              img: Github,
+              title: "Github",
+            },
+          ],
+
+          pages: [
+            {
+              title: "Home Page",
+              img: Portfolio2_Home,
+            },
+            {
+              title: "All Projects Page",
+              img: Portfolio2_AllProjects,
+            },
+            {
+              title: "AboutUs Page",
+              img: Portfolio2_About,
+            },
+            {
+              title: "ContactUs Page",
+              img: Portfolio2_Contact,
+            },
+          ],
+          // liveDemo: "https://mehrozportfolio.netlify.app/",
+          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
+          // challenges:
+          //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
+          //   improvements: [
+          //     "Add AI-based predictions for parking availability",
+          //     "Enhance the mobile responsiveness",
+          //   ],
+          documentation: {
+            description:
+              "This documentation provides an in-depth guide to the Personal Portfolio project built using React.js. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation is available as a paid resource, offering exclusive insights and best practices for building a professional portfolio. Ideal for developers looking to create their own portfolios or improve their React.js skills, this resource ensures a smooth and efficient development process.",
+            img: Portfolio_Contact,
+          },
+          pricing: "Free",
+          pricevalue: [
+            "compelete documentation",
+            "compelete project code",
+            "Four pages",
+            "complete guidence",
+          ],
+        },
+      },
+      {
+        id: "4",
         img: Quiz_Examistractions, // Replace with the appropriate image import
         title: "Quiz App",
         description:
           "A MERN stack Quiz application enabling users to participate in exams, view results, and allowing admins to manage exams and user reports effectively.",
         tags: ["React", "Nodejs", "MongoDB", "Expressjs"],
         projectData: {
-          id: "3",
+          id: "4",
           title: "Quiz Application",
           banner: Quiz_Examistractions, // Replace with an actual image
           about:
@@ -534,171 +705,6 @@ export const portfolio_data = {
             "Full backend integration",
             "1 Revision",
             "Setup guidance",
-          ],
-        },
-      },
-      {
-        id: "4",
-        img: Project1_Home,
-        title: "Smart Parking Solution",
-        description:
-          "An advanced web-based system that allows users to find, reserve, and manage parking spaces seamlessly. It provides an intuitive interface for both users and parking owners, enhancing the parking experience.",
-        tags: ["React", "Node.js", "Express.js", "MongoDB", "GitHub"],
-        projectData: {
-          id: "4",
-          title: "Smart Parking Solution",
-          banner: Project1_Mainapp,
-          about:
-            "A modern platform designed to make parking hassle-free. Users can search and book parking spots, while parking owners can list and manage their spaces. The system ensures seamless functionality and a user-friendly experience.",
-          projectState: {
-            heading: "Project Insights & Stats",
-            description:
-              "Discover the core features and development scale of the Smart Parking Solution. This section highlights the impact and usability of the system.",
-            img: Project1_Home,
-            state: [
-              { title: "Lines", number: "50000+" },
-              { title: "Modules", number: "5" },
-              { title: "Pages", number: "20+" },
-              { title: "Features", number: "25+" },
-              { title: "APIs", number: "60+" },
-            ],
-          },
-          technologies: [
-            { img: Reactjs, title: "React JS" },
-            { img: Node, title: "Node JS" },
-            { img: Mongo, title: "MongoDB" },
-            { img: Express, title: "Express JS" },
-            { img: Github, title: "GitHub" },
-            { img: Mongoose, title: "Mongoose" },
-            { img: JWT, title: "JWT" },
-            { img: Axios, title: "Axios" },
-            { img: ReactHookForm, title: "React Hook Form" },
-          ],
-          features: [
-            "Search and reserve parking spaces",
-            "List and manage spaces for rent",
-            "User and admin dashboards",
-            "Secure login and profile management",
-            "Real-time notifications for bookings and requests",
-          ],
-          pages: [
-            { title: "Home Page", img: Project1_Home },
-            { title: "Admin Dashboard", img: Project1_Admindashboard },
-            { title: "Admin Earnings", img: Project1_Adminearning },
-            { title: "Admin Notifications", img: Project1_Adminnotifications },
-            { title: "Admin Requests", img: Project1_Adminrequest },
-            { title: "Admin Spaces", img: Project1_Adminspaces },
-            { title: "Admin Settings", img: Project1_Adminsetting },
-            { title: "Admin Users", img: Project1_Adminuser },
-            { title: "User Dashboard", img: Project1_Userdashboard },
-            { title: "User Earnings", img: Project1_UserEarning },
-            { title: "User History", img: Project1_Userhistory },
-            { title: "User Requests", img: Project1_Userrequests },
-            { title: "User Spaces", img: Project1_Userspaces },
-            { title: "User Withdrawals", img: Project1_Userwithdraw },
-            { title: "Login Page", img: Project1_Userlogin },
-            { title: "Signup Page", img: Project1_Usersignup },
-          ],
-          liveDemo: "https://smart-parking-solution-demo.com",
-          repo: "https://github.com/username/smart-parking-solution",
-          challenges:
-            "Ensuring seamless integration of user and admin functionalities, while maintaining scalability and responsiveness.",
-          documentation: {
-            description:
-              "Comprehensive guides and resources for smooth usage of the Smart Parking Solution, covering setup, API usage, and advanced features.",
-            img: Project1_Newlisting,
-          },
-          pricing: 20000,
-          pricevalue: [
-            "Complete documentation",
-            "Full project code",
-            "User and admin modules",
-            "Two revisions",
-            "Setup assistance and guidance",
-          ],
-        },
-      },
-
-      {
-        id: "4",
-        img: Portfolio2_Home,
-        title: "Personal Portfolio",
-        description:
-          "A Unique personal portfolio website design using React.js to showcase my designing skill.",
-        tags: ["React", "Github"],
-        projectData: {
-          id: "2",
-          title: "Personal Portfolio",
-          banner: Portfolio2_Home,
-          about:
-            "This project demonstrates proficiency in React.js and front-end development principles. It leverages reusable components, clean code practices, and modern design trends. The website emphasizes responsiveness, ensuring accessibility across devices. It serves as a professional online presence for connecting with potential clients, collaborators, or employers",
-          projectState: {
-            description:
-              "This project consists around 4500+ lines of clean, efficient code, ensuring optimal performance. It includes 12 reusable components for a modular and consistent design. The website has 4 main pages: Home, Projects,Contact and About, offering a smooth and engaging user experience.",
-            img: Portfolio_Hero,
-            state: [
-              {
-                title: "Lines",
-                number: "4500",
-              },
-              {
-                title: "Components",
-                number: "12",
-              },
-              {
-                title: "Pages",
-                number: "4",
-              },
-            ],
-          },
-          technologies: [
-            {
-              img: Reactjs,
-              title: "React js",
-            },
-            {
-              img: Github,
-              title: "Github",
-            },
-          ],
-
-          pages: [
-            {
-              title: "Home Page",
-              img: Portfolio2_Home,
-            },
-            {
-              title: "All Projects Page",
-              img: Portfolio2_AllProjects,
-            },
-            {
-              title: "AboutUs Page",
-              img: Portfolio2_About,
-            },
-            {
-              title: "ContactUs Page",
-              img: Portfolio2_Contact,
-            },
-          ],
-          // liveDemo: "https://mehrozportfolio.netlify.app/",
-          // videoTutorial:"https://www.youtube.com/watch?v=1p9oK5VQr0M",
-          // challenges:
-          //   "Integrating real-time updates for parking availability and optimizing payment gateway integration.",
-          //   improvements: [
-          //     "Add AI-based predictions for parking availability",
-          //     "Enhance the mobile responsiveness",
-          //   ],
-          documentation: {
-            description:
-              "This documentation provides an in-depth guide to the Personal Portfolio project built using React.js. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation is available as a paid resource, offering exclusive insights and best practices for building a professional portfolio. Ideal for developers looking to create their own portfolios or improve their React.js skills, this resource ensures a smooth and efficient development process.",
-            img: Portfolio_Contact,
-          },
-          pricing: "Free",
-          pricevalue: [
-            "compelete documentation",
-            "compelete project code",
-            "Four pages",
-            "complete guidence",
           ],
         },
       },
