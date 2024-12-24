@@ -11,7 +11,7 @@ import Github from "../assets/github.png";
 import Section_Heading from "../components/Section_Heading";
 import Skill_card from "../components/Skill_card";
 
-const Skill_Section = ({skilldata}) => {
+const Skill_Section = ({ skilldata }) => {
   const skills = [
     { img: HTML, name: "HTML", percentage: "90%" },
     { img: CSS, name: "CSS", percentage: "90%" },
@@ -38,6 +38,7 @@ const Skill_Section = ({skilldata}) => {
               img={skill.img}
               name={skill.name}
               percentage={skill.percentage}
+              learning={skill.learning}
             />
           ))}
         </div>

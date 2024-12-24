@@ -17,6 +17,8 @@ import PrimeReact from "../src/assets/primereact.jpg";
 import Mapbox from "../src/assets/mapbox.png";
 import ReactToast from "../src/assets/reactToast.png";
 import ReChart from "../src/assets/reChart.png";
+import TypeScript from "../src/assets/typescript.png";
+import NextJs from "../src/assets/nextjs.png";
 //Project IMGs
 
 import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
@@ -210,15 +212,27 @@ export const portfolio_data = {
     heading: "My Skill",
     tagline: "Technologies I have expertise in",
     skill: [
-      { img: HTML, name: "HTML", percentage: "90%" },
-      { img: CSS, name: "CSS", percentage: "90%" },
-      { img: JavaScript, name: "JavaScript", percentage: "70%" },
-      { img: Reactjs, name: "React", percentage: "80%" },
-      { img: Node, name: "Node.js", percentage: "70%" },
-      { img: Express, name: "Express", percentage: "70%" },
-      { img: Mongo, name: "MongoDB", percentage: "70%" },
-      { img: Tailwind, name: "Tailwind", percentage: "70%" },
-      { img: Github, name: "GitHub", percentage: "80%" },
+      { img: HTML, name: "HTML", percentage: "90%", learning: false },
+      { img: CSS, name: "CSS", percentage: "90%", learning: false },
+      {
+        img: JavaScript,
+        name: "JavaScript",
+        percentage: "70%",
+        learning: false,
+      },
+      { img: Reactjs, name: "React", percentage: "80%", learning: false },
+      { img: Node, name: "Node.js", percentage: "70%", learning: false },
+      { img: Express, name: "Express", percentage: "70%", learning: false },
+      { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
+      { img: Github, name: "GitHub", percentage: "80%", learning: false },
+      { img: Tailwind, name: "Tailwind", percentage: "70%", learning: true },
+      {
+        img: TypeScript,
+        name: "TypeScript",
+        percentage: "80%",
+        learning: true,
+      },
+      { img: NextJs, name: "NextJs", percentage: "80%", learning: true },
     ],
   },
   ProjectSection: {

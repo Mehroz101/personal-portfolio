@@ -407,12 +407,13 @@ min-width: 300px;
 
 /*=================== Skill Styles =============================*/
 
-.skillsection{
+/* .skillsection {
     background-color: var(--background);
     text-align: center;
     padding: 40px 0;
 }
-.skillsection .skill_cards{
+
+.skillsection .skill_cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,65 +422,219 @@ min-width: 300px;
     max-width: 1200px;
     margin: 20px auto;
 }
-.skillsection .skill_cards .skill_card{
+
+.skillsection .skill_cards .skill_card {
     min-width: 100px;
     max-width: 200px;
     flex: 1;
     padding: 20px 16px 10px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
-    background-color:#262020;
+    background-color: #262020;
 }
-.skillsection .skill_cards .skill_card:hover{
+
+.skillsection .skill_cards .skill_card:hover {
     transform: translateY(-10px);
 }
+
 .skillsection .skill_cards .skill_card .img {
     width: 50px;
     height: 50px;
-    display: flex; /* Centers the content */
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%; /* Decorative shape */
+    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%;
     background-color: #312F2F;
     padding: 10px;
     margin: 0 auto 10px auto;
-    overflow: hidden; /* Ensures content stays within the container */
+    overflow: hidden;
 }
 
 .skillsection .skill_cards .skill_card img {
-    max-width: 60%; /* Ensures the image doesn't exceed the container's width */
-    max-height: 60%; /* Ensures the image doesn't exceed the container's height */
-    object-fit: contain; /* Keeps the aspect ratio intact */
-    display: block; /* Ensures proper alignment */
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    display: block;
 }
 
-
-.skillsection .skill_cards .skill_card .skill_name{
+.skillsection .skill_cards .skill_card .skill_name {
     font-size: 1.3rem;
     margin: 10px 0;
     text-align: left;
 }
-.skillsection .skill_cards .skill_card .progress_bar{
+
+.skillsection .skill_cards .skill_card .progress_bar {
     min-width: 100px;
     height: 10px;
     background-color: var(--secondary-background);
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 10px;
+    position: relative;
 }
-.skillsection .skill_cards .skill_card .progress{
+
+.skillsection .skill_cards .skill_card .progress {
     height: 100%;
-    background-color: #FFBD39;
+    background-color: var(--secondary-background);
     width: 0;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    position: relative;
+    animation: fill-progress 1.5s ease-in-out forwards;
 }
-.skillsection .skill_cards .skill_card .skill_percentage{
+
+.skillsection .skill_cards .skill_card .progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 189, 57, 0.5) 50%,
+        rgba(255, 189, 57, 1) 100%
+    );
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fill-progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--progress-width);
+    }
+}
+
+.skillsection .skill_cards .skill_card .skill_percentage {
     font-size: 0.9rem;
     text-align: right;
     color: var(--secondary-text);
-}
-
+} */
+.skillsection {
+    background-color: var(--background);
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .skillsection .skill_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .skillsection .skill_cards .skill_card {
+    min-width: 100px;
+    max-width: 200px;
+    flex: 1;
+    padding: 20px 16px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    background-color: #262020;
+    z-index: 100;
+  }
+  
+  .skillsection .skill_cards .skill_card:hover {
+    transform: translateY(-10px) !important;
+  }
+  
+  .skillsection .skill_cards .skill_card .img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33% 66% 70% 30% / 49% 62% 38% 51%;
+    background-color: #312f2f;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+  }
+  
+  .skillsection .skill_cards .skill_card img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .skillsection .skill_cards .skill_card .skill_name {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .skillsection .skill_cards .skill_card .progress_bar {
+    min-width: 100px;
+    height: 10px;
+    background-color: var(--secondary-background);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .skillsection .skill_cards .skill_card .progress {
+    height: 100%;
+    background-color: #ffbd39;
+    width: 0; /* Default width before animation */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Animation for the progress bar */
+  .skillsection .skill_cards .skill_card.animate_progress .progress {
+    width: 100%; /* Full width animation */
+    transition: width 2s ease-in-out; /* Adjust duration as needed */
+  }
+  
+  /* Shimmer effect for progress bar */
+  .skillsection .skill_cards .skill_card .progress.shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(170, 131, 5, 0.5) 50%,
+      rgba(248, 191, 2, 1) 100%
+    );
+    animation: shimmer 1.5s infinite;
+  }
+  
+  /* Shimmer animation */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .skillsection .skill_cards .skill_card .skill_percentage {
+    font-size: 0.9rem;
+    text-align: right;
+    color: var(--secondary-text);
+  }
+  
 
 /*=================== Project Styles =============================*/
 .projectsection{
