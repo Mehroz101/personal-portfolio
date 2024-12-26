@@ -313,7 +313,7 @@ min-width: 300px;
     box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.1), -1px 3px 5px rgba(255, 255, 255, 0.1);
 }
 .educationsection .education_cards .education_card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
 }
 .educationsection .education_cards .education_card .year{
     font-size: 0.9rem;
@@ -371,7 +371,7 @@ min-width: 300px;
     background-color:#262020;
 }
 .experiencesection .experience_cards .experience_card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
 }
 .experiencesection .experience_cards .experience_card .years{
     font-size: 0.9rem;
@@ -407,11 +407,8 @@ min-width: 300px;
 
 /*=================== Skill Styles =============================*/
 
-/* .skillsection {
-    background-color: var(--background);
-    text-align: center;
-    padding: 40px 0;
-}
+
+   
 
 .skillsection .skill_cards {
     display: flex;
@@ -545,7 +542,7 @@ min-width: 300px;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
     background-color: #262020;
-    z-index: 100;
+    
   }
   
   .skillsection .skill_cards .skill_card:hover {
@@ -835,7 +832,10 @@ min-width: 300px;
     transform: translateX(-100px) rotateZ(174deg);
     background-color: var(--primary-color);
 } */
-
+.footer .top h1{
+    color: var(--primary-color);
+    
+}
 .footer .social_links
 {
     display: flex;
