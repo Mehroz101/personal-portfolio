@@ -11,7 +11,6 @@ const AllProjects = () => {
   const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
-    // Safeguard initialization
     const tags = portfolio_data?.tags || [];
     const projects = portfolio_data?.ProjectSection?.project || [];
     setFilters(tags);
