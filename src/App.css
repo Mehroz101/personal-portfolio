@@ -40,7 +40,6 @@
   margin: 0 auto;
   margin-bottom: 20px;
   position: relative;
-          text-align:center;
 
 }
  .sectionheading_top .underline::after{
@@ -63,6 +62,7 @@
   font-size: 0.9rem;
   line-height: 1.7;
   margin-bottom: 20px;
+       text-align:center;
 }
 a{
   text-decoration: none;
