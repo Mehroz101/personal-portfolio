@@ -740,7 +740,7 @@ export const portfolio_data = {
         title: "Inventory Management System",
         description:
           "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports.",
-        tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "PDF Generation"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub"],
         projectData: {
           id: "6",
           title: "Inventory Management System",

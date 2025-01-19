@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <>
       <div className="homepage">
-        //hero is back
         <Hero_Section herodata={data?.HeroSection} />
         <Aboutus_Section aboutdata={data?.AboutSection}/>
         <My_Services servicedata={data?.ServiceSection} />
