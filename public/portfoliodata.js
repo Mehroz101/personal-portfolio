@@ -19,6 +19,7 @@ import ReactToast from "../src/assets/reactToast.png";
 import ReChart from "../src/assets/reChart.png";
 import TypeScript from "../src/assets/typescript.png";
 import NextJs from "../src/assets/nextjs.png";
+import PDF from "../src/assets/jsPDF.jpeg";
 //Project IMGs
 
 import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
@@ -40,6 +41,16 @@ import Quiz_StartExam from "../src/assets/QuizApp/Quiz_StartExam.png";
 import Quiz_Result from "../src/assets/QuizApp/Quiz_Result.png";
 import Quiz_Examistractions from "../src/assets/QuizApp/Quiz_Examinstractions.png";
 import Quiz_Userhome from "../src/assets/QuizApp/Quiz_Userhome.png";
+
+//Inventory App Screenshorts
+import Inventory_Login from "../src/assets/Inventory/Inventory_Login.png"
+import Inventory_Add from "../src/assets/Inventory/Inventory_Add.png"
+import Inventory_Generate from "../src/assets/Inventory/Inventory_Generate.png"
+import Inventory_New from "../src/assets/Inventory/Inventory_New.png"
+import Inventory_Report from "../src/assets/Inventory/Inventory_Report.png"
+import Inventory_Table from "../src/assets/Inventory/Inventory_Table.png"
+import Inventory_Home from "../src/assets/Inventory/Inventory_Home.png"
+
 
 //Parking Management System Screenshots
 import Project1_Admindashboard from "../src/assets/ParkingManagementSystem/Project1_Admindashboard.png";
@@ -723,6 +734,110 @@ export const portfolio_data = {
           ],
         },
       },
+      {
+        id: "6",
+        img: Inventory_Home, // Replace with your image
+        title: "Inventory Management System",
+        description:
+          "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports.",
+        tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "PDF Generation"],
+        projectData: {
+          id: "6",
+          title: "Inventory Management System",
+          banner: Inventory_Home, // Replace with your image
+          about:
+            "This project is a full-stack inventory management system designed to help businesses manage their inventory efficiently. It includes features like adding cities, products, and categories, managing purchases and sales, tracking stock, and generating detailed reports. The system is built using React.js for the front end, Node.js and Express for the back end, and MongoDB for the database. It also includes user authentication using JWT and PDF generation for reports.",
+          projectState: {
+            description:
+              "This project consists of a modular and scalable architecture with reusable components for both the front end and back end. It includes 10+ reusable components, 6 main pages, and a robust API for managing inventory operations. The system is designed to be responsive and user-friendly, ensuring a smooth experience across devices.",
+            img: Inventory_Report, // Replace with your image
+            state: [
+              {
+                title: "Lines of Code",
+                number: "8000+",
+              },
+              {
+                title: "Components",
+                number: "10+",
+              },
+              {
+                title: "Pages",
+                number: "6",
+              },
+            ],
+          },
+          technologies: [
+            {
+              img: Reactjs, // Replace with your image
+              title: "React.js",
+            },
+            {
+              img: Node, // Replace with your image
+              title: "Node.js",
+            },
+            {
+              img: Express, // Replace with your image
+              title: "Express.js",
+            },
+            {
+              img: Mongo, // Replace with your image
+              title: "MongoDB",
+            },
+            {
+              img: JWT, // Replace with your image
+              title: "JWT Authentication",
+            },
+            {
+              img: PDF, // Replace with your image
+              title: "PDF Generation",
+            },
+          ],
+          pages: [
+            {
+              title: "Dashboard",
+              img: Inventory_Home, // Replace with your image
+            },
+            {
+              title: "Add Form",
+              img: Inventory_Add, // Replace with your image
+            },
+            {
+              title: "New Form",
+              img: Inventory_New, // Replace with your image
+            },
+            {
+              title: "Table",
+              img: Inventory_Table, // Replace with your image
+            },
+            {
+              title: "Report Generate",
+              img: Inventory_Generate, // Replace with your image
+            },
+           
+            {
+              title: "Generate Report",
+              img: Inventory_Report, // Replace with your image
+            },
+            {
+              title: "Login Page",
+              img: Inventory_Login, // Replace with your image
+            },
+          ],
+          documentation: {
+            description:
+              "This documentation provides a comprehensive guide to the Inventory Management System project. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation also covers API endpoints, database schema, and best practices for building scalable inventory systems. Ideal for developers looking to create their own inventory management systems or improve their full-stack development skills.",
+          },
+          pricing: "Free",
+          pricevalue: [
+            "Complete documentation",
+            "Complete project code",
+            "Six pages",
+            "API integration guide",
+            "PDF generation guide",
+            "Complete guidance",
+          ],
+        },
+      }
     ],
   },
   tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub"],
