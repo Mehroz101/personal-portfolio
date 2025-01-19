@@ -19,7 +19,7 @@ import ReactToast from "../src/assets/reactToast.png";
 import ReChart from "../src/assets/reChart.png";
 import TypeScript from "../src/assets/typescript.png";
 import NextJs from "../src/assets/nextjs.png";
-import PDF from "../src/assets/jsPDF.jpeg";
+import PDF from "../src/assets/JsPDF.jpeg";
 //Project IMGs
 
 import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
