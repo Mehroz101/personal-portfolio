@@ -2,6 +2,9 @@ import HTML from "../src/assets/html.png";
 import CSS from "../src/assets/css.png";
 import JavaScript from "../src/assets/javascript.png";
 import Reactjs from "../src/assets/react.png";
+import Vue from "../src/assets/Vue.png";
+import Posgresql from "../src/assets/Posgresql.png";
+import AzureDevops from "../src/assets/AzureDevops.png";
 import Node from "../src/assets/nodejs.png";
 import Express from "../src/assets/express.png";
 import Mongo from "../src/assets/mongodb.png";
@@ -101,7 +104,7 @@ export const portfolio_data = {
     heading:
       "Hello! I'm <span>Mehroz Farooq. </span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
     para: "I’m a dedicated web and software developer with a passion for crafting innovative and user-friendly digital experiences. Leveraging expertise in modern technologies, I focus on delivering top-notch solutions tailored to individual and business needs. My mission is to empower businesses with creative and functional websites and applications that make a meaningful impact.",
-    projects: 6,
+    projects: 8,
     clients: 6,
     experience: 4,
     award: 1,
@@ -120,9 +123,9 @@ export const portfolio_data = {
     service: [
       {
         icon: "fa-solid fa-code",
-        title: "Web Development",
+        title: "Wordpress Development", 
         description:
-          "I create responsive and dynamic websites with the latest technologies.",
+          "I create responsive and dynamic websites using wordpress.",
       },
       {
         icon: "fa-solid fa-laptop-code",
@@ -204,11 +207,18 @@ export const portfolio_data = {
           "As a MERN Stack Developer at WebTech Smart Solution, I built dynamic web applications like a Smart Parking Solution, Tuition System, and Dashboards for students. I worked with APIs, handled both frontend and backend integrations, and collaborated with teams to deliver seamless user experiences.",
       },
       {
-        startend: "2024 - Present",
+        startend: "2024 - 2025",
         role: "Frontend React Developer",
         where: "EDUSoft System Solution",
         description:
           "At EDUSoft, I work on internal projects such as the Employee Management System and Tag Printing. I add new functionalities like creating master-detail forms, applying filters, and enhancing UI elements. I also contribute to the development of a new project, the Account Management System, from scratch.",
+      },
+      {
+        startend: "2025 - Present",
+        role: "Associate Mern Stack Developer",
+        where: "Atrule Technologies",
+        description:
+          "At Atrule Technologies, I work as an Associate MERN Stack Developer, which includes creating responsive web applications, debugging issues, and collaborating with senior developers to deliver high-quality solutions.",
       },
       {
         startend: "2024 - Present",
@@ -232,9 +242,11 @@ export const portfolio_data = {
         learning: false,
       },
       { img: Reactjs, name: "React", percentage: "80%", learning: false },
+      { img: Vue, name: "Vue", percentage: "60%", learning: false },
       { img: Node, name: "Node.js", percentage: "70%", learning: false },
       { img: Express, name: "Express", percentage: "70%", learning: false },
       { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
+      { img: Posgresql, name: "Posgresql", percentage: "60%", learning: false },
       { img: Github, name: "GitHub", percentage: "80%", learning: false },
       { img: Tailwind, name: "Tailwind", percentage: "70%", learning: true },
       {
@@ -243,7 +255,8 @@ export const portfolio_data = {
         percentage: "80%",
         learning: true,
       },
-      { img: NextJs, name: "NextJs", percentage: "80%", learning: true },
+      { img: NextJs, name: "NextJs", percentage: "60%", learning: true },
+      { img: AzureDevops, name: "Azure Devops", percentage: "30%", learning: true },
     ],
   },
   ProjectSection: {
