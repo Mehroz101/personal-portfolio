@@ -2,11 +2,6 @@ import HTML from "../src/assets/html.png";
 import CSS from "../src/assets/css.png";
 import JavaScript from "../src/assets/javascript.png";
 import Reactjs from "../src/assets/react.png";
-import Vue from "../src/assets/vue.png";
-import MSSqlServer from "../src/assets/mssqlserver.png";
-import Docker from "../src/assets/docker.png";
-import Posgresql from "../src/assets/Posgresql.png";
-import AzureDevops from "../src/assets/AzureDevops.png";
 import Node from "../src/assets/nodejs.png";
 import Express from "../src/assets/express.png";
 import Mongo from "../src/assets/mongodb.png";
@@ -115,7 +110,7 @@ export const portfolio_data = {
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
       linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
-      whatsapp: "https://wa.link/09unaf",
+      whatsapp: "https://wa.link/429loy",
     },
   },
   ServiceSection: {
@@ -244,23 +239,18 @@ export const portfolio_data = {
         learning: false,
       },
       { img: Reactjs, name: "React", percentage: "80%", learning: false },
-      { img: Vue, name: "Vue", percentage: "50%", learning: false },
-      { img: NextJs, name: "NextJs", percentage: "60%", learning: false },
+      { img: Node, name: "Node.js", percentage: "70%", learning: false },
+      { img: Express, name: "Express", percentage: "70%", learning: false },
+      { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
+      { img: Github, name: "GitHub", percentage: "80%", learning: false },
+      { img: Tailwind, name: "Tailwind", percentage: "70%", learning: true },
       {
         img: TypeScript,
         name: "TypeScript",
         percentage: "80%",
-        learning: false,
+        learning: true,
       },
-      { img: Tailwind, name: "Tailwind", percentage: "70%", learning: true },
-      { img: Node, name: "Node.js", percentage: "70%", learning: false },
-      { img: Express, name: "Express", percentage: "70%", learning: false },
-      { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
-      { img: Posgresql, name: "Posgresql", percentage: "60%", learning: false },
-      { img: MSSqlServer, name: "MSSqlServer", percentage: "50%", learning: true },
-      { img: Github, name: "GitHub", percentage: "80%", learning: false },
-      { img: AzureDevops, name: "Azure Devops", percentage: "30%", learning: true },
-      { img: Docker, name: "Docker", percentage: "30%", learning: true },
+      { img: NextJs, name: "NextJs", percentage: "80%", learning: true },
     ],
   },
   ProjectSection: {
@@ -865,7 +855,7 @@ export const portfolio_data = {
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
       linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
-      whatsapp: "https://wa.link/09unaf",
+      whatsapp: "https://wa.link/429loy",
     },
   },
 };
