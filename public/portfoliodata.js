@@ -2,7 +2,7 @@ import HTML from "../src/assets/html.png";
 import CSS from "../src/assets/css.png";
 import JavaScript from "../src/assets/javascript.png";
 import Reactjs from "../src/assets/react.png";
-import Vue from "../src/assets/Vue.png";
+import Vue from "../src/assets/vue.png";
 import Posgresql from "../src/assets/Posgresql.png";
 import AzureDevops from "../src/assets/AzureDevops.png";
 import Node from "../src/assets/nodejs.png";
