@@ -40,7 +40,7 @@ const Skill_card = ({ img, name, percentage, learning }) => {
         {/* Apply shimmer animation only if learning is true */}
         <div
           className={`progress ${learning ? "shimmer" : ""}`}
-          style={{ width: `${percentage}` }}
+          style={{ width: `${percentage}`  }}
         ></div>
       </div>
       <p className="skill_percentage">{percentage}</p>
