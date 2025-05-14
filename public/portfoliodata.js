@@ -92,7 +92,7 @@ import Portfolio2_Contact from "../src/assets/Portfolio2/Portfolio2_Contact.png"
 
 
 //wordpress electrosoftzone ScreenShot
-import Wordpress_home from "../src/assets/Wordpress-ecom/Wordpress-home.png";
+import Wordpress_home from "../src/assets/Wordpress-ecom/Wordpress-Home.png";
 import Wordpress_account from "../src/assets/Wordpress-ecom/Wordpress-account.png";
 import Wordpress_cart from "../src/assets/Wordpress-ecom/Wordpress-cart.png";
 import Wordpress_category from "../src/assets/Wordpress-ecom/Wordpress-category.png";
