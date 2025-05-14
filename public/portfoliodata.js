@@ -25,6 +25,7 @@ import ReChart from "../src/assets/reChart.png";
 import TypeScript from "../src/assets/typescript.png";
 import NextJs from "../src/assets/nextjs.png";
 import PDF from "../src/assets/JsPDF.jpeg";
+import Wordpress from "../src/assets/wordpress.png";
 //Project IMGs
 
 import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
@@ -48,14 +49,14 @@ import Quiz_Examistractions from "../src/assets/QuizApp/Quiz_Examinstractions.pn
 import Quiz_Userhome from "../src/assets/QuizApp/Quiz_Userhome.png";
 
 //Inventory App Screenshorts
-import Inventory_Login from "../src/assets/Inventory/Inventory_Login.png"
-import Inventory_Add from "../src/assets/Inventory/Inventory_Add.png"
-import Inventory_Generate from "../src/assets/Inventory/Inventory_Generate.png"
-import Inventory_New from "../src/assets/Inventory/Inventory_New.png"
-import Inventory_Report from "../src/assets/Inventory/Inventory_Report.png"
-import Inventory_Table from "../src/assets/Inventory/Inventory_Table.png"
-import Inventory_Home from "../src/assets/Inventory/Inventory_Home.png"
-
+import Inventory_Login from "../src/assets/Inventory/Inventory_Login.png";
+import Inventory_Add from "../src/assets/Inventory/Inventory_Add.png";
+import Inventory_Generate from "../src/assets/Inventory/Inventory_Generate.png";
+import Inventory_New from "../src/assets/Inventory/Inventory_New.png";
+import Inventory_Report from "../src/assets/Inventory/Inventory_Report.png";
+import Inventory_Table from "../src/assets/Inventory/Inventory_Table.png";
+import Inventory_Home from "../src/assets/Inventory/Inventory_Home.png";
+import Inventory_Sidebar from "../src/assets/Inventory/Inventory_sidebar.png";
 
 //Parking Management System Screenshots
 import Project1_Admindashboard from "../src/assets/ParkingManagementSystem/Project1_Admindashboard.png";
@@ -88,6 +89,18 @@ import Portfolio2_Home from "../src/assets/Portfolio2/Portfolio2_Home.png";
 import Portfolio2_About from "../src/assets/Portfolio2/Portfolio2_About.png";
 import Portfolio2_AllProjects from "../src/assets/Portfolio2/Portfolio2_AllProjects.png";
 import Portfolio2_Contact from "../src/assets/Portfolio2/Portfolio2_Contact.png";
+
+
+//wordpress electrosoftzone ScreenShot
+import Wordpress_home from "../src/assets/Wordpress-ecom/Wordpress-home.png";
+import Wordpress_account from "../src/assets/Wordpress-ecom/Wordpress-account.png";
+import Wordpress_cart from "../src/assets/Wordpress-ecom/Wordpress-cart.png";
+import Wordpress_category from "../src/assets/Wordpress-ecom/Wordpress-category.png";
+import Wordpress_checkout from "../src/assets/Wordpress-ecom/Wordpress-checkout.png";
+import Wordpress_detail from "../src/assets/Wordpress-ecom/Wordpress-detail.png";
+import Wordpress_order from "../src/assets/Wordpress-ecom/Wordpress-order.png";
+import Wordpress_shop from "../src/assets/Wordpress-ecom/Wordpress-shop.png";
+
 
 import Photo from "../src/assets/photo.png";
 export const portfolio_data = {
@@ -125,7 +138,7 @@ export const portfolio_data = {
     service: [
       {
         icon: "fa-solid fa-code",
-        title: "Wordpress Development", 
+        title: "Wordpress Development",
         description:
           "I create responsive and dynamic websites using wordpress.",
       },
@@ -257,9 +270,19 @@ export const portfolio_data = {
       { img: Express, name: "Express", percentage: "70%", learning: false },
       { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
       { img: Posgresql, name: "Posgresql", percentage: "60%", learning: false },
-      { img: MSSqlServer, name: "MSSqlServer", percentage: "50%", learning: true },
+      {
+        img: MSSqlServer,
+        name: "MSSqlServer",
+        percentage: "50%",
+        learning: true,
+      },
       { img: Github, name: "GitHub", percentage: "80%", learning: false },
-      { img: AzureDevops, name: "Azure Devops", percentage: "30%", learning: true },
+      {
+        img: AzureDevops,
+        name: "Azure Devops",
+        percentage: "30%",
+        learning: true,
+      },
       { img: Docker, name: "Docker", percentage: "30%", learning: true },
     ],
   },
@@ -554,7 +577,6 @@ export const portfolio_data = {
           ],
         },
       },
-
       {
         id: "4",
         img: Quiz_Examistractions, // Replace with the appropriate image import
@@ -779,7 +801,7 @@ export const portfolio_data = {
               },
               {
                 title: "Pages",
-                number: "6",
+                number: "12+",
               },
             ],
           },
@@ -830,7 +852,7 @@ export const portfolio_data = {
               title: "Report Generate",
               img: Inventory_Generate, // Replace with your image
             },
-           
+
             {
               title: "Generate Report",
               img: Inventory_Report, // Replace with your image
@@ -838,6 +860,10 @@ export const portfolio_data = {
             {
               title: "Login Page",
               img: Inventory_Login, // Replace with your image
+            },
+            {
+              title: "Sidebar Section",
+              img: Inventory_Sidebar, // Replace with your image
             },
           ],
           documentation: {
@@ -854,10 +880,96 @@ export const portfolio_data = {
             "Complete guidance",
           ],
         },
-      }
+      },
+      {
+        id: "7",
+        img: Wordpress_home,
+        title: "Digital Product Selling Website",
+        description:
+          "A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products.",
+        tags: ["Wordpress"],
+        projectData: {
+          id: "6",
+          title: "Digital Product Selling Website",
+          banner:
+          Wordpress_home,
+          about:
+            "A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products. Customer and admin both receieve email when a ew order come ororder status update",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "Explore the key metrics and components of the Electrosoftzone. This section outlines the project scale, core features, and development progress, showcasing its impact and usability.",
+            img: Wordpress_shop,
+            state: [
+              { title: "Modules", number: "10+" },
+              { title: "Pages", number: "10+" },
+             
+            ],
+          },
+          technologies: [
+            { img: Wordpress, title: "Wordpress" },
+          ],
+          features: [
+            "Search for teachers by subjects or location",
+            "Send and manage tuition invitations",
+            "Teacher profile and request management",
+            "User-friendly interface",
+            "Secure login for both students and teachers",
+          ],
+          pages: [
+            {
+              title: "Home Page",
+              img: Wordpress_home,
+            },
+            {
+              title: "Cart Page",
+              img: Wordpress_cart,
+            },
+            {
+              title: "Account Page",
+              img: Wordpress_account,
+            },
+            {
+              title: "Category Section",
+              img: Wordpress_category,
+            },
+            {
+              title: "Checkout Page",
+              img: Wordpress_checkout,
+            },
+            {
+              title: "Product Detail Page",
+              img: Wordpress_detail,
+            },
+            {
+              title: "Orders Page",
+              img: Wordpress_order,
+            },
+            {
+              title: "Shop Page",
+              img: Wordpress_shop,
+            },
+          ],
+          liveDemo: "https://electrosoftzone.com/",
+          repo: "",
+          challenges:
+            "While connecting online marchent payment gateway, indexing on google.",
+         
+          pricing: 25000,
+          pricevalue: [
+            "Complete documentation",
+            "Complete site setup",
+            "Payment method integration",
+            "Two revisions",
+            "Complete guidance and setup assistance",
+          ],
+        },
+      },
     ],
   },
-  tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub"],
+  tags: [
+    "Wordpress",
+  ],
   FooterSection: {
     heading: "MOJI",
     links: {
