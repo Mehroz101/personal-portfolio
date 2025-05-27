@@ -970,6 +970,12 @@ export const portfolio_data = {
   },
   tags: [
     "Wordpress",
+    "React",
+    "Nodejs",
+    "Expressjs",
+    "MongoDB", 
+    "GitHub",
+    
   ],
   FooterSection: {
     heading: "MOJI",
