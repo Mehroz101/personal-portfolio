@@ -779,7 +779,7 @@ export const portfolio_data = {
         img: Inventory_Home, // Replace with your image
         title: "Inventory Management System",
         description:
-          "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports.",
+          "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports. dummy login credentials 'username: admin  password:111'",
         tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub"],
         projectData: {
           id: "6",
@@ -871,6 +871,7 @@ export const portfolio_data = {
             description:
               "This documentation provides a comprehensive guide to the Inventory Management System project. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation also covers API endpoints, database schema, and best practices for building scalable inventory systems. Ideal for developers looking to create their own inventory management systems or improve their full-stack development skills.",
           },
+           liveDemo: "https://webtechims.vercel.app/",
           pricing: "Free",
           pricevalue: [
             "Complete documentation",
