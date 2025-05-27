@@ -112,7 +112,7 @@ export const portfolio_data = {
     img: Photo,
     CVlink:
       "https://drive.google.com/file/d/1J6NsqlWGzvlNEuLEIi5BsUooaySfd60w/view?usp=drive_link",
-    whatsapplink: "https://wa.link/09unaf",
+    whatsapplink: " https://wa.link/iry69d",
   },
   AboutSection: {
     tag: "About Me",
@@ -128,7 +128,7 @@ export const portfolio_data = {
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
       linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
-      whatsapp: "https://wa.link/09unaf",
+      whatsapp: " https://wa.link/iry69d",
     },
   },
   ServiceSection: {
@@ -284,6 +284,7 @@ export const portfolio_data = {
         learning: true,
       },
       { img: Docker, name: "Docker", percentage: "30%", learning: true },
+       { img: Wordpress, name: "Wordpress", percentage: "80%", learning: true },
     ],
   },
   ProjectSection: {
@@ -977,7 +978,7 @@ export const portfolio_data = {
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
       linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
-      whatsapp: "https://wa.link/09unaf",
+      whatsapp: " https://wa.link/iry69d",
     },
   },
 };
