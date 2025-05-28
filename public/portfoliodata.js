@@ -99,17 +99,17 @@ import Wordpress_shop from "../src/assets/Wordpress-ecom/Wordpress-shop.png";
 //Password Manager App
 
 import Company_Registration from "../src/assets/passkey/company_registration.png";
-import Passkey_activity from "../src/assets/passkey/passkey_activity.png";
-import Passkey_addpass from "../src/assets/passkey/passkey_addpass.png";
-import Passkey_appassword from "../src/assets/passkey/passkey_appassword.png";
-import Passkey_auth from "../src/assets/passkey/passkey_auth.png";
-import Passkey_companyusers from "../src/assets/passkey/passkey_companyusers.png";
-import Passkey_personaldetails from "../src/assets/passkey/passkey_personaldetails.png";
-import Passkey_profile from "../src/assets/passkey/passkey_profile.png";
-import Passkey_screen1 from "../src/assets/passkey/passkey_screen1.png";
-import Passkey_screen2 from "../src/assets/passkey/passkey_screen2.png";
+import Passkey_activity from "../src/assets/passkey/Passkey_activity.png";
+import Passkey_addpass from "../src/assets/passkey/Passkey_addpass.png";
+import Passkey_appassword from "../src/assets/passkey/Passkey_appassword.png";
+import Passkey_auth from "../src/assets/passkey/Passkey_auth.png";
+import Passkey_companyusers from "../src/assets/passkey/Passkey_companyusers.png";
+import Passkey_personaldetails from "../src/assets/passkey/Passkey_personaldetails.png";
+import Passkey_profile from "../src/assets/passkey/Passkey_profile.png";
+import Passkey_screen1 from "../src/assets/passkey/Passkey_screen1.png";
+import Passkey_screen2 from "../src/assets/passkey/Passkey_screen2.png";
 import Passkey_Showall from "../src/assets/passkey/Passkey_showallpass.png";
-import Passkey_welcome from "../src/assets/passkey/passkey_welcome.png";
+import Passkey_welcome from "../src/assets/passkey/Passkey_welcome.png";
 
 
 
