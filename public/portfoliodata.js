@@ -1109,7 +1109,7 @@ export const portfolio_data = {
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
       linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
-      whatsapp: " https://wa.link/iry69d",
+      whatsapp: "https://wa.link/iry69d",
     },
   },
 };
