@@ -99,18 +99,17 @@ import Wordpress_shop from "../src/assets/Wordpress-ecom/Wordpress-shop.png";
 //Password Manager App
 
 import Company_Registration from "../src/assets/passkey/company_registration.png";
-import passkey_activity from "../src/assets/passkey/passkey_activity.png";
-import passkey_addpass from "../src/assets/passkey/passkey_addpass.png";
-import passkey_appassword from "../src/assets/passkey/passkey_appassword.png";
-import passkey_auth from "../src/assets/passkey/passkey_auth.png";
-import passkey_companyusers from "../src/assets/passkey/passkey_companyusers.png";
-import passkey_personaldetails from "../src/assets/passkey/passkey_personaldetails.png";
-import passkey_profile from "../src/assets/passkey/passkey_profile.png";
-import passkey_screen1 from "../src/assets/passkey/passkey_screen1.png";
-import passkey_screen2 from "../src/assets/passkey/passkey_screen2.png";
-import passkey_screen3 from "../src/assets/passkey/passkey_screen3.png";
-import passkey_showall from "../src/assets/passkey/passkey_showall.png";
-import passkey_welcome from "../src/assets/passkey/passkey_welcome.png";
+import Passkey_activity from "../src/assets/passkey/passkey_activity.png";
+import Passkey_addpass from "../src/assets/passkey/passkey_addpass.png";
+import Passkey_appassword from "../src/assets/passkey/passkey_appassword.png";
+import Passkey_auth from "../src/assets/passkey/passkey_auth.png";
+import Passkey_companyusers from "../src/assets/passkey/passkey_companyusers.png";
+import Passkey_personaldetails from "../src/assets/passkey/passkey_personaldetails.png";
+import Passkey_profile from "../src/assets/passkey/passkey_profile.png";
+import Passkey_screen1 from "../src/assets/passkey/passkey_screen1.png";
+import Passkey_screen2 from "../src/assets/passkey/passkey_screen2.png";
+import Passkey_Showall from "../src/assets/passkey/Passkey_showallpass.png";
+import Passkey_welcome from "../src/assets/passkey/passkey_welcome.png";
 
 
 
@@ -981,7 +980,7 @@ export const portfolio_data = {
       },
       {
         id: "8",
-        img: passkey_profile,
+        img: Passkey_profile,
         title: "PassKey",
         description:
           "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
@@ -990,14 +989,14 @@ export const portfolio_data = {
           id: "8",
           title: "PassKey - Password Manager",
           banner:
-          passkey_profile,
+          Passkey_profile,
           about:
             "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
           projectState: {
             heading: "Project Insights & Stats",
             description:
               "This project is a modern, secure password manager web app designed to help individuals and companies store and manage their credentials dynamically. Users can create a company account, register team members, and assign permissions for password access and sharing. It enables seamless and secure password sharing among users with role-based access controls, making collaboration safe and efficient. The app emphasizes usability, security, and organizational structure, making it ideal for teams managing multiple credentials across departments or projects.",
-            img: passkey_welcome,
+            img: Passkey_welcome,
             state: [
               { title: "Modules", number: "9" },
               { title: "Pages", number: "10" },
@@ -1007,7 +1006,16 @@ export const portfolio_data = {
             ],
           },
           technologies: [
-            { img: Wordpress, title: "Wordpress" },
+            { img: Reactjs, title: "React JS" },
+            { img: Node, title: "Node JS" },
+            { img: Mongo, title: "MongoDB" },
+            { img: Express, title: "Express JS" },
+            { img: Github, title: "GitHub" },
+            { img: Mongoose, title: "Mongoose" },
+            { img: JWT, title: "JWT" },
+            { img: Axios, title: "Axios" },
+            { img: ReactHookForm, title: "React Hook Form" },
+            { img: TypeScript, title: "TypeScript" },
           ],
           features: [
             "Search for teachers by subjects or location",
@@ -1023,51 +1031,48 @@ export const portfolio_data = {
             },
             {
               title: "Actitvity Page",
-              img: passkey_activity,
+              img: Passkey_activity,
             },
             {
               title: "Add Password Page",
-              img: passkey_addpass,
+              img: Passkey_addpass,
             },
             {
               title: "Show Password Page",
-              img: passkey_appassword,
+              img: Passkey_appassword,
             },
             {
               title: "Auth Page",
-              img: passkey_auth,
+              img: Passkey_auth,
             },
              {
               title: "Welcome Page",
-              img: passkey_welcome,
+              img: Passkey_welcome,
             },
             {
               title: "Registration Page1",
-              img: passkey_screen1,
+              img: Passkey_screen1,
             },
             {
               title: "Registration Page2",
-              img: passkey_screen2,
+              img: Passkey_screen2,
             },
-            {
-              title: "Registration Page3",
-              img: passkey_screen3,
-            },
+           
             {
               title: "Profile Page",
-              img: passkey_profile,
+              img: Passkey_profile,
             },
             {
               title: "Show All Passwords Page",
-              img: passkey_showall,
+              img: Passkey_Showall,
             },
             {
               title: "Company Users Page",
-              img: passkey_companyusers,
+              img: Passkey_companyusers,
             },
             {
               title: "Personal Details Page",
-              img: passkey_personaldetails,
+              img: Passkey_personaldetails,
             },
            
           ],
