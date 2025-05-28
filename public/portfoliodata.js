@@ -26,6 +26,8 @@ import TypeScript from "../src/assets/typescript.png";
 import NextJs from "../src/assets/nextjs.png";
 import PDF from "../src/assets/JsPDF.jpeg";
 import Wordpress from "../src/assets/wordpress.png";
+
+
 //Project IMGs
 
 import Portfolio_Hero from "../src/assets/Portfolio1/Portfolio_Hero.png";
@@ -38,7 +40,6 @@ import Portfolio_Service from "../src/assets/Portfolio1/Portfolio1_Service.png";
 import Portfolio_Skill from "../src/assets/Portfolio1/Portfolio1_Skill.png";
 
 //Quiz APP Screenshots
-import Quiz_Login from "../src/assets/QuizApp/Quiz_Login.png";
 import Quiz_Signup from "../src/assets/QuizApp/Quiz_Signup.png";
 import Quiz_AddExam from "../src/assets/QuizApp/Quiz_AddExam.png";
 import Quiz_AllExams from "../src/assets/QuizApp/Quiz_AllExams.png";
@@ -60,26 +61,20 @@ import Inventory_Sidebar from "../src/assets/Inventory/Inventory_sidebar.png";
 
 //Parking Management System Screenshots
 import Project1_Admindashboard from "../src/assets/ParkingManagementSystem/Project1_Admindashboard.png";
-import Project1_AdmindashboardNav from "../src/assets/ParkingManagementSystem/Project1_AdmindashboardNav.png";
 import Project1_Adminearning from "../src/assets/ParkingManagementSystem/Project1_Adminearning.png";
 import Project1_Adminnotifications from "../src/assets/ParkingManagementSystem/Project1_Adminnotifications.png";
 import Project1_Adminrequest from "../src/assets/ParkingManagementSystem/Project1_Adminrequest.png";
-import Project1_Adminreview from "../src/assets/ParkingManagementSystem/Project1_Adminreview.png";
 import Project1_Adminsetting from "../src/assets/ParkingManagementSystem/Project1_Adminsetting.png";
 import Project1_Adminspaces from "../src/assets/ParkingManagementSystem/Project1_Adminspaces.png";
 import Project1_Adminuser from "../src/assets/ParkingManagementSystem/Project1_Adminuser.png";
 import Project1_Home from "../src/assets/ParkingManagementSystem/Project1_Home.png";
 import Project1_Mainapp from "../src/assets/ParkingManagementSystem/Project1_Mainapp.png";
 import Project1_Newlisting from "../src/assets/ParkingManagementSystem/Project1_Newlisting.png";
-import Project1_NewRequest from "../src/assets/ParkingManagementSystem/Project1_NewRequest.png";
 import Project1_Userdashboard from "../src/assets/ParkingManagementSystem/Project1_Userdashboard.png";
 import Project1_UserEarning from "../src/assets/ParkingManagementSystem/Project1_UserEarning.png";
-import Project1_Userhero from "../src/assets/ParkingManagementSystem/Project1_Userhero.png";
 import Project1_Userhistory from "../src/assets/ParkingManagementSystem/Project1_Userhistory.png";
 import Project1_Userlogin from "../src/assets/ParkingManagementSystem/Project1_Userlogin.png";
-import Project1_Userrequest from "../src/assets/ParkingManagementSystem/Project1_Userrequest.png";
 import Project1_Userrequests from "../src/assets/ParkingManagementSystem/Project1_Userrequests.png";
-import Project1_Usersetting from "../src/assets/ParkingManagementSystem/Project1_Usersetting.png";
 import Project1_Usersignup from "../src/assets/ParkingManagementSystem/Project1_Usersignup.png";
 import Project1_Userspaces from "../src/assets/ParkingManagementSystem/Project1_Userspaces.png";
 import Project1_Userwithdraw from "../src/assets/ParkingManagementSystem/Project1_Userwithdraw.png";
@@ -100,6 +95,23 @@ import Wordpress_checkout from "../src/assets/Wordpress-ecom/Wordpress-checkout.
 import Wordpress_detail from "../src/assets/Wordpress-ecom/Wordpress-detail.png";
 import Wordpress_order from "../src/assets/Wordpress-ecom/Wordpress-order.png";
 import Wordpress_shop from "../src/assets/Wordpress-ecom/Wordpress-shop.png";
+
+//Password Manager App
+
+import Company_Registration from "../src/assets/passkey/company_registration.png";
+import passkey_activity from "../src/assets/passkey/passkey_activity.png";
+import passkey_addpass from "../src/assets/passkey/passkey_addpass.png";
+import passkey_appassword from "../src/assets/passkey/passkey_appassword.png";
+import passkey_auth from "../src/assets/passkey/passkey_auth.png";
+import passkey_companyusers from "../src/assets/passkey/passkey_companyusers.png";
+import passkey_personaldetails from "../src/assets/passkey/passkey_personaldetails.png";
+import passkey_profile from "../src/assets/passkey/passkey_profile.png";
+import passkey_screen1 from "../src/assets/passkey/passkey_screen1.png";
+import passkey_screen2 from "../src/assets/passkey/passkey_screen2.png";
+import passkey_screen3 from "../src/assets/passkey/passkey_screen3.png";
+import passkey_showall from "../src/assets/passkey/passkey_showall.png";
+import passkey_welcome from "../src/assets/passkey/passkey_welcome.png";
+
 
 
 import Photo from "../src/assets/photo.png";
@@ -967,6 +979,112 @@ export const portfolio_data = {
           ],
         },
       },
+      {
+        id: "8",
+        img: passkey_profile,
+        title: "PassKey",
+        description:
+          "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub","TypeScript"],
+        projectData: {
+          id: "8",
+          title: "PassKey - Password Manager",
+          banner:
+          passkey_profile,
+          about:
+            "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "This project is a modern, secure password manager web app designed to help individuals and companies store and manage their credentials dynamically. Users can create a company account, register team members, and assign permissions for password access and sharing. It enables seamless and secure password sharing among users with role-based access controls, making collaboration safe and efficient. The app emphasizes usability, security, and organizational structure, making it ideal for teams managing multiple credentials across departments or projects.",
+            img: passkey_welcome,
+            state: [
+              { title: "Modules", number: "9" },
+              { title: "Pages", number: "10" },
+              { title: "APIs", number: "50+" },
+              { title: "Features", number: "12" },
+             
+            ],
+          },
+          technologies: [
+            { img: Wordpress, title: "Wordpress" },
+          ],
+          features: [
+            "Search for teachers by subjects or location",
+            "Send and manage tuition invitations",
+            "Teacher profile and request management",
+            "User-friendly interface",
+            "Secure login for both students and teachers",
+          ],
+          pages: [
+            {
+              title: "Company Registration",
+              img: Company_Registration,
+            },
+            {
+              title: "Actitvity Page",
+              img: passkey_activity,
+            },
+            {
+              title: "Add Password Page",
+              img: passkey_addpass,
+            },
+            {
+              title: "Show Password Page",
+              img: passkey_appassword,
+            },
+            {
+              title: "Auth Page",
+              img: passkey_auth,
+            },
+             {
+              title: "Welcome Page",
+              img: passkey_welcome,
+            },
+            {
+              title: "Registration Page1",
+              img: passkey_screen1,
+            },
+            {
+              title: "Registration Page2",
+              img: passkey_screen2,
+            },
+            {
+              title: "Registration Page3",
+              img: passkey_screen3,
+            },
+            {
+              title: "Profile Page",
+              img: passkey_profile,
+            },
+            {
+              title: "Show All Passwords Page",
+              img: passkey_showall,
+            },
+            {
+              title: "Company Users Page",
+              img: passkey_companyusers,
+            },
+            {
+              title: "Personal Details Page",
+              img: passkey_personaldetails,
+            },
+           
+          ],
+          repo: "",
+          challenges:
+            "While sharing passwords btw users.",
+         
+          pricing: 15000,
+          pricevalue: [
+            "Complete documentation",
+            "Complete site setup",
+            "Two revisions",
+            "Complete guidance and setup assistance",
+          ],
+        },
+      
+    },
     ],
   },
   tags: [
@@ -976,6 +1094,7 @@ export const portfolio_data = {
     "Expressjs",
     "MongoDB", 
     "GitHub",
+    "TypeScript",
     
   ],
   FooterSection: {

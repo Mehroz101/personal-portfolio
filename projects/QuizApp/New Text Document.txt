@@ -1,0 +1,1 @@
+This project demonstrates full-stack development proficiency using the MERN stack. It allows for user and admin role management. The application features a clean UI for conducting exams and robust backend capabilities for result computation and reporting.

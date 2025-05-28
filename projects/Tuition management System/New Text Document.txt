@@ -1,0 +1,1 @@
+A modern platform designed to connect students with teachers. Students can search for teachers based on their requirements and send invitations. Teachers can manage and respond to requests, while both can customize their profiles, providing a seamless tuition management experience.

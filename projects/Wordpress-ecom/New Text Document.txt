@@ -1,0 +1,1 @@
+A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products. Customer and admin both receieve email when a ew order come ororder status update
