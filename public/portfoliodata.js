@@ -123,7 +123,7 @@ export const portfolio_data = {
     img: Photo,
     CVlink:
       "https://drive.google.com/file/d/1r0sh9WABJW4zct1YWCPYcAsMszr5G-1G/view?usp=sharing",
-    whatsapplink: " https://wa.link/iry69d",
+    whatsapplink: "https://wa.link/iry69d",
   },
   AboutSection: {
     tag: "About Me",
@@ -139,7 +139,7 @@ export const portfolio_data = {
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
       linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
-      whatsapp: " https://wa.link/iry69d",
+      whatsapp: "https://wa.link/iry69d",
     },
   },
   ServiceSection: {
