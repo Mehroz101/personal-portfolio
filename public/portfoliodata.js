@@ -122,7 +122,7 @@ export const portfolio_data = {
       "I specialize in creating dynamic, responsive, and scalable web applications with expertise in the MERN stack. Let's build your vision!",
     img: Photo,
     CVlink:
-      "https://drive.google.com/file/d/1J6NsqlWGzvlNEuLEIi5BsUooaySfd60w/view?usp=drive_link",
+      "https://drive.google.com/file/d/1r0sh9WABJW4zct1YWCPYcAsMszr5G-1G/view?usp=sharing",
     whatsapplink: " https://wa.link/iry69d",
   },
   AboutSection: {
