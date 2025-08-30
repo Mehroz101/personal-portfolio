@@ -122,7 +122,7 @@ export const portfolio_data = {
       "I specialize in creating dynamic, responsive, and scalable web applications with expertise in the MERN stack. Let's build your vision!",
     img: Photo,
     CVlink:
-      "https://drive.google.com/file/d/1r0sh9WABJW4zct1YWCPYcAsMszr5G-1G/view?usp=sharing",
+      "https://drive.google.com/file/d/1BDnWbKeQNsEqJbkgJvY7xVqtu5IWQ9Pt/view?usp=sharing",
     whatsapplink: "https://wa.link/iry69d",
   },
   AboutSection: {
@@ -138,7 +138,7 @@ export const portfolio_data = {
       facebook: "https://www.facebook.com/mehroz.farooq.7/",
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
-      linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
+      linkdin: "https://www.linkedin.com/in/mehroz-farooq/",
       whatsapp: "https://wa.link/iry69d",
     },
   },
@@ -1108,7 +1108,7 @@ export const portfolio_data = {
       facebook: "https://www.facebook.com/mehroz.farooq.7/",
       github: "https://github.com/Mehroz101",
       instagram: "https://www.instagram.com/mehrozfarooq/",
-      linkdin: "https://pk.linkedin.com/in/mehroz-farooq-0ba92b223",
+      linkdin: "https://www.linkedin.com/in/mehroz-farooq/",
       whatsapp: "https://wa.link/iry69d",
     },
   },
