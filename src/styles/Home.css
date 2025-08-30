@@ -478,7 +478,15 @@ min-width: 300px;
     position: relative;
     animation: fill-progress 1.5s ease-in-out forwards;
 }
-
+.skillsection .skill_cards .skill_card .progress {
+    height: 100%;
+    background-color: #ffbd39;
+    width: 0; /* Default width before animation */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
 .skillsection .skill_cards .skill_card .progress::after {
     content: '';
     position: absolute;
@@ -585,53 +593,9 @@ min-width: 300px;
     position: relative;
   }
   
-  .skillsection .skill_cards .skill_card .progress {
-    height: 100%;
-    background-color: #ffbd39;
-    width: 0; /* Default width before animation */
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-  }
   
-  /* Animation for the progress bar */
-  .skillsection .skill_cards .skill_card.animate_progress .progress {
-    width: 100%; /* Full width animation */
-    transition: width 2s ease-in-out; /* Adjust duration as needed */
-  }
-  
-  /* Shimmer effect for progress bar */
-  .skillsection .skill_cards .skill_card .progress.shimmer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(170, 131, 5, 0.5) 50%,
-      rgba(248, 191, 2, 1) 100%
-    );
-    animation: shimmer 1.5s infinite;
-  }
-  
-  /* Shimmer animation */
-  @keyframes shimmer {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  
-  .skillsection .skill_cards .skill_card .skill_percentage {
-    font-size: 0.9rem;
-    text-align: right;
-    color: var(--secondary-text);
-  }
-  
+ 
+ 
 
 /*=================== Project Styles =============================*/
 .projectsection{

@@ -26,7 +26,8 @@ import TypeScript from "../src/assets/typescript.png";
 import NextJs from "../src/assets/nextjs.png";
 import PDF from "../src/assets/JsPDF.jpeg";
 import Wordpress from "../src/assets/wordpress.png";
-
+import Nest from "../src/assets/nestjs.png";
+import AntDesign from "../src/assets/antdesign.png";
 
 //Project IMGs
 
@@ -113,7 +114,7 @@ import Passkey_welcome from "../src/assets/passkey/Passkey_welcome.png";
 
 
 
-import Photo from "../src/assets/photo.png";
+import Photo from "../src/assets/Photo1.png";
 export const portfolio_data = {
   HeroSection: {
     tag: "Aslam Alikum",
@@ -130,7 +131,7 @@ export const portfolio_data = {
     heading:
       "Hello! I'm <span>Mehroz Farooq. </span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
     para: "I’m a dedicated web and software developer with a passion for crafting innovative and user-friendly digital experiences. Leveraging expertise in modern technologies, I focus on delivering top-notch solutions tailored to individual and business needs. My mission is to empower businesses with creative and functional websites and applications that make a meaningful impact.",
-    projects: 8,
+    projects: "10+",
     clients: 6,
     experience: 4,
     award: 1,
@@ -202,7 +203,7 @@ export const portfolio_data = {
         degree: "Bachelor of Science in Information Technology",
         institute: "Bahauddin Zakariya University",
         description:
-          "Among the few who mastered coding and web development, creating outstanding projects during my studies at Bahauddin Zakariya University.",
+          "Among the few who mastered coding and web development and obtained 3.61 / 4.0 CGPA, creating outstanding projects during my studies at Bahauddin Zakariya University.",
       },
     ],
   },
@@ -276,8 +277,10 @@ export const portfolio_data = {
         percentage: "80%",
         learning: false,
       },
+      { img: AntDesign, name: "Ant Design", percentage: "40%", learning: true },
       { img: Tailwind, name: "Tailwind", percentage: "70%", learning: true },
       { img: Node, name: "Node.js", percentage: "70%", learning: false },
+      { img: Nest, name: "Nest.js", percentage: "60%", learning: true },
       { img: Express, name: "Express", percentage: "70%", learning: false },
       { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
       { img: Posgresql, name: "Posgresql", percentage: "60%", learning: false },
