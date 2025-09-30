@@ -112,7 +112,14 @@ import Passkey_screen2 from "../src/assets/passkey/Passkey_screen2.png";
 import Passkey_Showall from "../src/assets/passkey/Passkey_showallpass.png";
 import Passkey_welcome from "../src/assets/passkey/Passkey_welcome.png";
 
-
+//Qwizzy APP Screenshots
+import Qwizzy_addquestion from "../src/assets/Qwizzy/qwizzy_addquestion.png";
+import Qwizzy_ai from "../src/assets/Qwizzy/qwizzy_ai.png";
+import Qwizzy_answer from "../src/assets/Qwizzy/qwizzy_answer.png";
+import Qwizzy_home from "../src/assets/Qwizzy/qwizzy_home.png";
+import Qwizzy_profile from "../src/assets/Qwizzy/qwizzy_profile.png";
+import Qwizzy_responsiveprofile from "../src/assets/Qwizzy/qwizzy_responsiveprofile.png";
+import Qwizzy_responsivehome from "../src/assets/Qwizzy/qwizzy_responsivehome.png";
 
 import Photo from "../src/assets/Photo1.png";
 export const portfolio_data = {
@@ -1016,7 +1023,7 @@ export const portfolio_data = {
             { img: Github, title: "GitHub" },
             { img: Mongoose, title: "Mongoose" },
             { img: JWT, title: "JWT" },
-            { img: Axios, title: "Axios" },
+            { img: , title: "Axios" },
             { img: ReactHookForm, title: "React Hook Form" },
             { img: TypeScript, title: "TypeScript" },
           ],
@@ -1093,6 +1100,77 @@ export const portfolio_data = {
         },
       
     },
+        {
+        id: "9",
+        img: Qwizzy_home,
+        title: "Qwizzy - Interview Q&A Platform",
+        description:
+          "A modern web app for practicing and sharing interview questions and answers. Features AI-powered question generation, bookmarking, voting, and a responsive profile system for users.",
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub"],
+        projectData: {
+          id: "9",
+          title: "Qwizzy - Interview Q&A Platform",
+          banner: Qwizzy_home,
+          about:
+            "Qwizzy is a full-stack platform for interview preparation. Users can search, filter, and answer questions, generate new questions with AI, and manage their own profile and contributions. Built with React, Redux Toolkit, Node.js, Express, and MongoDB.",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "Explore the features and scale of Qwizzy. This section highlights the platform's core capabilities and development progress.",
+            img: Qwizzy_home,
+            state: [
+              { title: "Lines", number: "6000+" },
+              { title: "Modules", number: "12" },
+              { title: "Pages", number: "7" },
+              { title: "Features", number: "20+" },
+              { title: "APIs", number: "18+" },
+              ],
+          },
+          technologies: [
+            { img: Reactjs, title: "React JS" },
+            { img: Redux, title: "Redux Toolkit" },
+            { img: Node, title: "Node JS" },
+            { img: Express, title: "Express JS" },
+            { img: Mongo, title: "MongoDB" },
+            { img: TypeScript, title: "TypeScript" },
+            { img: Github, title: "GitHub" },
+            { img: Axios, title: "Axios" },
+          ],
+          features: [
+            "Search and filter interview questions",
+            "AI-powered structured question and answer generation",
+            "Bookmark and vote on questions",
+            "Responsive user profile and dashboard",
+            "Add, edit, and manage questions",
+            "Authentication and user management",
+          ],
+          pages: [
+            { title: "Home Page", img: Qwizzy_home },
+            { title: "Responsive Home", img: Qwizzy_responsivehome },
+            { title: "Add Question Page", img: Qwizzy_addquestion },
+            { title: "AI Question Generation", img: Qwizzy_ai },
+            { title: "Answer Page", img: Qwizzy_answer },
+            { title: "Profile Page", img: Qwizzy_profile },
+            { title: "Responsive Profile", img: Qwizzy_responsiveprofile },
+          ],
+          liveDemo: "https://qwizzy-demo.vercel.app/",
+          repo: "https://github.com/Mehroz101/qnapp",
+          challenges:
+            "Integrating AI for question generation, ensuring real-time updates and a seamless user experience.",
+          documentation: {
+            description:
+              "Comprehensive guides for using Qwizzy, including setup, API usage, and advanced features.",
+            img: Qwizzy_home,
+          },
+          pricing: "10000",
+          pricevalue: [
+            "Full project code",
+            "Complete documentation",
+            "All features included",
+            "Setup guidance",
+          ],
+        },
+      },
     ],
   },
   tags: [
