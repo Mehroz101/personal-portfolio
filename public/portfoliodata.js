@@ -1105,8 +1105,8 @@ export const portfolio_data = {
         img: Qwizzy_home,
         title: "Qwizzy - Interview Q&A Platform",
         description:
-          "A modern web app for practicing and sharing interview questions and answers. Features AI-powered question generation, bookmarking, voting, and a responsive profile system for users.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub"],
+          "A modern PWA for practicing and sharing interview questions and answers. Features AI-powered question generation, bookmarking, voting, and a responsive profile system for users.",
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub","PWA"],
         projectData: {
           id: "9",
           title: "Qwizzy - Interview Q&A Platform",
@@ -1137,6 +1137,7 @@ export const portfolio_data = {
             { img: Axios, title: "Axios" },
           ],
           features: [
+            "PWA with responsive UI app",
             "Search and filter interview questions",
             "AI-powered structured question and answer generation",
             "Bookmark and vote on questions",
@@ -1153,8 +1154,8 @@ export const portfolio_data = {
             { title: "Profile Page", img: Qwizzy_profile },
             { title: "Responsive Profile", img: Qwizzy_responsiveprofile },
           ],
-          liveDemo: "https://qwizzy-demo.vercel.app/",
-          repo: "https://github.com/Mehroz101/qnapp",
+          liveDemo: "https://qwizzy-zeta.vercel.app/",
+          repo: "",
           challenges:
             "Integrating AI for question generation, ensuring real-time updates and a seamless user experience.",
           documentation: {
@@ -1181,6 +1182,7 @@ export const portfolio_data = {
     "MongoDB", 
     "GitHub",
     "TypeScript",
+    "PWA",
     
   ],
   FooterSection: {
