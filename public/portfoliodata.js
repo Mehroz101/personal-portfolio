@@ -1112,7 +1112,7 @@ export const portfolio_data = {
           title: "Qwizzy - Interview Q&A Platform",
           banner: Qwizzy_home,
           about:
-            "Qwizzy is a full-stack platform for interview preparation. Users can search, filter, and answer questions, generate new questions with AI, and manage their own profile and contributions. Built with React, Redux Toolkit, Node.js, Express, and MongoDB.",
+            "Qwizzy is a full-stack  platform  and PWA for interview preparation. Users can search, filter, and answer questions, generate new questions with AI, and manage their own profile and contributions. Built with React, Redux Toolkit, Node.js, Express, and MongoDB.",
           projectState: {
             heading: "Project Insights & Stats",
             description:
