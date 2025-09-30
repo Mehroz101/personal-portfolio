@@ -695,7 +695,7 @@ export const portfolio_data = {
               img: Quiz_AddExam, // Replace with appropriate image
             },
           ],
-          // liveDemo: "https://quizappdemo.netlify.app/", // Update with the live demo link
+         liveDemo: "https://mindmetrics.vercel.app/", // Update with the live demo link
           repo: "https://github.com/yourusername/quizapp", // Update with your repository link
           documentation: {
             description:
