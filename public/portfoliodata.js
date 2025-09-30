@@ -1023,7 +1023,7 @@ export const portfolio_data = {
             { img: Github, title: "GitHub" },
             { img: Mongoose, title: "Mongoose" },
             { img: JWT, title: "JWT" },
-            { img: , title: "Axios" },
+            { img: Axios, title: "Axios" },
             { img: ReactHookForm, title: "React Hook Form" },
             { img: TypeScript, title: "TypeScript" },
           ],
