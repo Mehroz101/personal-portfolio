@@ -718,7 +718,7 @@ export const portfolio_data = {
         title: "Personal Portfolio",
         description:
           "A Unique personal portfolio website design using React.js to showcase my designing skill.",
-        tags: ["React", "Github","Live"],
+        tags: ["React", "Github"],
         projectData: {
           id: "5",
           title: "Personal Portfolio",
