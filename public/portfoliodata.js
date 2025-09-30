@@ -497,7 +497,7 @@ export const portfolio_data = {
         title: "Personal Portfolio",
         description:
           "A personal portfolio website built using React.js to showcase skills, projects, and experience. The platform features an interactive, responsive design with smooth navigation, highlighting professional expertise in web development.",
-        tags: ["React", "Github", "Tailwind"],
+        tags: ["React", "Github", "Tailwind","Live"],
         projectData: {
           id: "3",
           title: "Personal Portfolio",
@@ -605,7 +605,7 @@ export const portfolio_data = {
         title: "Quiz App",
         description:
           "A MERN stack Quiz application enabling users to participate in exams, view results, and allowing admins to manage exams and user reports effectively.",
-        tags: ["React", "Nodejs", "MongoDB", "Expressjs"],
+        tags: ["React", "Nodejs", "MongoDB", "Expressjs","Live"],
         projectData: {
           id: "4",
           title: "Quiz Application",
@@ -718,7 +718,7 @@ export const portfolio_data = {
         title: "Personal Portfolio",
         description:
           "A Unique personal portfolio website design using React.js to showcase my designing skill.",
-        tags: ["React", "Github"],
+        tags: ["React", "Github","Live"],
         projectData: {
           id: "5",
           title: "Personal Portfolio",
@@ -801,7 +801,7 @@ export const portfolio_data = {
         title: "Inventory Management System",
         description:
           "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports. dummy login credentials 'username: admin  password:111'",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub","Live"],
         projectData: {
           id: "6",
           title: "Inventory Management System",
@@ -910,7 +910,7 @@ export const portfolio_data = {
         title: "Digital Product Selling Website",
         description:
           "A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products.",
-        tags: ["Wordpress"],
+        tags: ["Wordpress","Live"],
         projectData: {
           id: "6",
           title: "Digital Product Selling Website",
@@ -1106,7 +1106,7 @@ export const portfolio_data = {
         title: "Qwizzy - Interview Q&A Platform",
         description:
           "A modern PWA for practicing and sharing interview questions and answers. Features AI-powered question generation, bookmarking, voting, and a responsive profile system for users.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub","PWA"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub","PWA","Live"],
         projectData: {
           id: "9",
           title: "Qwizzy - Interview Q&A Platform",
@@ -1183,6 +1183,7 @@ export const portfolio_data = {
     "GitHub",
     "TypeScript",
     "PWA",
+    "Live"
     
   ],
   FooterSection: {
