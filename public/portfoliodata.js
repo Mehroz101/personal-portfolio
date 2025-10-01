@@ -319,7 +319,7 @@ export const portfolio_data = {
         title: "Tuition Management System",
         description:
           "A comprehensive web-based platform enabling students to find and send invitations to teachers, while teachers can manage requests and their profiles. This system simplifies tuition management with intuitive interfaces for both teachers and students.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub","Live"],
         projectData: {
           id: "1",
           title: "Tuition Management System",
