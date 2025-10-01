@@ -330,7 +330,7 @@ export const portfolio_data = {
           projectState: {
             heading: "Project Insights & Stats",
             description:
-              "Explore the key metrics and components of the Tuition Management System. This section outlines the project scale, core features, and development progress, showcasing its impact and usability.",
+              "Explore the key metrics and components of the Tuition Management System. This section outlines the project scale, core features, and development progress, showcasing its impact and usability. Access dashboard from this link https://tutorgrounddashboard.vercel.app/",
             img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
             state: [
               { title: "Lines", number: "40000+" },
