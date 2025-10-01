@@ -388,8 +388,8 @@ export const portfolio_data = {
               img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Invitation.png?raw=true",
             },
           ],
-          liveDemo: "https://tuition-management-demo.com",
-          repo: "https://github.com/username/tuition-management-system",
+          liveDemo: "https://tutorground.vercel.app/",
+          // repo: "https://github.com/username/tuition-management-system",
           challenges:
             "Creating a robust invitation and request management system, ensuring scalability for a large number of users.",
           documentation: {
