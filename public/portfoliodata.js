@@ -1154,7 +1154,7 @@ export const portfolio_data = {
             { title: "Profile Page", img: Qwizzy_profile },
             { title: "Responsive Profile", img: Qwizzy_responsiveprofile },
           ],
-          liveDemo: "https://qwizzy-zeta.vercel.app/",
+          liveDemo: "https://qwizzyapp.vercel.app/",
           repo: "",
           challenges:
             "Integrating AI for question generation, ensuring real-time updates and a seamless user experience.",
