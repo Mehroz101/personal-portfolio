@@ -121,6 +121,15 @@ import Qwizzy_profile from "../src/assets/Qwizzy/qwizzy_profile.png";
 import Qwizzy_responsiveprofile from "../src/assets/Qwizzy/qwizzy_responsiveprofile.png";
 import Qwizzy_responsivehome from "../src/assets/Qwizzy/qwizzy_responsivehome.png";
 
+
+//Expense Tracker APP Screenshots
+import ExpenseTracker_dashboard1 from "../src/assets/expensetracker/dashboard.png";
+import ExpenseTracker_dashboard2 from "../src/assets/expensetracker/dashboard1.png";
+import ExpenseTracker_dashboard3 from "../src/assets/expensetracker/dashboard2.png";
+import ExpenseTracker_createexenponse from "../src/assets/expensetracker/createexenponse.png";
+import ExpenseTracker_ledger from "../src/assets/expensetracker/ledger.png";
+import ExpenseTracker_totalexpense from "../src/assets/expensetracker/totalexpense.png";
+
 import Photo from "../src/assets/Photo1.png";
 export const portfolio_data = {
   HeroSection: {
