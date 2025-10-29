@@ -314,7 +314,7 @@ export const portfolio_data = {
         learning: true,
       },
       { img: Docker, name: "Docker", percentage: "30%", learning: true },
-       { img: Wordpress, name: "Wordpress", percentage: "80%", learning: true },
+      { img: Wordpress, name: "Wordpress", percentage: "80%", learning: true },
     ],
   },
   ProjectSection: {
@@ -328,7 +328,7 @@ export const portfolio_data = {
         title: "Tuition Management System",
         description:
           "A comprehensive web-based platform enabling students to find and send invitations to teachers, while teachers can manage requests and their profiles. This system simplifies tuition management with intuitive interfaces for both teachers and students.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub","Live"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub", "Live"],
         projectData: {
           id: "1",
           title: "Tuition Management System",
@@ -506,7 +506,7 @@ export const portfolio_data = {
         title: "Personal Portfolio",
         description:
           "A personal portfolio website built using React.js to showcase skills, projects, and experience. The platform features an interactive, responsive design with smooth navigation, highlighting professional expertise in web development.",
-        tags: ["React", "Github", "Tailwind","Live"],
+        tags: ["React", "Github", "Tailwind", "Live"],
         projectData: {
           id: "3",
           title: "Personal Portfolio",
@@ -614,7 +614,7 @@ export const portfolio_data = {
         title: "Quiz App",
         description:
           "A MERN stack Quiz application enabling users to participate in exams, view results, and allowing admins to manage exams and user reports effectively.",
-        tags: ["React", "Nodejs", "MongoDB", "Expressjs","Live"],
+        tags: ["React", "Nodejs", "MongoDB", "Expressjs", "Live"],
         projectData: {
           id: "4",
           title: "Quiz Application",
@@ -704,7 +704,7 @@ export const portfolio_data = {
               img: Quiz_AddExam, // Replace with appropriate image
             },
           ],
-         liveDemo: "https://mindmetrics.vercel.app/", // Update with the live demo link
+          liveDemo: "https://mindmetrics.vercel.app/", // Update with the live demo link
           repo: "https://github.com/yourusername/quizapp", // Update with your repository link
           documentation: {
             description:
@@ -810,7 +810,7 @@ export const portfolio_data = {
         title: "Inventory Management System",
         description:
           "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports. dummy login credentials 'username: admin  password:111'",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub","Live"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub", "Live"],
         projectData: {
           id: "6",
           title: "Inventory Management System",
@@ -901,7 +901,7 @@ export const portfolio_data = {
             description:
               "This documentation provides a comprehensive guide to the Inventory Management System project. It includes detailed instructions for installation, setup, and deployment, along with explanations for the code structure, key features, and components. The documentation also covers API endpoints, database schema, and best practices for building scalable inventory systems. Ideal for developers looking to create their own inventory management systems or improve their full-stack development skills.",
           },
-           liveDemo: "https://webtechims.vercel.app/",
+          liveDemo: "https://webtechims.vercel.app/",
           pricing: "Free",
           pricevalue: [
             "Complete documentation",
@@ -919,12 +919,12 @@ export const portfolio_data = {
         title: "Digital Product Selling Website",
         description:
           "A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products.",
-        tags: ["Wordpress","Live"],
+        tags: ["Wordpress", "Live"],
         projectData: {
           id: "6",
           title: "Digital Product Selling Website",
           banner:
-          Wordpress_home,
+            Wordpress_home,
           about:
             "A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products. Customer and admin both receieve email when a ew order come ororder status update",
           projectState: {
@@ -935,7 +935,7 @@ export const portfolio_data = {
             state: [
               { title: "Modules", number: "10+" },
               { title: "Pages", number: "10+" },
-             
+
             ],
           },
           technologies: [
@@ -986,7 +986,7 @@ export const portfolio_data = {
           repo: "",
           challenges:
             "While connecting online marchent payment gateway, indexing on google.",
-         
+
           pricing: 25000,
           pricevalue: [
             "Complete documentation",
@@ -1003,12 +1003,12 @@ export const portfolio_data = {
         title: "PassKey",
         description:
           "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub","TypeScript"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub", "TypeScript"],
         projectData: {
           id: "8",
           title: "PassKey - Password Manager",
           banner:
-          Passkey_profile,
+            Passkey_profile,
           about:
             "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
           projectState: {
@@ -1021,7 +1021,7 @@ export const portfolio_data = {
               { title: "Pages", number: "10" },
               { title: "APIs", number: "50+" },
               { title: "Features", number: "12" },
-             
+
             ],
           },
           technologies: [
@@ -1064,7 +1064,7 @@ export const portfolio_data = {
               title: "Auth Page",
               img: Passkey_auth,
             },
-             {
+            {
               title: "Welcome Page",
               img: Passkey_welcome,
             },
@@ -1076,7 +1076,7 @@ export const portfolio_data = {
               title: "Registration Page2",
               img: Passkey_screen2,
             },
-           
+
             {
               title: "Profile Page",
               img: Passkey_profile,
@@ -1093,12 +1093,12 @@ export const portfolio_data = {
               title: "Personal Details Page",
               img: Passkey_personaldetails,
             },
-           
+
           ],
           repo: "",
           challenges:
             "While sharing passwords btw users.",
-           liveDemo: "https://drive.google.com/file/d/1qVSM7wX021w0d1LKJVaCpfxAgX8DT9Lx/view?usp=sharing",
+          liveDemo: "https://drive.google.com/file/d/1qVSM7wX021w0d1LKJVaCpfxAgX8DT9Lx/view?usp=sharing",
           pricing: 15000,
           pricevalue: [
             "Complete documentation",
@@ -1107,15 +1107,15 @@ export const portfolio_data = {
             "Complete guidance and setup assistance",
           ],
         },
-      
-    },
-        {
+
+      },
+      {
         id: "9",
         img: Qwizzy_home,
         title: "Qwizzy - Interview Q&A Platform",
         description:
           "A modern PWA for practicing and sharing interview questions and answers. Features AI-powered question generation, bookmarking, voting, and a responsive profile system for users.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub","PWA","Live"],
+        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub", "PWA", "Live"],
         projectData: {
           id: "9",
           title: "Qwizzy - Interview Q&A Platform",
@@ -1133,7 +1133,7 @@ export const portfolio_data = {
               { title: "Pages", number: "7" },
               { title: "Features", number: "20+" },
               { title: "APIs", number: "18+" },
-              ],
+            ],
           },
           technologies: [
             { img: Reactjs, title: "React JS" },
@@ -1182,88 +1182,88 @@ export const portfolio_data = {
         },
       },
       {
-  id: "10",
-  img: ExpenseTracker_dashboard1,
-  title: "Enterprise Expense Tracker",
-  description:
-    "A full-stack enterprise-level expense management system that streamlines expense tracking, approvals, and reporting with role-based access and real-time analytics dashboards.",
-  tags: [
-    "React",
-    "NestJS",
-    "Nodejs",
-    "MongoDB",
-    "Live",
-    "Github"
-  ],
-  projectData: {
-    id: "10",
-    title: "Enterprise Expense Tracker",
-    banner: ExpenseTracker_dashboard2,
-    about:
-      "The Enterprise Expense Tracker is a smart and secure web platform built for organizations to manage expenses, reimbursements, and approvals efficiently. It enables different roles such as Submitter, Operator, Finance, and Admin to interact in a controlled workflow, ensuring data integrity and transparency across the system.",
-    projectState: {
-      heading: "Project Insights & Stats",
-      description:
-        "Discover the scale and structure of the Enterprise Expense Tracker. From multi-role authentication to detailed financial analytics, this platform demonstrates enterprise-grade engineering with a modular architecture and well-documented API layer.",
-      img: ExpenseTracker_dashboard1,
-      state: [
-        { title: "Lines", number: "35,000+" },
-        { title: "Modules", number: "4" },
-        { title: "Pages", number: "6" },
-        { title: "Features", number: "15+" },
-        { title: "APIs", number: "30+" }
-      ]
-    },
-    technologies: [
-  { img: Reactjs, title: "React JS" },
-  { img: Node, title: "Node JS" },
-  { img: Express, title: "Express JS" },
-  { img: Mongo, title: "MongoDB" },
-  { img: Mongoose, title: "Mongoose" },
-  { img: JWT, title: "JWT" },
-  { img: Redux, title: "Redux" },
-  { img: Tailwind, title: "Tailwind CSS" },
-  { img: TypeScript, title: "TypeScript" },
-  { img: Github, title: "GitHub" },
-  { img: Axios, title: "Axios" }
-],
-    features: [
-      "Role-based access control (Submitter, Operator, Finance, Admin)",
-      "Secure authentication and authorization using JWT",
-      "Expense creation, review, and approval workflow",
-      "Dynamic dashboard with analytics and charts",
-      "Comprehensive ledger view and expense summaries",
-      "Integrated Swagger documentation for APIs",
-      "Dark mode and local caching support on frontend"
-    ],
-    pages: [
-      { title: "Dashboard", img: ExpenseTracker_dashboard1 },
-      { title: "Create Expense", img: ExpenseTracker_createexenponse },
-      { title: "Ledger View", img: ExpenseTracker_ledger },
-      { title: "Total Expense Summary", img: ExpenseTracker_totalexpense },
-      { title: "Admin Dashboard", img: ExpenseTracker_dashboard2 },
-      { title: "Finance Overview", img: ExpenseTracker_dashboard3 }
-    ],
-    // liveDemo: "https://smart-expense.vercel.app/",
-    repo: "https://github.com/Mehroz101/enterprise-expense-tracker",
-    challenges:
-      "Implementing multi-role permission layers and ensuring secure JWT-based access while keeping the API scalable and maintainable with Swagger documentation.",
-    documentation: {
-      description:
-        "Detailed documentation covering setup, API routes, and workflow structure for each role. Includes interactive Swagger UI and architecture overview.",
-      img: ExpenseTracker_totalexpense
-    },
-    pricing: 18000,
-    pricevalue: [
-      "Complete source code (frontend + backend)",
-      "Swagger API documentation",
-      "Authentication and role-based modules",
-      "Dashboard and analytics screens",
-      "Deployment assistance and 2 revisions"
+        id: "10",
+        img: ExpenseTracker_dashboard1,
+        title: "Enterprise Expense Tracker",
+        description:
+          "A full-stack enterprise-level expense management system that streamlines expense tracking, approvals, and reporting with role-based access and real-time analytics dashboards.",
+        tags: [
+          "React",
+          "NestJS",
+          "Nodejs",
+          "MongoDB",
+          "Live",
+          "Github"
+        ],
+        projectData: {
+          id: "10",
+          title: "Enterprise Expense Tracker",
+          banner: ExpenseTracker_dashboard2,
+          about:
+            "The Enterprise Expense Tracker is a smart and secure web platform built for organizations to manage expenses, reimbursements, and approvals efficiently. It enables different roles such as Submitter, Operator, Finance, and Admin to interact in a controlled workflow, ensuring data integrity and transparency across the system.",
+          projectState: {
+            heading: "Project Insights & Stats",
+            description:
+              "Discover the scale and structure of the Enterprise Expense Tracker. From multi-role authentication to detailed financial analytics, this platform demonstrates enterprise-grade engineering with a modular architecture and well-documented API layer.",
+            img: ExpenseTracker_dashboard1,
+            state: [
+              { title: "Lines", number: "35,000+" },
+              { title: "Modules", number: "4" },
+              { title: "Pages", number: "6" },
+              { title: "Features", number: "15+" },
+              { title: "APIs", number: "30+" }
+            ]
+          },
+          technologies: [
+            { img: Reactjs, title: "React JS" },
+            { img: Node, title: "Node JS" },
+            { img: Express, title: "Express JS" },
+            { img: Mongo, title: "MongoDB" },
+            { img: Mongoose, title: "Mongoose" },
+            { img: JWT, title: "JWT" },
+            { img: Redux, title: "Redux" },
+            { img: Tailwind, title: "Tailwind CSS" },
+            { img: TypeScript, title: "TypeScript" },
+            { img: Github, title: "GitHub" },
+            { img: Axios, title: "Axios" }
+          ],
+          features: [
+            "Role-based access control (Submitter, Operator, Finance, Admin)",
+            "Secure authentication and authorization using JWT",
+            "Expense creation, review, and approval workflow",
+            "Dynamic dashboard with analytics and charts",
+            "Comprehensive ledger view and expense summaries",
+            "Integrated Swagger documentation for APIs",
+            "Dark mode and local caching support on frontend"
+          ],
+          pages: [
+            { title: "Dashboard", img: ExpenseTracker_dashboard1 },
+            { title: "Create Expense", img: ExpenseTracker_createexenponse },
+            { title: "Ledger View", img: ExpenseTracker_ledger },
+            { title: "Total Expense Summary", img: ExpenseTracker_totalexpense },
+            { title: "Admin Dashboard", img: ExpenseTracker_dashboard2 },
+            { title: "Finance Overview", img: ExpenseTracker_dashboard3 }
+          ],
+          // liveDemo: "https://smart-expense.vercel.app/",
+          repo: "https://github.com/Mehroz101/enterprise-expense-tracker",
+          challenges:
+            "Implementing multi-role permission layers and ensuring secure JWT-based access while keeping the API scalable and maintainable with Swagger documentation.",
+          documentation: {
+            description:
+              "Detailed documentation covering setup, API routes, and workflow structure for each role. Includes interactive Swagger UI and architecture overview.",
+            img: ExpenseTracker_totalexpense
+          },
+          pricing: 18000,
+          pricevalue: [
+            "Complete source code (frontend + backend)",
+            "Swagger API documentation",
+            "Authentication and role-based modules",
+            "Dashboard and analytics screens",
+            "Deployment assistance and 2 revisions"
+          ]
+        }
+      }
     ]
-  }
-
-    ],
   },
   tags: [
     "Wordpress",
@@ -1271,12 +1271,12 @@ export const portfolio_data = {
     "Nodejs",
     "NestJS",
     "Expressjs",
-    "MongoDB", 
+    "MongoDB",
     "GitHub",
     "TypeScript",
     "PWA",
     "Live"
-    
+
   ],
   FooterSection: {
     heading: "MOJI",
