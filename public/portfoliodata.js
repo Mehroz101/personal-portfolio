@@ -1181,12 +1181,95 @@ export const portfolio_data = {
           ],
         },
       },
+      {
+  id: "10",
+  img: ExpenseTracker_dashboard1,
+  title: "Enterprise Expense Tracker",
+  description:
+    "A full-stack enterprise-level expense management system that streamlines expense tracking, approvals, and reporting with role-based access and real-time analytics dashboards.",
+  tags: [
+    "React",
+    "NestJS",
+    "Nodejs",
+    "MongoDB",
+    "Live",
+    "Github"
+  ],
+  projectData: {
+    id: "10",
+    title: "Enterprise Expense Tracker",
+    banner: ExpenseTracker_dashboard2,
+    about:
+      "The Enterprise Expense Tracker is a smart and secure web platform built for organizations to manage expenses, reimbursements, and approvals efficiently. It enables different roles such as Submitter, Operator, Finance, and Admin to interact in a controlled workflow, ensuring data integrity and transparency across the system.",
+    projectState: {
+      heading: "Project Insights & Stats",
+      description:
+        "Discover the scale and structure of the Enterprise Expense Tracker. From multi-role authentication to detailed financial analytics, this platform demonstrates enterprise-grade engineering with a modular architecture and well-documented API layer.",
+      img: ExpenseTracker_dashboard1,
+      state: [
+        { title: "Lines", number: "35,000+" },
+        { title: "Modules", number: "4" },
+        { title: "Pages", number: "6" },
+        { title: "Features", number: "15+" },
+        { title: "APIs", number: "30+" }
+      ]
+    },
+    technologies: [
+  { img: Reactjs, title: "React JS" },
+  { img: Node, title: "Node JS" },
+  { img: Express, title: "Express JS" },
+  { img: Mongo, title: "MongoDB" },
+  { img: Mongoose, title: "Mongoose" },
+  { img: JWT, title: "JWT" },
+  { img: Redux, title: "Redux" },
+  { img: Tailwind, title: "Tailwind CSS" },
+  { img: TypeScript, title: "TypeScript" },
+  { img: Github, title: "GitHub" },
+  { img: Axios, title: "Axios" }
+],
+    features: [
+      "Role-based access control (Submitter, Operator, Finance, Admin)",
+      "Secure authentication and authorization using JWT",
+      "Expense creation, review, and approval workflow",
+      "Dynamic dashboard with analytics and charts",
+      "Comprehensive ledger view and expense summaries",
+      "Integrated Swagger documentation for APIs",
+      "Dark mode and local caching support on frontend"
+    ],
+    pages: [
+      { title: "Dashboard", img: ExpenseTracker_dashboard1 },
+      { title: "Create Expense", img: ExpenseTracker_createexenponse },
+      { title: "Ledger View", img: ExpenseTracker_ledger },
+      { title: "Total Expense Summary", img: ExpenseTracker_totalexpense },
+      { title: "Admin Dashboard", img: ExpenseTracker_dashboard2 },
+      { title: "Finance Overview", img: ExpenseTracker_dashboard3 }
+    ],
+    // liveDemo: "https://smart-expense.vercel.app/",
+    repo: "https://github.com/Mehroz101/enterprise-expense-tracker",
+    challenges:
+      "Implementing multi-role permission layers and ensuring secure JWT-based access while keeping the API scalable and maintainable with Swagger documentation.",
+    documentation: {
+      description:
+        "Detailed documentation covering setup, API routes, and workflow structure for each role. Includes interactive Swagger UI and architecture overview.",
+      img: ExpenseTracker_totalexpense
+    },
+    pricing: 18000,
+    pricevalue: [
+      "Complete source code (frontend + backend)",
+      "Swagger API documentation",
+      "Authentication and role-based modules",
+      "Dashboard and analytics screens",
+      "Deployment assistance and 2 revisions"
+    ]
+  }
+
     ],
   },
   tags: [
     "Wordpress",
     "React",
     "Nodejs",
+    "NestJS",
     "Expressjs",
     "MongoDB", 
     "GitHub",
