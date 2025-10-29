@@ -126,7 +126,7 @@ import Qwizzy_responsivehome from "../src/assets/Qwizzy/qwizzy_responsivehome.pn
 import ExpenseTracker_dashboard1 from "../src/assets/expensetracker/dashboard.png";
 import ExpenseTracker_dashboard2 from "../src/assets/expensetracker/dashboard1.png";
 import ExpenseTracker_dashboard3 from "../src/assets/expensetracker/dashboard2.png";
-import ExpenseTracker_createexenponse from "../src/assets/expensetracker/createexenponse.png";
+import ExpenseTracker_createexpense from "../src/assets/expensetracker/createexpense.png";
 import ExpenseTracker_ledger from "../src/assets/expensetracker/ledger.png";
 import ExpenseTracker_totalexpense from "../src/assets/expensetracker/totalexpense.png";
 
@@ -1238,7 +1238,7 @@ export const portfolio_data = {
           ],
           pages: [
             { title: "Dashboard", img: ExpenseTracker_dashboard1 },
-            { title: "Create Expense", img: ExpenseTracker_createexenponse },
+            { title: "Create Expense", img: ExpenseTracker_createexpense },
             { title: "Ledger View", img: ExpenseTracker_ledger },
             { title: "Total Expense Summary", img: ExpenseTracker_totalexpense },
             { title: "Admin Dashboard", img: ExpenseTracker_dashboard2 },
