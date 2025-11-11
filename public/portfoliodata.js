@@ -1244,7 +1244,7 @@ export const portfolio_data = {
             { title: "Admin Dashboard", img: ExpenseTracker_dashboard2 },
             { title: "Finance Overview", img: ExpenseTracker_dashboard3 }
           ],
-          // liveDemo: "https://smart-expense.vercel.app/",
+          liveDemo: "https://atrule-expensetracker.vercel.app/",
           repo: "https://github.com/Mehroz101/enterprise-expense-tracker",
           challenges:
             "Implementing multi-role permission layers and ensuring secure JWT-based access while keeping the API scalable and maintainable with Swagger documentation.",
