@@ -32,6 +32,7 @@ const Footer = () => {
           <p className="copyright">
             &copy; {new Date().getFullYear()} MOJI. All rights reserved
           </p>
+          <a href="https://aichief-web-bice.vercel.app/ai-entertainment-tools/vibeknow-ai?utm_source=aichief_embed" data-aichief-domain-verification="LggcbFoQK7Iz4fOnxhjLnhdlzHS7hzSP" title="Vibeknow"><img src="https://aichief-web-bice.vercel.app/assets/brand/dark-featured-logo.svg" alt="Vibeknow Featured on AIChief" width="305" height="94" /></a>
         </div>
       </div>
     </>
