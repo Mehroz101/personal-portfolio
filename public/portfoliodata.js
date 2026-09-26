@@ -2,7 +2,6 @@ import HTML from "../src/assets/html.png";
 import CSS from "../src/assets/css.png";
 import JavaScript from "../src/assets/javascript.png";
 import Reactjs from "../src/assets/react.png";
-import Vue from "../src/assets/vue.png";
 import MSSqlServer from "../src/assets/mssqlserver.png";
 import Docker from "../src/assets/docker.png";
 import Posgresql from "../src/assets/Posgresql.png";
@@ -133,10 +132,10 @@ import ExpenseTracker_totalexpense from "../src/assets/expensetracker/totalexpen
 import Photo from "../src/assets/Photo1.png";
 export const portfolio_data = {
   HeroSection: {
-    tag: "Aslam Alikum",
-    heading: "I'm Professional <span> MERN Stack Developer </span>",
+    tag: "Assalam-o-Alaikum",
+    heading: "I'm a Professional <span> Full Stack Developer </span>",
     tagline:
-      "I specialize in creating dynamic, responsive, and scalable web applications with expertise in the MERN stack. Let's build your vision!",
+      "Full Stack Developer specializing in the MERN stack, Next.js, Node.js, and system design — building scalable production apps with performance, SEO, and AI-powered features.",
     img: Photo,
     CVlink:
       "https://drive.google.com/file/d/1BDnWbKeQNsEqJbkgJvY7xVqtu5IWQ9Pt/view?usp=sharing",
@@ -145,11 +144,11 @@ export const portfolio_data = {
   AboutSection: {
     tag: "About Me",
     heading:
-      "Hello! I'm <span>Mehroz Farooq. </span. A Professional <span>Web Developer & MERN Stack Specialist</span>",
-    para: "I’m a dedicated web and software developer with a passion for crafting innovative and user-friendly digital experiences. Leveraging expertise in modern technologies, I focus on delivering top-notch solutions tailored to individual and business needs. My mission is to empower businesses with creative and functional websites and applications that make a meaningful impact.",
+      "Hello! I'm <span>Mehroz Farooq.</span> A Professional <span>Full Stack Developer</span>",
+    para: "Full Stack Developer with 3+ years of experience architecting and scaling production web applications across the MERN stack, Next.js, TypeScript, PostgreSQL, and PHP/MySQL. Specialized in performance engineering and system design — including cutting critical API response times from 23 seconds to under 500ms, scaling a SaaS marketplace to 30,000+ monthly users, and shipping AI-powered product features with GPT-4 and Gemini. Experienced leading feature delivery end-to-end, mentoring developers, and partnering with leadership on product strategy.",
     projects: "10+",
     clients: 6,
-    experience: 4,
+    experience: 3,
     award: 1,
     links: {
       facebook: "https://www.facebook.com/mehroz.farooq.7/",
@@ -162,159 +161,155 @@ export const portfolio_data = {
   ServiceSection: {
     heading: "My Services",
     tagline:
-      "I offer a variety of web and mobile development services, tailored to help businesses achieve their goals through innovative and efficient solutions.",
+      "End-to-end full stack development — from scalable backends and polished frontends to performance, SEO, and AI-powered product features.",
     service: [
       {
-        icon: "fa-solid fa-code",
-        title: "Wordpress Development",
+        icon: "fa-solid fa-layer-group",
+        title: "Full Stack Development",
         description:
-          "I create responsive and dynamic websites using wordpress.",
+          "Architecting and shipping production web apps with the MERN stack, Next.js, TypeScript, and modern databases.",
       },
       {
         icon: "fa-solid fa-laptop-code",
         title: "Front-End Development",
         description:
-          "Specialized in building interactive user interfaces with React and modern JavaScript.",
+          "Building responsive, high-performance UIs with React, Next.js, Redux Toolkit, Tailwind CSS, and Ant Design.",
       },
       {
-        icon: "fa-solid fa-database",
-        title: "Back-End Development",
+        icon: "fa-solid fa-server",
+        title: "Back-End & APIs",
         description:
-          "Building robust back-end solutions using Node.js, Express, and MongoDB.",
+          "Designing robust Node.js, Express, and NestJS APIs with Redis caching, BullMQ queues, and secure auth.",
       },
       {
-        icon: "fa-solid fa-paint-brush",
-        title: "UI/UX Design",
+        icon: "fa-solid fa-gauge-high",
+        title: "Performance & Scalability",
         description:
-          "Crafting user-centered designs with an emphasis on usability and aesthetics usiing Figma.",
+          "Optimizing Core Web Vitals, API latency, caching strategies, and system design for high-traffic platforms.",
       },
       {
-        icon: "fa-solid fa-cogs",
-        title: "Web App Optimization",
+        icon: "fa-solid fa-robot",
+        title: "AI-Powered Features",
         description:
-          "Optimizing web applications for speed, performance, and SEO.",
+          "Integrating GPT-4, Gemini, and OpenRouter for content generation, agents, and intelligent product workflows.",
       },
       {
-        icon: "fa-solid fa-wand-magic-sparkles",
-        title: "Wordpress Design & Development",
+        icon: "fa-solid fa-magnifying-glass-chart",
+        title: "SEO & Integrations",
         description:
-          "I create responsive and dynamic websites using wordpress.",
+          "Next.js SEO, third-party APIs, payment gateways (Stripe, Braintree), and search integrations for growth.",
       },
     ],
   },
   EducationSection: {
     heading: "My Education",
     tagline:
-      "I have a strong academic background in Information Technology and Computer Science, which has shaped my skills and knowledge in web development and software engineering.",
+      "Strong academic foundation in Information Technology and Artificial Intelligence, paired with hands-on engineering experience.",
     education: [
       {
-        startend: "2018 - 2020",
-        degree: " FSC Pre Engineering",
-        institute: "Aspire College, Mian Channu",
+        startend: "2026 - 2028",
+        degree: "MS in Artificial Intelligence",
+        institute: "University of Management and Technology, Lahore",
         description:
-          "Achieved 80% overall, with 92% in Mathematics, during my FSC Pre-Engineering at Aspire College, Mian Channu.",
+          "Currently pursuing a Master's in Artificial Intelligence at UMT Lahore, deepening expertise in AI systems and modern intelligent applications.",
       },
       {
         startend: "2020 - 2024",
         degree: "Bachelor of Science in Information Technology",
-        institute: "Bahauddin Zakariya University",
+        institute: "Bahauddin Zakariya University, Multan",
         description:
-          "Among the few who mastered coding and web development and obtained 3.61 / 4.0 CGPA, creating outstanding projects during my studies at Bahauddin Zakariya University.",
+          "Graduated with a Final CGPA of 3.61 / 4.0, building strong foundations in software engineering and full stack web development.",
+      },
+      {
+        startend: "2018 - 2020",
+        degree: "FSC Pre-Engineering",
+        institute: "Aspire College, Mian Channu",
+        description:
+          "Scored 884/1100 with 97% in Mathematics during FSC Pre-Engineering at Aspire College, Mian Channu.",
       },
     ],
   },
   ExperienceSection: {
     heading: "My Experience",
     tagline:
-      " Experienced in web development with the MERN stack, collaborating with .NET developers to integrate RESTful APIs into frontend applications.",
+      "3+ years building and scaling production web platforms — from SaaS marketplaces and PWAs to data engineering and AI-powered products.",
     experience: [
       {
-        startend: "2020 - 2021",
-        role: "Web Development Learner",
-        where: "Self-Study",
+        startend: "Nov 2022 - Present",
+        role: "Full Stack Developer",
+        where: "Freelance / Contract (Remote)",
         description:
-          "I started my journey into web development by learning HTML, CSS, JavaScript, PHP, and SQL. Through self-paced learning and personal projects, I gained foundational skills in web development, which set the groundwork for my future career.",
+          "Built AI-powered systems using GPT-4, Gemini, and OpenRouter for multi-format content generation (links, PDFs, voice), implemented unified RBAC dashboards, and achieved 95+ Lighthouse performance and SEO scores with caching, Redux, and React Query.",
       },
       {
-        startend: "2021 - 2022",
-        role: "Frontend Developer Intern",
-        where: "MUX Institute",
-        description:
-          "During my time at MUX Institute, I learned advanced web development concepts and worked as an intern as a frontend developer. I contributed to the development of web applications, enhanced UI/UX, and worked closely with senior developers to sharpen my skills.",
-      },
-      {
-        startend: "2023 - 2024",
+        startend: "Jun 2023 - Nov 2024",
         role: "MERN Stack Developer",
-        where: "WebTech Smart Solution",
+        where: "Webtech Smart Solution, Multan",
         description:
-          "As a MERN Stack Developer at WebTech Smart Solution, I built dynamic web applications like a Smart Parking Solution, Tuition System, and Dashboards for students. I worked with APIs, handled both frontend and backend integrations, and collaborated with teams to deliver seamless user experiences.",
+          "Engineered a full stack Smart Parking Solution with Mapbox geolocation and Braintree payments, and delivered a Rental Management System and Tuition Booking platform covering lease tracking, payments, scheduling, and in-app messaging.",
       },
       {
-        startend: "2024 - 2025",
-        role: "Frontend React Developer",
-        where: "EDUSoft System Solution",
+        startend: "Nov 2024 - Feb 2025",
+        role: "React Developer",
+        where: "Edusoft System Solution, Multan",
         description:
-          "At EDUSoft, I work on internal projects such as the Employee Management System and Tag Printing. I add new functionalities like creating master-detail forms, applying filters, and enhancing UI elements. I also contribute to the development of a new project, the Account Management System, from scratch.",
+          "Cut manual record handling from days to minutes for 30+ employees by enhancing an Employee Management system with master-detail forms and complex filtering, and architected an Account Management System MVP from scratch.",
       },
       {
-        startend: "2025 - Present",
-        role: "Associate Mern Stack Developer",
-        where: "Atrule Technologies",
+        startend: "Mar 2025 - Nov 2025",
+        role: "Full Stack Developer (Project Lead)",
+        where: "Atrule Technologies, Multan",
         description:
-          "At Atrule Technologies, I work as an Associate MERN Stack Developer, which includes creating responsive web applications, debugging issues, and collaborating with senior developers to deliver high-quality solutions.",
+          "Led a multi-branch Expense Tracker with Redis and BullMQ, built WynShop (React PWA with real-time notifications and barcode scanning), migrated LoopBack 4 to Node.js/Express, and shipped a Next.js Quality Shop Marketplace with 95% SEO and speed scores.",
       },
       {
-        startend: "2024 - Present",
-        role: "Freelance Web Developer",
-        where: "Freelance",
+        startend: "2026",
+        role: "Full Stack Developer — Data Engineering",
+        where: "Freelance Client (Dubai, UAE)",
         description:
-          "As a freelance web developer, I have worked on various client projects, including developing responsive websites, e-commerce platforms, and custom web applications. I leverage my expertise in frontend and backend technologies to deliver solutions that meet client needs and enhance user experience.",
+          "Designed and ran a PHP/MySQL data-cleaning pipeline that deduplicated and standardized a 10M+ record property database for a Dubai-based real estate client, enabling reliable downstream reporting.",
+      },
+      {
+        startend: "Nov 2025 - Present",
+        role: "Full Stack Developer",
+        where: "Xihawks (AIChief), Lahore",
+        description:
+          "Scaled AIChief, a SaaS AI-tools marketplace, to 30,000+ monthly users and 10,000+ daily API requests across 12,000+ tools. Built listing, ranking, subscription, and analytics systems; implemented Redis/BullMQ; fixed Stripe 3DS checkout; and shipped SEO ownership verification and SimilarWeb integrations.",
       },
     ],
   },
   SkillSection: {
-    heading: "My Skill",
-    tagline: "Technologies I have expertise in",
+    heading: "My Skills",
+    tagline: "Frontend, backend, databases, DevOps, and AI tooling I use in production",
     skill: [
-      { img: HTML, name: "HTML", percentage: "90%", learning: false },
-      { img: CSS, name: "CSS", percentage: "90%", learning: false },
+      { img: HTML, name: "HTML", percentage: "95%", learning: false },
+      { img: CSS, name: "CSS", percentage: "95%", learning: false },
       {
         img: JavaScript,
         name: "JavaScript",
-        percentage: "70%",
+        percentage: "90%",
         learning: false,
       },
-      { img: Reactjs, name: "React", percentage: "80%", learning: false },
-      { img: Vue, name: "Vue", percentage: "50%", learning: false },
-      { img: NextJs, name: "NextJs", percentage: "60%", learning: false },
-      {
-        img: TypeScript,
-        name: "TypeScript",
-        percentage: "80%",
-        learning: false,
-      },
-      { img: AntDesign, name: "Ant Design", percentage: "40%", learning: true },
-      { img: Tailwind, name: "Tailwind", percentage: "70%", learning: true },
-      { img: Node, name: "Node.js", percentage: "70%", learning: false },
-      { img: Nest, name: "Nest.js", percentage: "60%", learning: true },
-      { img: Express, name: "Express", percentage: "70%", learning: false },
-      { img: Mongo, name: "MongoDB", percentage: "70%", learning: false },
-      { img: Posgresql, name: "Posgresql", percentage: "60%", learning: false },
-      {
-        img: MSSqlServer,
-        name: "MSSqlServer",
-        percentage: "50%",
-        learning: true,
-      },
-      { img: Github, name: "GitHub", percentage: "80%", learning: false },
-      {
-        img: AzureDevops,
-        name: "Azure Devops",
-        percentage: "30%",
-        learning: true,
-      },
-      { img: Docker, name: "Docker", percentage: "30%", learning: true },
-      { img: Wordpress, name: "Wordpress", percentage: "80%", learning: true },
+      { img: TypeScript, name: "TypeScript", percentage: "85%", learning: false },
+      { img: Reactjs, name: "React", percentage: "90%", learning: false },
+      { img: NextJs, name: "Next.js", percentage: "85%", learning: false },
+      { img: Redux, name: "Redux Toolkit", percentage: "85%", learning: false },
+      { img: Tailwind, name: "Tailwind CSS", percentage: "85%", learning: false },
+      { img: AntDesign, name: "Ant Design", percentage: "75%", learning: false },
+      { img: PrimeReact, name: "PrimeReact", percentage: "75%", learning: false },
+      { img: ReactHookForm, name: "React Hook Form", percentage: "85%", learning: false },
+      { img: Node, name: "Node.js", percentage: "90%", learning: false },
+      { img: Express, name: "Express", percentage: "90%", learning: false },
+      { img: Nest, name: "NestJS", percentage: "80%", learning: false },
+      { img: Mongo, name: "MongoDB", percentage: "85%", learning: false },
+      { img: Posgresql, name: "PostgreSQL", percentage: "75%", learning: false },
+      { img: MSSqlServer, name: "SQL Server", percentage: "70%", learning: false },
+      { img: JWT, name: "JWT / OAuth", percentage: "85%", learning: false },
+      { img: Axios, name: "Axios", percentage: "90%", learning: false },
+      { img: Github, name: "Git / GitHub", percentage: "90%", learning: false },
+      { img: Docker, name: "Docker", percentage: "70%", learning: false },
+      { img: AzureDevops, name: "CI/CD", percentage: "65%", learning: false },
+      { img: Wordpress, name: "PHP / WordPress", percentage: "70%", learning: false },
     ],
   },
   ProjectSection: {
@@ -325,21 +320,21 @@ export const portfolio_data = {
       {
         id: "1",
         img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
-        title: "Tuition Management System",
+        title: "TutorGround",
         description:
-          "A comprehensive web-based platform enabling students to find and send invitations to teachers, while teachers can manage requests and their profiles. This system simplifies tuition management with intuitive interfaces for both teachers and students.",
+          "A MERN stack tutoring marketplace with real-time WebSocket messaging, streamlining tutor discovery by location, subject, and pricing.",
         tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub", "Live"],
         projectData: {
           id: "1",
-          title: "Tuition Management System",
+          title: "TutorGround",
           banner:
             "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Banner.png?raw=true",
           about:
-            "A modern platform designed to connect students with teachers. Students can search for teachers based on their requirements and send invitations. Teachers can manage and respond to requests, while both can customize their profiles, providing a seamless tuition management experience.",
+            "TutorGround is a MERN stack tutoring marketplace that streamlines tutor discovery by location, subject, and pricing. Students can search for teachers, send invitations, and chat in real time via WebSocket messaging. Teachers manage requests and profiles — consolidating discovery, booking, and communication into one platform.",
           projectState: {
             heading: "Project Insights & Stats",
             description:
-              "Explore the key metrics and components of the Tuition Management System. This section outlines the project scale, core features, and development progress, showcasing its impact and usability. Access dashboard from this link https://tutorgrounddashboard.vercel.app/",
+              "Explore the key metrics and components of TutorGround. This section outlines the project scale, core features, and development progress, showcasing its impact and usability. Access dashboard from this link https://tutorgrounddashboard.vercel.app/",
             img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
             state: [
               { title: "Lines", number: "40000+" },
@@ -361,10 +356,10 @@ export const portfolio_data = {
             { img: ReactHookForm, title: "React Hook Form" },
           ],
           features: [
-            "Search for teachers by subjects or location",
+            "Tutor discovery by location, subject, and pricing",
+            "Real-time WebSocket messaging",
             "Send and manage tuition invitations",
             "Teacher profile and request management",
-            "User-friendly interface",
             "Secure login for both students and teachers",
           ],
           pages: [
@@ -403,7 +398,7 @@ export const portfolio_data = {
             "Creating a robust invitation and request management system, ensuring scalability for a large number of users.",
           documentation: {
             description:
-              "Access detailed guides and resources for smooth usage of the Tuition Management System. Comprehensive documentation covers setup, API usage, and advanced features.",
+              "Access detailed guides and resources for smooth usage of TutorGround. Comprehensive documentation covers setup, API usage, and advanced features.",
             img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Documentation.png?raw=true",
           },
           pricing: 15000,
@@ -809,14 +804,14 @@ export const portfolio_data = {
         img: Inventory_Home, // Replace with your image
         title: "Inventory Management System",
         description:
-          "A comprehensive inventory management system built with React.js and Node.js to manage products, purchases, sales, and generate reports. dummy login credentials 'username: admin  password:111'",
+          "A full MERN stack inventory platform built as sole developer, with PDF generation and analytics, centralizing sales, stock, and product lifecycle management. Dummy login: username: admin / password: 111",
         tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub", "Live"],
         projectData: {
           id: "6",
           title: "Inventory Management System",
           banner: Inventory_Home, // Replace with your image
           about:
-            "This project is a full-stack inventory management system designed to help businesses manage their inventory efficiently. It includes features like adding cities, products, and categories, managing purchases and sales, tracking stock, and generating detailed reports. The system is built using React.js for the front end, Node.js and Express for the back end, and MongoDB for the database. It also includes user authentication using JWT and PDF generation for reports.",
+            "A full MERN stack inventory platform built as sole developer. It centralizes sales, stock, and product lifecycle management with PDF generation and analytics. Features include adding cities, products, and categories, managing purchases and sales, tracking stock, and generating detailed reports. Built with React.js, Node.js, Express, MongoDB, JWT authentication, and PDF generation for reports.",
           projectState: {
             description:
               "This project consists of a modular and scalable architecture with reusable components for both the front end and back end. It includes 10+ reusable components, 6 main pages, and a robust API for managing inventory operations. The system is designed to be responsive and user-friendly, ensuring a smooth experience across devices.",
@@ -861,6 +856,13 @@ export const portfolio_data = {
               img: PDF, // Replace with your image
               title: "PDF Generation",
             },
+          ],
+          features: [
+            "Centralized sales, stock, and product lifecycle management",
+            "PDF report generation and analytics",
+            "Purchase and sales tracking",
+            "Product, category, and city management",
+            "Secure JWT authentication",
           ],
           pages: [
             {
@@ -1112,20 +1114,20 @@ export const portfolio_data = {
       {
         id: "9",
         img: Qwizzy_home,
-        title: "Qwizzy - Interview Q&A Platform",
+        title: "QwizzyAI",
         description:
-          "A modern PWA for practicing and sharing interview questions and answers. Features AI-powered question generation, bookmarking, voting, and a responsive profile system for users.",
+          "A full MERN stack interview-prep platform integrating GPT-4 and Gemini for dynamic question generation, with user profiles, bookmarking, and community voting — consolidating interview prep, curation, and AI-assisted practice into one platform.",
         tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub", "PWA", "Live"],
         projectData: {
           id: "9",
-          title: "Qwizzy - Interview Q&A Platform",
+          title: "QwizzyAI",
           banner: Qwizzy_home,
           about:
-            "Qwizzy is a full-stack  platform  and PWA for interview preparation. Users can search, filter, and answer questions, generate new questions with AI, and manage their own profile and contributions. Built with React, Redux Toolkit, Node.js, Express, and MongoDB.",
+            "QwizzyAI is a full MERN stack interview-prep platform that integrates GPT-4 and Gemini for dynamic question generation. Users can search, filter, and answer questions, bookmark and vote in the community, and manage profiles and contributions — consolidating interview prep, curation, and AI-assisted practice into one platform. Built with React, Node.js, Express, MongoDB, Gemini API, and GPT-4.",
           projectState: {
             heading: "Project Insights & Stats",
             description:
-              "Explore the features and scale of Qwizzy. This section highlights the platform's core capabilities and development progress.",
+              "Explore the features and scale of QwizzyAI. This section highlights the platform's core capabilities and development progress.",
             img: Qwizzy_home,
             state: [
               { title: "Lines", number: "6000+" },
@@ -1146,11 +1148,11 @@ export const portfolio_data = {
             { img: Axios, title: "Axios" },
           ],
           features: [
-            "PWA with responsive UI app",
+            "GPT-4 and Gemini dynamic question generation",
             "Search and filter interview questions",
-            "AI-powered structured question and answer generation",
-            "Bookmark and vote on questions",
-            "Responsive user profile and dashboard",
+            "User profiles with contribution tracking",
+            "Bookmark and community voting on questions",
+            "AI-assisted interview practice in one platform",
             "Add, edit, and manage questions",
             "Authentication and user management",
           ],
@@ -1166,10 +1168,10 @@ export const portfolio_data = {
           liveDemo: "https://qwizzyapp.vercel.app/",
           repo: "",
           challenges:
-            "Integrating AI for question generation, ensuring real-time updates and a seamless user experience.",
+            "Integrating GPT-4 and Gemini for reliable question generation while keeping a seamless user experience.",
           documentation: {
             description:
-              "Comprehensive guides for using Qwizzy, including setup, API usage, and advanced features.",
+              "Comprehensive guides for using QwizzyAI, including setup, API usage, and advanced features.",
             img: Qwizzy_home,
           },
           pricing: "10000",
@@ -1184,27 +1186,28 @@ export const portfolio_data = {
       {
         id: "10",
         img: ExpenseTracker_dashboard1,
-        title: "Enterprise Expense Tracker",
+        title: "Expense Tracker",
         description:
-          "A full-stack enterprise-level expense management system that streamlines expense tracking, approvals, and reporting with role-based access and real-time analytics dashboards.",
+          "A PWA expense tracker with NestJS backend, React frontend, multi-role approval workflows, and Cloudinary document uploads — replacing fragmented manual expense tracking with a unified, auditable system.",
         tags: [
           "React",
           "NestJS",
           "Nodejs",
           "MongoDB",
           "Live",
-          "Github"
+          "Github",
+          "PWA"
         ],
         projectData: {
           id: "10",
-          title: "Enterprise Expense Tracker",
+          title: "Expense Tracker",
           banner: ExpenseTracker_dashboard2,
           about:
-            "The Enterprise Expense Tracker is a smart and secure web platform built for organizations to manage expenses, reimbursements, and approvals efficiently. It enables different roles such as Submitter, Operator, Finance, and Admin to interact in a controlled workflow, ensuring data integrity and transparency across the system.",
+            "Led development of a PWA expense tracker with NestJS backend, React frontend, multi-role approval workflows, and Cloudinary document uploads. Built for organizations to manage expenses, reimbursements, and approvals efficiently — replacing fragmented manual expense tracking with a unified, auditable system across Submitter, Operator, Finance, and Admin roles.",
           projectState: {
             heading: "Project Insights & Stats",
             description:
-              "Discover the scale and structure of the Enterprise Expense Tracker. From multi-role authentication to detailed financial analytics, this platform demonstrates enterprise-grade engineering with a modular architecture and well-documented API layer.",
+              "Discover the scale and structure of the Expense Tracker. From multi-role authentication to detailed financial analytics, this platform demonstrates enterprise-grade engineering with a modular NestJS architecture and well-documented API layer.",
             img: ExpenseTracker_dashboard1,
             state: [
               { title: "Lines", number: "35,000+" },
@@ -1216,8 +1219,8 @@ export const portfolio_data = {
           },
           technologies: [
             { img: Reactjs, title: "React JS" },
+            { img: Nest, title: "NestJS" },
             { img: Node, title: "Node JS" },
-            { img: Express, title: "Express JS" },
             { img: Mongo, title: "MongoDB" },
             { img: Mongoose, title: "Mongoose" },
             { img: JWT, title: "JWT" },
@@ -1228,13 +1231,13 @@ export const portfolio_data = {
             { img: Axios, title: "Axios" }
           ],
           features: [
-            "Role-based access control (Submitter, Operator, Finance, Admin)",
-            "Secure authentication and authorization using JWT",
+            "Multi-role approval workflows (Submitter, Operator, Finance, Admin)",
+            "NestJS backend with scalable API architecture",
+            "Cloudinary document uploads",
+            "PWA with offline-friendly experience",
             "Expense creation, review, and approval workflow",
             "Dynamic dashboard with analytics and charts",
-            "Comprehensive ledger view and expense summaries",
-            "Integrated Swagger documentation for APIs",
-            "Dark mode and local caching support on frontend"
+            "Comprehensive ledger view and expense summaries"
           ],
           pages: [
             { title: "Dashboard", img: ExpenseTracker_dashboard1 },
@@ -1247,7 +1250,7 @@ export const portfolio_data = {
           liveDemo: "https://atrule-expensetracker.vercel.app/",
           repo: "https://github.com/Mehroz101/enterprise-expense-tracker",
           challenges:
-            "Implementing multi-role permission layers and ensuring secure JWT-based access while keeping the API scalable and maintainable with Swagger documentation.",
+            "Implementing multi-role permission layers and Cloudinary uploads while keeping the NestJS API scalable and maintainable.",
           documentation: {
             description:
               "Detailed documentation covering setup, API routes, and workflow structure for each role. Includes interactive Swagger UI and architecture overview.",
