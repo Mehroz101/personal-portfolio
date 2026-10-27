@@ -26,6 +26,8 @@ Netlify builds with `npm run build` and publishes `dist`. `public/_redirects` se
 - `public/Mehroz_Farooq_Resume.pdf`: downloadable résumé supplied by Mehroz.
 - `src/portfolio.css`: responsive layout and visual styles.
 
+Projects use three alternating featured case studies (Waaimo, AIChief, and Placed), followed by a compact archive of the other ten projects. The same layout is searchable on `/projects`. Subtle hero, scroll, hover, and dialog animations respect reduced-motion preferences, with content visible by default.
+
 The homepage includes about, experience, selected projects, skills, education, certification, and contact. `/projects` contains all thirteen projects with keyword search. `/project/:id` provides project details and keyboard-accessible screenshot dialogs. Contact opens an email client; there is no unconnected contact form.
 
 Motion respects reduced-motion preferences. Navigation, project search, gallery dialogs, and all interactive controls support keyboard use.

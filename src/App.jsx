@@ -4,6 +4,8 @@ import { portfolio_data as data } from "../public/portfoliodata";
 import { profile } from "./portfolio-profile";
 import "./portfolio.css";
 import ScreenshotSlider from "./components/ScreenshotSlider";
+import ProjectList from "./components/ProjectList";
+import ScrollMotion from "./components/ScrollMotion";
 import { aichiefProject } from "./aichief-project";
 import { placedProject } from "./placed-project";
 import { waaimoProject } from "./waaimo-project";
@@ -90,44 +92,6 @@ function Heading({ number, label, title, children }) {
       </div>
       {children}
     </div>
-  );
-}
-function Card({ project, index }) {
-  return (
-    <article className="project-card">
-      <Link
-        className={`project-image color-${index % 4}`}
-        to={`/project/${project.id}`}
-        aria-label={`Explore ${project.title}`}
-      >
-        <img
-          src={project.img}
-          alt={project.imageAlt || `${project.title} application screenshot`}
-          loading="lazy"
-          width="1200"
-          height="800"
-        />
-        <span className="project-open" aria-hidden="true">
-          ↗
-        </span>
-      </Link>
-      <div className="project-meta">
-        <span>PROJECT / {String(index + 1).padStart(2, "0")}</span>
-        <span>
-          {project.projectData.technologies
-            ?.slice(0, 3)
-            .map((t) => t.title.replace(/ JS| js/g, ""))
-            .join(" · ")}
-        </span>
-      </div>
-      <h3>
-        <Link to={`/project/${project.id}`}>
-          {project.title}
-          <Arrow />
-        </Link>
-      </h3>
-      <p>{project.description.split(" Dummy login:")[0]}</p>
-    </article>
   );
 }
 function Home() {
@@ -313,15 +277,7 @@ function Home() {
             All {projects.length} projects <Arrow />
           </Link>
         </Heading>
-        <div className="project-grid">
-          {["13", "11", "12", "9"].map((id, index) => (
-            <Card
-              project={projects.find((p) => p.id === id)}
-              index={index}
-              key={id}
-            />
-          ))}
-        </div>
+        <ProjectList projects={projects} />
       </section>
       <section className="section section-tint" id="skills">
         <div className="wrap">
@@ -467,11 +423,7 @@ function AllProjects() {
       <p className="result-count" role="status">
         {visible.length} {visible.length === 1 ? "project" : "projects"}
       </p>
-      <div className="project-grid">
-        {visible.map((p, i) => (
-          <Card project={p} index={i} key={p.id} />
-        ))}
-      </div>
+      <ProjectList projects={visible} headingLevel={2} />
       {!visible.length && (
         <div className="empty-state">
           <h2>No projects found.</h2>
@@ -637,6 +589,7 @@ export default function App() {
         Skip to content
       </a>
       <Effects />
+      <ScrollMotion />
       <Header />
       <main id="main">
         <Routes>
