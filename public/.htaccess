@@ -1,0 +1,12 @@
+# Hostinger (Apache/LiteSpeed): let React Router handle direct page requests.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Keep real assets, documents, and directories available as normal.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Internally serve the app without changing /projects or /project/:id.
+  RewriteRule ^ index.html [L]
+</IfModule>
