@@ -6,7 +6,9 @@ import "./portfolio.css";
 import ScreenshotSlider from "./components/ScreenshotSlider";
 import { aichiefProject } from "./aichief-project";
 import { placedProject } from "./placed-project";
+import { waaimoProject } from "./waaimo-project";
 const projects = [
+  waaimoProject,
   aichiefProject,
   placedProject,
   ...data.ProjectSection.project,
@@ -312,7 +314,7 @@ function Home() {
           </Link>
         </Heading>
         <div className="project-grid">
-          {["11", "12", "9", "10"].map((id, index) => (
+          {["13", "11", "12", "9"].map((id, index) => (
             <Card
               project={projects.find((p) => p.id === id)}
               index={index}
@@ -571,7 +573,7 @@ function ProjectDetail() {
           )}
         </div>
         <aside>
-          <p className="eyebrow">BUILT WITH</p>
+          <p className="eyebrow">{d.stackLabel || "BUILT WITH"}</p>
           <ul className="technology-list">
             {d.technologies?.map((t) => (
               <li key={t.title}>{t.title}</li>
