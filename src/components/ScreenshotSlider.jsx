@@ -149,7 +149,9 @@ export default function ScreenshotSlider({ pages, onOpen }) {
             {String(active + 1).padStart(2, "0")} /{" "}
             {String(pages.length).padStart(2, "0")}
           </p>
-          <p>{pages[active].title}</p>
+          <p className="slider-caption-text" key={active}>
+            {pages[active].title}
+          </p>
         </div>
         <button
           className="slider-arrow"
