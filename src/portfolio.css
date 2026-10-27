@@ -1340,8 +1340,7 @@ h3 {
 }
 .screenshot-open img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1.44;
+  height: clamp(140px, calc(100svh - 380px), 420px);
   object-fit: contain;
   object-position: top;
   background: #eeeee8;
@@ -1411,6 +1410,9 @@ h3 {
   font-variant-numeric: tabular-nums;
 }
 @media (max-width: 580px) {
+  .screenshot-open img {
+    height: clamp(140px, 38svh, 260px);
+  }
   .screenshot-track {
     gap: 12px;
   }
