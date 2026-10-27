@@ -4,6 +4,7 @@ export const profile = {
   experience: [
     {
       company: "Xihawks · AIChief",
+      projectId: "11",
       role: "Full Stack Developer",
       date: "Nov 2025 — Present",
       location: "Lahore",
