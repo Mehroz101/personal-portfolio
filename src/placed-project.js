@@ -1,6 +1,7 @@
 import home from "./assets/placed/home.jpg";
 import features from "./assets/placed/features.jpg";
 import guides from "./assets/placed/guides.jpg";
+import community from "./assets/placed/community.jpg";
 
 // Role and contributions confirmed by Mehroz; screenshots show public pages.
 export const placedProject = {
@@ -46,6 +47,7 @@ export const placedProject = {
     pages: [
       { title: "Placed — public homepage and assessment", img: home },
       { title: "Career platform features", img: features },
+      { title: "Community and member stories", img: community },
       { title: "Public career guides", img: guides },
     ],
   },
