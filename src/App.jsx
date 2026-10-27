@@ -4,7 +4,12 @@ import { portfolio_data as data } from "../public/portfoliodata";
 import { profile } from "./portfolio-profile";
 import "./portfolio.css";
 import { aichiefProject } from "./aichief-project";
-const projects = [aichiefProject, ...data.ProjectSection.project];
+import { placedProject } from "./placed-project";
+const projects = [
+  aichiefProject,
+  placedProject,
+  ...data.ProjectSection.project,
+];
 const social = data.AboutSection.links;
 const nav = ["About", "Experience", "Projects", "Skills", "Education"];
 const Arrow = () => (
@@ -276,7 +281,14 @@ function Home() {
                   <p className="company">
                     {job.company} <span>· {job.location}</span>
                   </p>
-                  {job.projectId && <Link className="text-link" to={`/project/${job.projectId}`}>Explore AIChief at Xihawks <Arrow /></Link>}
+                  {job.projectId && (
+                    <Link
+                      className="text-link"
+                      to={`/project/${job.projectId}`}
+                    >
+                      Explore {job.projectTitle || "project"} <Arrow />
+                    </Link>
+                  )}
                   <ul>
                     {job.points.map((point) => (
                       <li key={point}>{point}</li>
@@ -299,7 +311,7 @@ function Home() {
           </Link>
         </Heading>
         <div className="project-grid">
-          {["11", "9", "10", "1"].map((id, index) => (
+          {["11", "12", "9", "10"].map((id, index) => (
             <Card
               project={projects.find((p) => p.id === id)}
               index={index}
@@ -500,6 +512,7 @@ function ProjectDetail() {
       </Link>
       <p className="eyebrow">PROJECT / {id.padStart(2, "0")}</p>
       <h1>{project.title}</h1>
+      {d.context && <p className="project-context">{d.context}</p>}
       <p className="lead">{project.description.split(" Dummy login:")[0]}</p>
       <div className="detail-links">
         {d.liveDemo && (
@@ -523,6 +536,17 @@ function ProjectDetail() {
         width="1200"
         height="750"
       />
+      {d.highlight && (
+        <section
+          className="engineering-highlight"
+          aria-labelledby="engineering-highlight-title"
+        >
+          <p className="eyebrow">{d.highlight.label}</p>
+          <h2 id="engineering-highlight-title">{d.highlight.title}</h2>
+          <p>{d.highlight.description}</p>
+          <p className="highlight-outcome">{d.highlight.outcome}</p>
+        </section>
+      )}
       <div className="detail-columns">
         <div>
           <p className="eyebrow">THE OVERVIEW</p>

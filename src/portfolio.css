@@ -1266,3 +1266,40 @@ h3 {
   width: 19px;
   height: 19px;
 }
+
+.project-context {
+  color: var(--accent);
+  font-size: 13px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.engineering-highlight {
+  margin-top: 45px;
+  padding: 32px;
+  background: #eee8db;
+  border: 1px solid #d8c7ae;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+}
+.engineering-highlight h2 {
+  font-size: clamp(26px, 3vw, 38px);
+  margin: 16px 0;
+  max-width: 850px;
+  line-height: 1.2;
+}
+.engineering-highlight > p:not(.eyebrow) {
+  max-width: 850px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.engineering-highlight .highlight-outcome {
+  margin-top: 18px;
+  font-weight: 600;
+  color: var(--accent) !important;
+}
+@media (max-width: 580px) {
+  .engineering-highlight {
+    padding: 24px 20px;
+  }
+}

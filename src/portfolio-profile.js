@@ -5,12 +5,15 @@ export const profile = {
     {
       company: "Xihawks · AIChief",
       projectId: "11",
+      projectTitle: "AIChief at Xihawks",
       role: "Full Stack Developer",
       date: "Nov 2025 — Present",
       location: "Lahore",
       points: [
         "Scaled a SaaS AI-tools marketplace to 30,000+ monthly users and 10,000+ daily API requests across a catalog of 12,000+ tools.",
         "Built listing, ranking, subscription, and analytics systems; implemented Redis caching and BullMQ background jobs.",
+        "Designed an algorithm to derive daily view, upvote, and bookmark increments from real data without storing generated increments in the database.",
+        "Built user and admin dashboards and multistep forms with React Hook Form and Redux; improved Core Web Vitals and SEO.",
         "Resolved Stripe 3D Secure checkout failures, shipped SEO verification and third-party integrations, and mentored junior developers.",
       ],
     },
@@ -47,6 +50,8 @@ export const profile = {
     },
     {
       company: "Freelance / Contract",
+      projectId: "12",
+      projectTitle: "Placed",
       role: "Full Stack Developer · Part-time",
       date: "Nov 2022 — Present",
       location: "Remote",

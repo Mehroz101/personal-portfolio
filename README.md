@@ -21,10 +21,11 @@ Netlify builds with `npm run build` and publishes `dist`. `public/_redirects` se
 ## Update content
 
 - `src/portfolio-profile.js`: career experience, contact email, and grouped skills, based on the supplied résumé.
+- `src/aichief-project.js` and `src/placed-project.js`: professional project case studies and public website screenshots.
 - `public/portfoliodata.js`: existing project descriptions, screenshots, education, portrait, and social links.
 - `public/Mehroz_Farooq_Resume.pdf`: downloadable résumé supplied by Mehroz.
 - `src/portfolio.css`: responsive layout and visual styles.
 
-The homepage includes about, experience, selected projects, skills, education, certification, and contact. `/projects` contains all ten projects with keyword search. `/project/:id` provides project details and keyboard-accessible screenshot dialogs. Contact opens an email client; there is no unconnected contact form.
+The homepage includes about, experience, selected projects, skills, education, certification, and contact. `/projects` contains all twelve projects with keyword search. `/project/:id` provides project details and keyboard-accessible screenshot dialogs. Contact opens an email client; there is no unconnected contact form.
 
 Motion respects reduced-motion preferences. Navigation, project search, gallery dialogs, and all interactive controls support keyboard use.

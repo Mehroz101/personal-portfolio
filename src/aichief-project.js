@@ -1,24 +1,75 @@
-// Professional contributions based on Mehroz's supplied résumé.
+import home from "./assets/aichief/home.jpg";
+import directory from "./assets/aichief/directory.jpg";
+import toolDetail from "./assets/aichief/tool-detail.jpg";
+
+// Stack and contributions supplied by Mehroz; career metrics from his résumé.
 export const aichiefProject = {
   id: "11",
   title: "AIChief",
-  img: "https://aichief.com/aichief-best-ai-tools-directory.svg",
-  imageAlt: "AIChief logo",
-  description: "An AI-tools discovery and SaaS marketplace platform. As a Full Stack Developer at Xihawks, I contributed to listings, rankings, subscriptions, analytics, performance, and payment reliability.",
-  tags: ["AIChief", "Xihawks", "SaaS", "Redis", "BullMQ", "Stripe", "React Hook Form", "SimilarWeb"],
+  img: home,
+  description:
+    "An AI-tools discovery and SaaS marketplace. At Xihawks, I build full stack features, dashboards, payment integrations, and performance improvements, including a daily engagement-metrics algorithm that avoids storing generated increments in the database.",
+  tags: [
+    "AIChief",
+    "Xihawks",
+    "Next.js",
+    "MongoDB",
+    "Node.js",
+    "Express",
+    "Redis",
+    "BullMQ",
+    "Stripe",
+    "PayPal",
+    "SimilarWeb API",
+    "React Hook Form",
+    "Redux",
+    "Core Web Vitals",
+    "SEO",
+  ],
   projectData: {
-    id: "11", title: "AIChief", liveDemo: "https://aichief.com/",
-    about: "AIChief helps people discover and evaluate AI tools. I work on the platform as a Full Stack Developer at Xihawks in Lahore (November 2025–present), contributing as part of the engineering team. My work spans the Tool Listing System, Ranking Algorithm, Subscription Management, Analytics System, dashboard improvements, SEO verification, third-party integrations, and production reliability. During my work on the platform, it scaled to 30,000+ monthly users and 10,000+ daily API requests across a catalog of 12,000+ tools. These figures describe the period covered by my résumé.",
-    technologies: [{title:"Redis"},{title:"BullMQ"},{title:"Stripe"},{title:"React Hook Form"},{title:"SimilarWeb API"}],
-    challenges: "Supporting a growing tools catalog and request volume while improving backend reliability, resolving checkout failures, and making the platform easier to operate. I implemented Redis caching and BullMQ background jobs, fixed Stripe 3D Secure payment failures, and streamlined dashboard forms.",
+    id: "11",
+    title: "AIChief",
+    banner: home,
+    liveDemo: "https://aichief.com/",
+    context: "Full Stack Developer · Xihawks · Nov 2025 — Present",
+    about:
+      "AIChief is an AI-tools discovery and SaaS marketplace. As a Full Stack Developer at Xihawks, I contribute across a Next.js frontend and a Node.js/Express backend with MongoDB, Redis, and BullMQ. My work includes user and admin dashboards, multistep forms, listing and ranking systems, subscription management, analytics, payment integrations, production bug fixes, and Core Web Vitals and SEO improvements. During the period covered by my résumé, the platform scaled to 30,000+ monthly users and 10,000+ daily API requests across 12,000+ listed tools.",
+    highlight: {
+      label: "ENGINEERING HIGHLIGHT",
+      title: "Daily engagement metrics, without storing generated increments.",
+      description:
+        "I designed an algorithm that derives daily increments for views, upvotes, and bookmarks from real data at calculation time, avoiding database storage of those generated increments. This lets the application calculate changing engagement metrics without persisting every calculated update.",
+      outcome:
+        "Real-data inputs · Daily calculations · No database writes for generated increments",
+    },
+    technologies: [
+      "Next.js",
+      "MongoDB",
+      "Node.js",
+      "Express",
+      "Redis",
+      "BullMQ",
+      "Stripe",
+      "PayPal",
+      "SimilarWeb API",
+      "React Hook Form",
+      "Redux",
+    ].map((title) => ({ title })),
+    challenges:
+      "Balancing a growing catalog and request volume with reliable payments, maintainable dashboards, and a fast, discoverable frontend. I used Redis caching and BullMQ background jobs, fixed production bugs including Stripe 3D Secure checkout failures, and improved Core Web Vitals and SEO.",
     features: [
-      "Built tool listing, ranking, subscription management, and analytics systems.",
-      "Implemented Redis caching and BullMQ queues for reliable background processing.",
-      "Resolved Stripe 3D Secure failures that blocked checkout completion.",
-      "Built ownership verification using meta tags, HTML files, scripts, and business email, plus a backlink creation module.",
-      "Migrated core dashboard forms to React Hook Form and improved user dashboards.",
-      "Developed cron jobs, chatbot features, SimilarWeb integrations, and user journey tracking.",
-      "Partnered with management on product planning, mentored developers, and reviewed pull requests."
-    ]
-  }
+      "Designed an algorithm to calculate daily view, upvote, and bookmark increments from real data without storing the generated increments in MongoDB.",
+      "Built and improved user dashboards, admin dashboards, forms, and multistep workflows using React Hook Form and Redux.",
+      "Developed tool listing, ranking, subscription management, analytics, and user journey tracking systems.",
+      "Worked on Stripe and PayPal payment integrations and resolved Stripe 3D Secure checkout failures.",
+      "Implemented Redis caching, BullMQ background jobs, cron jobs, and SimilarWeb API integrations.",
+      "Improved Core Web Vitals and SEO; built ownership verification using meta tags, HTML files, scripts, and business email, plus a backlink module.",
+      "Fixed production bugs, reviewed pull requests, mentored developers, and collaborated with management on product planning.",
+    ],
+    pages: [
+      { title: "AIChief — public homepage", img: home },
+      { title: "AI tools directory", img: directory },
+      { title: "Tool detail and review page", img: toolDetail },
+    ],
+  },
 };
