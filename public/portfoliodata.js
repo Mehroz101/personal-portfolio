@@ -1,3 +1,11 @@
+import TutorImage0 from "../src/assets/tutorground-0.png";
+import TutorImage1 from "../src/assets/tutorground-1.png";
+import TutorImage2 from "../src/assets/tutorground-2.png";
+import TutorImage3 from "../src/assets/tutorground-3.png";
+import TutorImage4 from "../src/assets/tutorground-4.png";
+import TutorImage5 from "../src/assets/tutorground-5.png";
+import TutorImage6 from "../src/assets/tutorground-6.png";
+import TutorImage7 from "../src/assets/tutorground-7.png";
 import HTML from "../src/assets/html.png";
 import CSS from "../src/assets/css.png";
 import JavaScript from "../src/assets/javascript.png";
@@ -85,7 +93,6 @@ import Portfolio2_About from "../src/assets/Portfolio2/Portfolio2_About.png";
 import Portfolio2_AllProjects from "../src/assets/Portfolio2/Portfolio2_AllProjects.png";
 import Portfolio2_Contact from "../src/assets/Portfolio2/Portfolio2_Contact.png";
 
-
 //wordpress electrosoftzone ScreenShot
 import Wordpress_home from "../src/assets/Wordpress-ecom/Wordpress-Home.png";
 import Wordpress_account from "../src/assets/Wordpress-ecom/Wordpress-account.png";
@@ -119,7 +126,6 @@ import Qwizzy_home from "../src/assets/Qwizzy/qwizzy_home.png";
 import Qwizzy_profile from "../src/assets/Qwizzy/qwizzy_profile.png";
 import Qwizzy_responsiveprofile from "../src/assets/Qwizzy/qwizzy_responsiveprofile.png";
 import Qwizzy_responsivehome from "../src/assets/Qwizzy/qwizzy_responsivehome.png";
-
 
 //Expense Tracker APP Screenshots
 import ExpenseTracker_dashboard1 from "../src/assets/expensetracker/dashboard.png";
@@ -280,7 +286,8 @@ export const portfolio_data = {
   },
   SkillSection: {
     heading: "My Skills",
-    tagline: "Frontend, backend, databases, DevOps, and AI tooling I use in production",
+    tagline:
+      "Frontend, backend, databases, DevOps, and AI tooling I use in production",
     skill: [
       { img: HTML, name: "HTML", percentage: "95%", learning: false },
       { img: CSS, name: "CSS", percentage: "95%", learning: false },
@@ -290,26 +297,66 @@ export const portfolio_data = {
         percentage: "90%",
         learning: false,
       },
-      { img: TypeScript, name: "TypeScript", percentage: "85%", learning: false },
+      {
+        img: TypeScript,
+        name: "TypeScript",
+        percentage: "85%",
+        learning: false,
+      },
       { img: Reactjs, name: "React", percentage: "90%", learning: false },
       { img: NextJs, name: "Next.js", percentage: "85%", learning: false },
       { img: Redux, name: "Redux Toolkit", percentage: "85%", learning: false },
-      { img: Tailwind, name: "Tailwind CSS", percentage: "85%", learning: false },
-      { img: AntDesign, name: "Ant Design", percentage: "75%", learning: false },
-      { img: PrimeReact, name: "PrimeReact", percentage: "75%", learning: false },
-      { img: ReactHookForm, name: "React Hook Form", percentage: "85%", learning: false },
+      {
+        img: Tailwind,
+        name: "Tailwind CSS",
+        percentage: "85%",
+        learning: false,
+      },
+      {
+        img: AntDesign,
+        name: "Ant Design",
+        percentage: "75%",
+        learning: false,
+      },
+      {
+        img: PrimeReact,
+        name: "PrimeReact",
+        percentage: "75%",
+        learning: false,
+      },
+      {
+        img: ReactHookForm,
+        name: "React Hook Form",
+        percentage: "85%",
+        learning: false,
+      },
       { img: Node, name: "Node.js", percentage: "90%", learning: false },
       { img: Express, name: "Express", percentage: "90%", learning: false },
       { img: Nest, name: "NestJS", percentage: "80%", learning: false },
       { img: Mongo, name: "MongoDB", percentage: "85%", learning: false },
-      { img: Posgresql, name: "PostgreSQL", percentage: "75%", learning: false },
-      { img: MSSqlServer, name: "SQL Server", percentage: "70%", learning: false },
+      {
+        img: Posgresql,
+        name: "PostgreSQL",
+        percentage: "75%",
+        learning: false,
+      },
+      {
+        img: MSSqlServer,
+        name: "SQL Server",
+        percentage: "70%",
+        learning: false,
+      },
       { img: JWT, name: "JWT / OAuth", percentage: "85%", learning: false },
       { img: Axios, name: "Axios", percentage: "90%", learning: false },
       { img: Github, name: "Git / GitHub", percentage: "90%", learning: false },
       { img: Docker, name: "Docker", percentage: "70%", learning: false },
       { img: AzureDevops, name: "CI/CD", percentage: "65%", learning: false },
-      { img: Wordpress, name: "PHP / WordPress", percentage: "70%", learning: false },
+      {
+        img: Wordpress,
+        name: "PHP / WordPress",
+        percentage: "70%",
+        learning: false,
+      },
     ],
   },
   ProjectSection: {
@@ -319,7 +366,7 @@ export const portfolio_data = {
     project: [
       {
         id: "1",
-        img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
+        img: TutorImage0,
         title: "TutorGround",
         description:
           "A MERN stack tutoring marketplace with real-time WebSocket messaging, streamlining tutor discovery by location, subject, and pricing.",
@@ -327,15 +374,14 @@ export const portfolio_data = {
         projectData: {
           id: "1",
           title: "TutorGround",
-          banner:
-            "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Banner.png?raw=true",
+          banner: TutorImage1,
           about:
             "TutorGround is a MERN stack tutoring marketplace that streamlines tutor discovery by location, subject, and pricing. Students can search for teachers, send invitations, and chat in real time via WebSocket messaging. Teachers manage requests and profiles — consolidating discovery, booking, and communication into one platform.",
           projectState: {
             heading: "Project Insights & Stats",
             description:
               "Explore the key metrics and components of TutorGround. This section outlines the project scale, core features, and development progress, showcasing its impact and usability. Access dashboard from this link https://tutorgrounddashboard.vercel.app/",
-            img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
+            img: TutorImage0,
             state: [
               { title: "Lines", number: "40000+" },
               { title: "Modules", number: "4" },
@@ -365,31 +411,31 @@ export const portfolio_data = {
           pages: [
             {
               title: "Home Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Homepage.png?raw=true",
+              img: TutorImage0,
             },
             {
               title: "Teacher Detail Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_%20Detail.png?raw=true",
+              img: TutorImage2,
             },
             {
               title: "Books Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Books.png?raw=true",
+              img: TutorImage3,
             },
             {
               title: "Profile Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Profile.png?raw=true",
+              img: TutorImage4,
             },
             {
               title: "Search Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Search.png?raw=true",
+              img: TutorImage5,
             },
             {
               title: "Student Request Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_stdRequest.png?raw=true",
+              img: TutorImage6,
             },
             {
               title: "Invitation Page",
-              img: "https://github.com/Mehroz101/imgs/blob/main/docs/images/Tutor_Invitation.png?raw=true",
+              img: TutorImage7,
             },
           ],
           liveDemo: "https://tutorground.vercel.app/",
@@ -805,7 +851,15 @@ export const portfolio_data = {
         title: "Inventory Management System",
         description:
           "A full MERN stack inventory platform built as sole developer, with PDF generation and analytics, centralizing sales, stock, and product lifecycle management. Dummy login: username: admin / password: 111",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "Tailwind", "GitHub", "Live"],
+        tags: [
+          "React",
+          "Nodejs",
+          "Expressjs",
+          "MongoDB",
+          "Tailwind",
+          "GitHub",
+          "Live",
+        ],
         projectData: {
           id: "6",
           title: "Inventory Management System",
@@ -925,8 +979,7 @@ export const portfolio_data = {
         projectData: {
           id: "6",
           title: "Digital Product Selling Website",
-          banner:
-            Wordpress_home,
+          banner: Wordpress_home,
           about:
             "A Wordpress site where user is able to sell its digital products like software. Woocommerece is enabled to process order and manage products. Customer and admin both receieve email when a ew order come ororder status update",
           projectState: {
@@ -937,12 +990,9 @@ export const portfolio_data = {
             state: [
               { title: "Modules", number: "10+" },
               { title: "Pages", number: "10+" },
-
             ],
           },
-          technologies: [
-            { img: Wordpress, title: "Wordpress" },
-          ],
+          technologies: [{ img: Wordpress, title: "Wordpress" }],
           features: [
             "Search for teachers by subjects or location",
             "Send and manage tuition invitations",
@@ -1005,12 +1055,18 @@ export const portfolio_data = {
         title: "PassKey",
         description:
           "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "GitHub", "TypeScript"],
+        tags: [
+          "React",
+          "Nodejs",
+          "Expressjs",
+          "MongoDB",
+          "GitHub",
+          "TypeScript",
+        ],
         projectData: {
           id: "8",
           title: "PassKey - Password Manager",
-          banner:
-            Passkey_profile,
+          banner: Passkey_profile,
           about:
             "A dynamic web-based password manager that securely stores, organizes, and shares passwords with team members through role-based access and company-specific permissions.",
           projectState: {
@@ -1023,7 +1079,6 @@ export const portfolio_data = {
               { title: "Pages", number: "10" },
               { title: "APIs", number: "50+" },
               { title: "Features", number: "12" },
-
             ],
           },
           technologies: [
@@ -1095,12 +1150,11 @@ export const portfolio_data = {
               title: "Personal Details Page",
               img: Passkey_personaldetails,
             },
-
           ],
           repo: "",
-          challenges:
-            "While sharing passwords btw users.",
-          liveDemo: "https://drive.google.com/file/d/1qVSM7wX021w0d1LKJVaCpfxAgX8DT9Lx/view?usp=sharing",
+          challenges: "While sharing passwords btw users.",
+          liveDemo:
+            "https://drive.google.com/file/d/1qVSM7wX021w0d1LKJVaCpfxAgX8DT9Lx/view?usp=sharing",
           pricing: 15000,
           pricevalue: [
             "Complete documentation",
@@ -1109,7 +1163,6 @@ export const portfolio_data = {
             "Complete guidance and setup assistance",
           ],
         },
-
       },
       {
         id: "9",
@@ -1117,7 +1170,16 @@ export const portfolio_data = {
         title: "QwizzyAI",
         description:
           "A full MERN stack interview-prep platform integrating GPT-4 and Gemini for dynamic question generation, with user profiles, bookmarking, and community voting — consolidating interview prep, curation, and AI-assisted practice into one platform.",
-        tags: ["React", "Nodejs", "Expressjs", "MongoDB", "TypeScript", "GitHub", "PWA", "Live"],
+        tags: [
+          "React",
+          "Nodejs",
+          "Expressjs",
+          "MongoDB",
+          "TypeScript",
+          "GitHub",
+          "PWA",
+          "Live",
+        ],
         projectData: {
           id: "9",
           title: "QwizzyAI",
@@ -1189,15 +1251,7 @@ export const portfolio_data = {
         title: "Expense Tracker",
         description:
           "A PWA expense tracker with NestJS backend, React frontend, multi-role approval workflows, and Cloudinary document uploads — replacing fragmented manual expense tracking with a unified, auditable system.",
-        tags: [
-          "React",
-          "NestJS",
-          "Nodejs",
-          "MongoDB",
-          "Live",
-          "Github",
-          "PWA"
-        ],
+        tags: ["React", "NestJS", "Nodejs", "MongoDB", "Live", "Github", "PWA"],
         projectData: {
           id: "10",
           title: "Expense Tracker",
@@ -1214,8 +1268,8 @@ export const portfolio_data = {
               { title: "Modules", number: "4" },
               { title: "Pages", number: "6" },
               { title: "Features", number: "15+" },
-              { title: "APIs", number: "30+" }
-            ]
+              { title: "APIs", number: "30+" },
+            ],
           },
           technologies: [
             { img: Reactjs, title: "React JS" },
@@ -1228,7 +1282,7 @@ export const portfolio_data = {
             { img: Tailwind, title: "Tailwind CSS" },
             { img: TypeScript, title: "TypeScript" },
             { img: Github, title: "GitHub" },
-            { img: Axios, title: "Axios" }
+            { img: Axios, title: "Axios" },
           ],
           features: [
             "Multi-role approval workflows (Submitter, Operator, Finance, Admin)",
@@ -1237,15 +1291,18 @@ export const portfolio_data = {
             "PWA with offline-friendly experience",
             "Expense creation, review, and approval workflow",
             "Dynamic dashboard with analytics and charts",
-            "Comprehensive ledger view and expense summaries"
+            "Comprehensive ledger view and expense summaries",
           ],
           pages: [
             { title: "Dashboard", img: ExpenseTracker_dashboard1 },
             { title: "Create Expense", img: ExpenseTracker_createexpense },
             { title: "Ledger View", img: ExpenseTracker_ledger },
-            { title: "Total Expense Summary", img: ExpenseTracker_totalexpense },
+            {
+              title: "Total Expense Summary",
+              img: ExpenseTracker_totalexpense,
+            },
             { title: "Admin Dashboard", img: ExpenseTracker_dashboard2 },
-            { title: "Finance Overview", img: ExpenseTracker_dashboard3 }
+            { title: "Finance Overview", img: ExpenseTracker_dashboard3 },
           ],
           liveDemo: "https://atrule-expensetracker.vercel.app/",
           repo: "https://github.com/Mehroz101/enterprise-expense-tracker",
@@ -1254,7 +1311,7 @@ export const portfolio_data = {
           documentation: {
             description:
               "Detailed documentation covering setup, API routes, and workflow structure for each role. Includes interactive Swagger UI and architecture overview.",
-            img: ExpenseTracker_totalexpense
+            img: ExpenseTracker_totalexpense,
           },
           pricing: 18000,
           pricevalue: [
@@ -1262,11 +1319,11 @@ export const portfolio_data = {
             "Swagger API documentation",
             "Authentication and role-based modules",
             "Dashboard and analytics screens",
-            "Deployment assistance and 2 revisions"
-          ]
-        }
-      }
-    ]
+            "Deployment assistance and 2 revisions",
+          ],
+        },
+      },
+    ],
   },
   tags: [
     "Wordpress",
@@ -1278,8 +1335,7 @@ export const portfolio_data = {
     "GitHub",
     "TypeScript",
     "PWA",
-    "Live"
-
+    "Live",
   ],
   FooterSection: {
     heading: "MOJI",

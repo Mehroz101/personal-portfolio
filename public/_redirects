@@ -1,2 +1,2 @@
-# Route bot traffic to prerender
-/*  https://service.prerender.io/:splat  200
+# Serve client-side routes on direct visits and refreshes.
+/* /index.html 200
