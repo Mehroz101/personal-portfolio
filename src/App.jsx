@@ -3,7 +3,8 @@ import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { portfolio_data as data } from "../public/portfoliodata";
 import { profile } from "./portfolio-profile";
 import "./portfolio.css";
-const projects = data.ProjectSection.project;
+import { aichiefProject } from "./aichief-project";
+const projects = [aichiefProject, ...data.ProjectSection.project];
 const social = data.AboutSection.links;
 const nav = ["About", "Experience", "Projects", "Skills", "Education"];
 const Arrow = () => (
@@ -93,7 +94,7 @@ function Card({ project, index }) {
       >
         <img
           src={project.img}
-          alt={`${project.title} application screenshot`}
+          alt={project.imageAlt || `${project.title} application screenshot`}
           loading="lazy"
           width="1200"
           height="800"
@@ -275,6 +276,7 @@ function Home() {
                   <p className="company">
                     {job.company} <span>· {job.location}</span>
                   </p>
+                  {job.projectId && <Link className="text-link" to={`/project/${job.projectId}`}>Explore AIChief at Xihawks <Arrow /></Link>}
                   <ul>
                     {job.points.map((point) => (
                       <li key={point}>{point}</li>
@@ -297,7 +299,7 @@ function Home() {
           </Link>
         </Heading>
         <div className="project-grid">
-          {["9", "10", "1", "6"].map((id, index) => (
+          {["11", "9", "10", "1"].map((id, index) => (
             <Card
               project={projects.find((p) => p.id === id)}
               index={index}
