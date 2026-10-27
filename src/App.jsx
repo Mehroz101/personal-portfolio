@@ -4,6 +4,7 @@ import { portfolio_data as data } from "../public/portfoliodata";
 import { profile } from "./portfolio-profile";
 import "./portfolio.css";
 import ScreenshotSlider from "./components/ScreenshotSlider";
+import ToolkitIcon from "./components/ToolkitIcon";
 import ProjectList from "./components/ProjectList";
 import ScrollMotion from "./components/ScrollMotion";
 import { aichiefProject } from "./aichief-project";
@@ -295,11 +296,17 @@ function Home() {
           <div className="skills-grid">
             {profile.skills.map((group, i) => (
               <article className="skill-group" key={group.title}>
-                <span className="skill-number">0{i + 1}</span>
+                <div className="skill-category-marker">
+                  <ToolkitIcon name={group.title} category />
+                  <span className="skill-number">0{i + 1}</span>
+                </div>
                 <h3>{group.title}</h3>
                 <ul>
                   {group.items.map((skill) => (
-                    <li key={skill}>{skill}</li>
+                    <li key={skill}>
+                      <ToolkitIcon name={skill} />
+                      <span>{skill}</span>
+                    </li>
                   ))}
                 </ul>
               </article>

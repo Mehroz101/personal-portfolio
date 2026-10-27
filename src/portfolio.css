@@ -1798,3 +1798,36 @@ h3 {
     transform: none;
   }
 }
+
+.skill-category-marker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.toolkit-category-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.skill-group li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 30px;
+}
+.toolkit-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: #57664d;
+}
+@media (max-width: 580px) {
+  .skill-group li {
+    gap: 5px;
+  }
+  .toolkit-icon {
+    width: 13px;
+    height: 13px;
+  }
+}
