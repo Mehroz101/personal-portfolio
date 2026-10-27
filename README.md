@@ -31,3 +31,7 @@ Projects use three alternating featured case studies (Waaimo, AIChief, and Place
 The homepage includes about, experience, selected projects, skills, education, certification, and contact. `/projects` contains all thirteen projects with keyword search. `/project/:id` provides project details and keyboard-accessible screenshot dialogs. Contact opens an email client; there is no unconnected contact form.
 
 Motion respects reduced-motion preferences. Navigation, project search, gallery dialogs, and all interactive controls support keyboard use.
+
+## Hostinger deployment
+
+Build with `npm run build` and deploy the contents of `dist/` to the domain’s web root (usually `public_html`). Include the hidden `dist/.htaccess` file. It serves `index.html` for client-side routes such as `/projects` and `/project/13`, while leaving existing asset and document requests alone. Netlify uses the separate `public/_redirects` fallback.
