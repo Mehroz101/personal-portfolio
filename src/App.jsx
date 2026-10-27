@@ -3,6 +3,7 @@ import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { portfolio_data as data } from "../public/portfoliodata";
 import { profile } from "./portfolio-profile";
 import "./portfolio.css";
+import ScreenshotSlider from "./components/ScreenshotSlider";
 import { aichiefProject } from "./aichief-project";
 import { placedProject } from "./placed-project";
 const projects = [
@@ -579,34 +580,14 @@ function ProjectDetail() {
         </aside>
       </div>
       {d.pages?.length > 0 && (
-        <section className="gallery-section">
-          <h2>A closer look.</h2>
-          <p>Select a screenshot to view it in full.</p>
-          <div className="gallery-grid">
-            {d.pages.map((page, i) => (
-              <button
-                className="gallery-item"
-                key={`${page.title}-${i}`}
-                onClick={(e) => {
-                  trigger.current = e.currentTarget;
-                  setImage(page);
-                }}
-              >
-                <img
-                  src={page.img}
-                  alt={page.title}
-                  loading="lazy"
-                  width="1200"
-                  height="750"
-                />
-                <span>
-                  {page.title}
-                  <Arrow />
-                </span>
-              </button>
-            ))}
-          </div>
-        </section>
+        <ScreenshotSlider
+          key={id}
+          pages={d.pages}
+          onOpen={(page, button) => {
+            trigger.current = button;
+            setImage(page);
+          }}
+        />
       )}
       {image && (
         <dialog
