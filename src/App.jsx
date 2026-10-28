@@ -7,6 +7,7 @@ import ScreenshotSlider from "./components/ScreenshotSlider";
 import ToolkitIcon from "./components/ToolkitIcon";
 import ProjectList from "./components/ProjectList";
 import ScrollMotion from "./components/ScrollMotion";
+import SiteMotion from "./components/SiteMotion";
 import { aichiefProject } from "./aichief-project";
 import { placedProject } from "./placed-project";
 import { waaimoProject } from "./waaimo-project";
@@ -153,7 +154,19 @@ function Home() {
             </span>
           </div>
           <div className="portrait-note">
-            <span aria-hidden="true">✳</span> From the first idea to production.
+            <span className="portrait-asterisk" aria-hidden="true">
+              <svg
+                viewBox="0 0 32 32"
+                width="25"
+                height="25"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M16 2v28M2 16h28M6 6l20 20M6 26 26 6" />
+              </svg>
+            </span>{" "}
+            From the first idea to production.
           </div>
         </div>
       </section>
@@ -205,8 +218,8 @@ function Home() {
               Over the past 3+ years, I’ve built and contributed to SaaS
               applications, ERP systems, web scrapers, tool directories, and
               chatbots. I work across React and Next.js interfaces, Node.js
-              backends, API integrations, and database design, with caching
-              and background processing to support reliable applications.
+              backends, API integrations, and database design, with caching and
+              background processing to support reliable applications.
             </p>
             <p>
               Currently, I’m a Full Stack Developer at Xihawks, working on
@@ -591,13 +604,18 @@ function NotFound() {
   );
 }
 export default function App() {
+  const [motionPaused, setMotionPaused] = useState(false);
   return (
     <>
       <a className="skip-link" href="#main">
         Skip to content
       </a>
       <Effects />
-      <ScrollMotion />
+      <ScrollMotion paused={motionPaused} />
+      <SiteMotion
+        paused={motionPaused}
+        onToggle={() => setMotionPaused((value) => !value)}
+      />
       <Header />
       <main id="main">
         <Routes>

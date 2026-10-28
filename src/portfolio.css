@@ -1831,3 +1831,141 @@ h3 {
     height: 13px;
   }
 }
+/* Scroll-linked and ambient motion, with a persistent pause control. */
+.page-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 3px;
+  z-index: 60;
+  pointer-events: none;
+}
+.page-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleX(var(--page-progress, 0));
+  transform-origin: left;
+}
+.site-header {
+  transition:
+    box-shadow 0.25s,
+    background 0.25s;
+}
+.site-header.has-scrolled {
+  box-shadow: 0 3px 18px #2428240a;
+}
+.portrait-area {
+  perspective: 1000px;
+}
+.portrait-frame {
+  transform: translateY(var(--portrait-scroll, 0px))
+    rotateX(var(--portrait-rx, 0deg)) rotateY(var(--portrait-ry, 0deg));
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.portrait-frame::before {
+  animation: portrait-breathe 8s ease-in-out infinite;
+}
+.portrait-caption {
+  animation: portrait-float 6s ease-in-out infinite;
+}
+.portrait-asterisk {
+  display: inline-flex;
+  animation: asterisk-turn 24s linear infinite;
+}
+.skill-group li {
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    transform 0.2s;
+}
+@media (hover: hover) {
+  .skill-group li:hover {
+    transform: translateY(-3px);
+    background: var(--paper);
+    border-color: #a6af9b;
+  }
+  .archive-row {
+    transition: background 0.2s;
+  }
+  .archive-row:hover {
+    background: #eff0e94d;
+  }
+}
+.timeline-row[data-motion-entered] .timeline-dot {
+  animation: timeline-dot-in 0.7s ease-out;
+}
+.motion-toggle {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--muted);
+  box-shadow: 0 2px 8px #24282408;
+}
+.motion-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.motion-paused *,
+.motion-paused *::before,
+.motion-paused *::after {
+  animation-play-state: paused !important;
+  transition: none !important;
+}
+@keyframes portrait-breathe {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.055);
+  }
+}
+@keyframes portrait-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes asterisk-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes timeline-dot-in {
+  0% {
+    box-shadow: 0 0 0 0 #b34f2d35;
+  }
+  100% {
+    box-shadow: 0 0 0 9px #b34f2d00;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portrait-frame {
+    transform: none;
+  }
+  .motion-toggle {
+    display: none;
+  }
+  .skill-group li:hover {
+    transform: none;
+  }
+}
+@media (max-width: 580px) {
+  .motion-toggle {
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    bottom: 10px;
+  }
+}
