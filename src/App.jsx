@@ -8,6 +8,9 @@ import ToolkitIcon from "./components/ToolkitIcon";
 import ProjectList from "./components/ProjectList";
 import ScrollMotion from "./components/ScrollMotion";
 import SiteMotion from "./components/SiteMotion";
+import CameraSilhouette from "./components/CameraSilhouette";
+import HeroBeams from "./components/HeroBeams";
+import StackConnections from "./components/StackConnections";
 import { aichiefProject } from "./aichief-project";
 import { placedProject } from "./placed-project";
 import { waaimoProject } from "./waaimo-project";
@@ -96,10 +99,11 @@ function Heading({ number, label, title, children }) {
     </div>
   );
 }
-function Home() {
+function Home({ cameraStatus, onEnableCamera }) {
   return (
     <>
       <section className="hero wrap" id="home">
+        <HeroBeams hidden={cameraStatus === "active"} />
         <div className="hero-copy">
           <p className="eyebrow hero-intro">
             <span className="accent-line" />
@@ -133,6 +137,31 @@ function Home() {
               LinkedIn <Arrow />
             </External>
             <span>Lahore, Pakistan · PKT</span>
+          </div>
+          <div className="camera-invite">
+            {cameraStatus === "active" ? (
+              <p className="camera-note">Your pixel silhouette is on.</p>
+            ) : (
+              <>
+                <button
+                  className="camera-enable"
+                  onClick={onEnableCamera}
+                  disabled={cameraStatus === "loading"}
+                >
+                  {cameraStatus === "loading"
+                    ? "Starting silhouette…"
+                    : "Try your pixel silhouette"}{" "}
+                  <Arrow />
+                </button>
+                <p className="camera-note" role="status">
+                  {cameraStatus === "denied"
+                    ? "Camera access declined. Hero beams are active."
+                    : cameraStatus === "unavailable"
+                      ? "Camera effect unavailable. Hero beams are active."
+                      : "Optional camera effect. No audio, recording, or uploads."}
+                </p>
+              </>
+            )}
           </div>
         </div>
         <div className="portrait-area">
@@ -307,6 +336,7 @@ function Home() {
               from an idea to production.
             </p>
           </Heading>
+          <StackConnections />
           <div className="skills-grid">
             {profile.skills.map((group, i) => (
               <article className="skill-group" key={group.title}>
@@ -604,22 +634,34 @@ function NotFound() {
   );
 }
 export default function App() {
-  const [motionPaused, setMotionPaused] = useState(false);
+  const [cameraStatus, setCameraStatus] = useState("idle");
+  const camera = useRef(null);
   return (
     <>
       <a className="skip-link" href="#main">
         Skip to content
       </a>
       <Effects />
-      <ScrollMotion paused={motionPaused} />
-      <SiteMotion
-        paused={motionPaused}
-        onToggle={() => setMotionPaused((value) => !value)}
-      />
+      <ScrollMotion />
+      <SiteMotion />
+      <CameraSilhouette ref={camera} onStatus={setCameraStatus} />
+      {(cameraStatus === "active" || cameraStatus === "loading") && (
+        <button className="camera-stop" onClick={() => camera.current?.stop()}>
+          {cameraStatus === "loading" ? "Cancel camera" : "Turn off camera"}
+        </button>
+      )}
       <Header />
       <main id="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                cameraStatus={cameraStatus}
+                onEnableCamera={() => camera.current?.start()}
+              />
+            }
+          />
           <Route path="/projects" element={<AllProjects />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />
