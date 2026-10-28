@@ -52,7 +52,7 @@ export default function ScrollMotion({ paused = false }) {
     );
     document
       .querySelectorAll(
-        ".section-heading, .about-grid > div, .timeline-row, .featured-project, .project-archive, .archive-row, .skill-group, .education-row, .contact-grid > div, .gallery-section",
+        ".section-heading, .about-grid > div, .timeline-row, .featured-project, .project-archive, .archive-row, .skill-group, .education-row, .contact-grid > div, .gallery-section, .stack-connections, .connection-illustration",
       )
       .forEach((element) => {
         if (!element.dataset.motionEntered) observer.observe(element);
