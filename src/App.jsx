@@ -112,9 +112,9 @@ function Home() {
             <em>the real world.</em>
           </h1>
           <p className="hero-description">
-            I’m Mehroz Farooq, a full stack developer in Lahore. I turn complex
-            problems into fast, reliable web applications — from the interface
-            to the infrastructure.
+            I’m Mehroz Farooq, a full stack developer in Lahore. I build SaaS
+            applications, ERP systems, and AI-powered products — from the
+            interface to the infrastructure.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#projects">
@@ -202,10 +202,11 @@ function Home() {
               feel right.
             </p>
             <p>
-              Over the past 3+ years, I’ve worked on SaaS marketplaces, business
-              platforms, and AI-powered products. My work spans React and
-              Next.js interfaces, Node.js backends, databases, caching, and
-              background processing.
+              Over the past 3+ years, I’ve built and contributed to SaaS
+              applications, ERP systems, web scrapers, tool directories, and
+              chatbots. I work across React and Next.js interfaces, Node.js
+              backends, API integrations, and database design, with caching
+              and background processing to support reliable applications.
             </p>
             <p>
               Currently, I’m a Full Stack Developer at Xihawks, working on
